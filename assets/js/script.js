@@ -4,11 +4,41 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
 
+    // Sidebar collapse functionality
+    const sidebarCollapseBtn = document.getElementById('sidebarCollapseBtn');
+    const guideSidebar = document.querySelector('.guide-sidebar');
+    const guideMainContent = document.querySelector('.guide-main-content');
+
     // Mobile menu toggle
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
+
+    // Sidebar collapse toggle
+    if (sidebarCollapseBtn) {
+        sidebarCollapseBtn.addEventListener('click', function() {
+            guideSidebar.classList.toggle('collapsed');
+
+            // Update collapse button icon
+            const collapseIcon = this.querySelector('.collapse-icon');
+            if (guideSidebar.classList.contains('collapsed')) {
+                collapseIcon.textContent = '☰';
+                // Save collapsed state to localStorage
+                localStorage.setItem('sidebarCollapsed', 'true');
+            } else {
+                collapseIcon.textContent = '☰';
+                // Save expanded state to localStorage
+                localStorage.setItem('sidebarCollapsed', 'false');
+            }
+        });
+    }
+
+    // Check saved sidebar state on page load
+    const savedSidebarState = localStorage.getItem('sidebarCollapsed');
+    if (savedSidebarState === 'true' && guideSidebar) {
+        guideSidebar.classList.add('collapsed');
+    }
 
     // Close menu when clicking navigation links
     navLinks.forEach(link => {

@@ -25,6 +25,12 @@
                 </li>
                 <li class="nav-item">
                     <a href="guide.html" class="nav-link">Guide</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#characters">Characters</a></li>
+                        <li><a href="#character-scripts">Scripts</a></li>
+                        <li><a href="#edible-items">Edible Items</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" class="nav-link" target="_blank">Download</a>
@@ -41,45 +47,836 @@
         </div>
     </nav>
 
-    <!-- Guide Home -->
-    <section class="guide-hero" style="padding-top: 120px;">
-        <div class="container">
-            <div class="guide-content">
-                <h1 class="guide-title">Complete Game Guide</h1>
-                <p class="guide-subtitle">Master the art of survival and visitor identification in No, I'm not a Human</p>
-
-                <!-- Guide Navigation -->
-                <div class="guide-navigation">
-                    <div class="nav-section">
+    <!-- Main Content Area (Full Width) -->
+        <div class="guide-main-content">
+            <!-- Left Sidebar Navigation (Global for entire page) -->
+            <div class="guide-sidebar">
+                    <!-- Collapse Button -->
+                    <button class="sidebar-collapse-btn" id="sidebarCollapseBtn">
+                        <span class="collapse-icon">☰</span>
+                    </button>
+                    <div class="sidebar-section">
+                        <h3>Game Information</h3>
+                        <ul>
+                            <li><a href="#achievements" data-tooltip="Achievements"><span class="nav-icon">🏆</span> <span class="nav-text">Achievements</span></a></li>
+                            <li><a href="#characters" data-tooltip="Characters"><span class="nav-icon">👥</span> <span class="nav-text">Characters</span></a></li>
+                            <li><a href="#character-scripts" data-tooltip="Character Scripts"><span class="nav-icon">📝</span> <span class="nav-text">Character Scripts</span></a></li>
+                            <li><a href="#edible-items" data-tooltip="Edible Items"><span class="nav-icon">🍔</span> <span class="nav-text">Edible Items</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-section">
                         <h3>Game Basics</h3>
                         <ul>
-                            <li><a href="#save-method">Save Method</a></li>
-                            <li><a href="#day-night-cycle">Day & Night Cycle</a></li>
-                            <li><a href="#game-mechanics">Game Mechanics</a></li>
+                            <li><a href="#save-method" data-tooltip="Save Method"><span class="nav-icon">💾</span> <span class="nav-text">Save Method</span></a></li>
+                            <li><a href="#day-night-cycle" data-tooltip="Day & Night Cycle"><span class="nav-icon">🌙</span> <span class="nav-text">Day & Night Cycle</span></a></li>
+                            <li><a href="#game-mechanics" data-tooltip="Game Mechanics"><span class="nav-icon">⚙️</span> <span class="nav-text">Game Mechanics</span></a></li>
                         </ul>
                     </div>
-                    <div class="nav-section">
+                    <div class="sidebar-section">
                         <h3>Visitor Detection</h3>
                         <ul>
-                            <li><a href="#visitor-identification">Visitor Identification Guide</a></li>
-                            <li><a href="#phone-numbers">All Phone Numbers & Functions</a></li>
-                            <li><a href="#character-guide">Character Conditions & Traits</a></li>
+                            <li><a href="#visitor-identification" data-tooltip="Visitor Identification Guide"><span class="nav-icon">🔍</span> <span class="nav-text">Visitor Identification Guide</span></a></li>
+                            <li><a href="#phone-numbers" data-tooltip="All Phone Numbers & Functions"><span class="nav-icon">📞</span> <span class="nav-text">All Phone Numbers & Functions</span></a></li>
+                            <li><a href="#character-guide" data-tooltip="Character Conditions & Traits"><span class="nav-icon">🧩</span> <span class="nav-text">Character Conditions & Traits</span></a></li>
                         </ul>
                     </div>
-                    <div class="nav-section">
+                    <div class="sidebar-section">
                         <h3>Walkthrough</h3>
                         <ul>
-                            <li><a href="#fixed-events">Fixed Events List</a></li>
-                            <li><a href="#consumables">Consumables Effects</a></li>
-                            <li><a href="#story-walkthrough">Complete Story Walkthrough</a></li>
+                            <li><a href="#fixed-events" data-tooltip="Fixed Events List"><span class="nav-icon">📅</span> <span class="nav-text">Fixed Events List</span></a></li>
+                            <li><a href="#consumables" data-tooltip="Consumables Effects"><span class="nav-icon">💊</span> <span class="nav-text">Consumables Effects</span></a></li>
+                            <li><a href="#story-walkthrough" data-tooltip="Complete Story Walkthrough"><span class="nav-icon">🎮</span> <span class="nav-text">Complete Story Walkthrough</span></a></li>
                         </ul>
                     </div>
-                    <div class="nav-section">
+                    <div class="sidebar-section">
                         <h3>Endings & Unlockables</h3>
                         <ul>
-                            <li><a href="#all-endings">All Endings Guide</a></li>
-                            <li><a href="#tips-tricks">Tips & Tricks</a></li>
+                            <li><a href="#all-endings" data-tooltip="All Endings Guide"><span class="nav-icon">🎭</span> <span class="nav-text">All Endings Guide</span></a></li>
+                            <li><a href="#tips-tricks" data-tooltip="Tips & Tricks"><span class="nav-icon">💡</span> <span class="nav-text">Tips & Tricks</span></a></li>
                         </ul>
+                    </div>
+                </div>
+
+                
+            <!-- Guide Home -->
+            <section class="guide-hero" style="padding-top: 120px;">
+                <div class="container">
+                    <div class="guide-content">
+                        <h1 class="guide-title">Complete Game Guide</h1>
+                        <p class="guide-subtitle">Master the art of survival and visitor identification in No, I'm not a Human</p>
+
+                        <!-- Guide Navigation -->
+                        <div class="guide-navigation">
+                            <div class="nav-section">
+                                <h3>Game Basics</h3>
+                                <ul>
+                                    <li><a href="#save-method">Save Method</a></li>
+                                    <li><a href="#day-night-cycle">Day & Night Cycle</a></li>
+                                    <li><a href="#game-mechanics">Game Mechanics</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-section">
+                                <h3>Visitor Detection</h3>
+                                <ul>
+                                    <li><a href="#visitor-identification">Visitor Identification Guide</a></li>
+                                    <li><a href="#phone-numbers">All Phone Numbers & Functions</a></li>
+                                    <li><a href="#character-guide">Character Conditions & Traits</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-section">
+                                <h3>Walkthrough</h3>
+                                <ul>
+                                    <li><a href="#fixed-events">Fixed Events List</a></li>
+                                    <li><a href="#consumables">Consumables Effects</a></li>
+                                    <li><a href="#story-walkthrough">Complete Story Walkthrough</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-section">
+                                <h3>Endings & Unlockables</h3>
+                                <ul>
+                                    <li><a href="#all-endings">All Endings Guide</a></li>
+                                    <li><a href="#tips-tricks">Tips & Tricks</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Sections (No extra container) -->
+
+    <!-- Achievements -->
+    <section id="achievements" class="guide-section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-intro">
+                <p>Complete list of all 20 achievements available in the Full Release of "No, I'm not a Human". Achievements cover exploration, story progression, character interactions, and completionist challenges.</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-category">
+                    <h3>🏠 Exploration & Discovery</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/8/8e/House_with_history_Achievment.jpg/revision/latest?cb=20250917162500" alt="A House with History" class="achievement-image">
+                            <h4>A House with History</h4>
+                            <p>Explore the past of your home</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Walk around the entire house and interact with everything around you (bedroom, storage room, bathroom, living room, office, kitchen).
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/1/19/Everywhere_at_the_End_of_Time.jpg/revision/latest?cb=20250918101214" alt="Everywhere at the End of Time" class="achievement-image">
+                            <h4>Everywhere at the End of Time</h4>
+                            <p>Unlock all endings</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Unlock all the 10 endings of the game.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/f/f7/Lost_in_the_Roots.jpg/revision/latest?cb=20250918101529" alt="Lost in the Roots" class="achievement-image">
+                            <h4>Lost in the Roots</h4>
+                            <p>Learn the secrets of immortality from the Forest</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Meet the Immortal Man.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/4/4a/The_Usual_Suspects.jpg/revision/latest?cb=20250918101805" alt="The Usual Suspects" class="achievement-image">
+                            <h4>The Usual Suspects</h4>
+                            <p>Meet all characters at least once</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Meet Every possible character present in the game.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3>☕ Daily Life & Consumption</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/8/8d/Breakfast_of_Champions.jpg/revision/latest?cb=20250918101006" alt="Breakfast of Champions" class="achievement-image">
+                            <h4>Breakfast of Champions</h4>
+                            <p>Nothing's better than coffee and a cigarette</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Consume both a Cigarette and a can of Coffee in the same day.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/7/79/Sommelier.jpg/revision/latest?cb=20250918101553" alt="Sommelier" class="achievement-image">
+                            <h4>Sommelier</h4>
+                            <p>Fill your belly</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Consume all types of food and drinks available: Beer, Coffee, Kombucha, Mushroom.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/e/eb/Story_Was_a_Little_Dry.jpg/revision/latest?cb=20250918101724" alt="Story Was a Little Dry" class="achievement-image">
+                            <h4>Story Was a Little Dry</h4>
+                            <p>Beat the game without drinking kombucha</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Unlock any ending without using the save mechanic (kombucha).
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/3/3c/Your_Fluffy_Master.jpg/revision/latest?cb=20250918101901" alt="Your Fluffy Master" class="achievement-image">
+                            <h4>Your Fluffy Master</h4>
+                            <p>Feed the cat</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Feed the cat.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3>📞 Communication & Information</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/8/83/Phone_Book.jpg/revision/latest?cb=20250918101625" alt="Phone Book" class="achievement-image">
+                            <h4>Phone Book</h4>
+                            <p>Make a call to every number</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Call every phone number. Check the phone page.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/1/1f/Radioactive.jpg/revision/latest?cb=20250918101648" alt="Radioactive" class="achievement-image">
+                            <h4>Radioactive</h4>
+                            <p>Hear all the radio messages</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Decode all daily radio messages.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/9/9a/Idiot_Box.jpg/revision/latest?cb=20250918101512" alt="Idiot Box" class="achievement-image">
+                            <h4>Idiot Box</h4>
+                            <p>Watch all the TV shows</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Interact with the TV whenever possible every day.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/d/de/Special_Delivery.jpg/revision/latest?cb=20250918101700" alt="Special Delivery" class="achievement-image">
+                            <h4>Special Delivery</h4>
+                            <p>Order something from ForRest</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Obtain the For Rest phone number, place an order by calling them and collect the ordered item from the Delivery Man the next night.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3>🎯 Visitor Detection & Combat</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/1/18/Not_on_my_watch.jpg/revision/latest?cb=20250918101544" alt="Not on my watch!" class="achievement-image">
+                            <h4>Not on my watch!</h4>
+                            <p>Identify a Visitor and take action</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Shoot a visitor.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/d/db/Firsttime.jpg/revision/latest?cb=20250918074947" alt="First time?" class="achievement-image">
+                            <h4>First time?</h4>
+                            <p>Misidentify a Visitor</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Shoot a human guest.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/8/88/TV_Made_Me_Do_It.jpg/revision/latest?cb=20250918101828" alt="TV Made Me Do It" class="achievement-image">
+                            <h4>TV Made Me Do It</h4>
+                            <p>Check a person for Visitor signs for the first time</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Ask to check someone after allowing them entry into your house during the day.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/5/5b/Frenemy.jpg/revision/latest?cb=20250918101444" alt="Frenemy" class="achievement-image">
+                            <h4>Frenemy</h4>
+                            <p>Kill the same character both as a human and a Visitor</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> In separate runs, shoot the same character twice: once while they're Human and once while they're a Visitor. The target must be a character with a random identity.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3>🏆 Story Progression & Endings</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/6/6d/The_End.jpg/revision/latest?cb=20250918101747" alt="The End?" class="achievement-image">
+                            <h4>The End?</h4>
+                            <p>Survive till the end</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Unlock Ending 2.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/8/8b/Family_Dinner.jpg/revision/latest?cb=20250918101416" alt="Family Dinner" class="achievement-image">
+                            <h4>Family Dinner</h4>
+                            <p>Don't refuse anyone entry</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Let every potential guest that knocks on your door take shelter in your house.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/f/f6/Harsh_Compromise.jpg/revision/latest?cb=20250918101456" alt="Harsh Compromise" class="achievement-image">
+                            <h4>Harsh Compromise</h4>
+                            <p>Accept a bribe. Shameless</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Accept a bribe or offer from anyone who you encounter at night after denying them entry.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/0/02/Watch_and_learn.jpg/revision/latest?cb=20250918101844" alt="Watch and learn" class="achievement-image">
+                            <h4>Watch and learn</h4>
+                            <p>Teach a young man the meaning of murder</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Kill the Young Man in Purple.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters -->
+    <section id="characters" class="guide-section dark-section">
+        <div class="container">
+            <h2 class="section-title">Characters</h2>
+            <div class="characters-overview">
+                <p>Meet the diverse cast of characters you'll encounter in No, I'm not a Human. Each character has unique traits, behaviors, and storylines that will test your ability to distinguish between human survivors and visitor impostors.</p>
+            </div>
+            <div class="characters-grid">
+                <div class="character-category">
+                    <h3>👥 Regular Visitors</h3>
+                    <div class="character-list">
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/d/d0/AmogusGuyCloseUp.jpg/revision/latest/smart/width/40/height/30?cb=20241002171725" alt="Amogus Guy" class="character-avatar">
+                            <div class="character-info">
+                                <h4>Amogus Guy</h4>
+                                <p>A suspicious character with an uncanny resemblance to space travelers. Often appears nervous and speaks in cryptic phrases.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Suspicious Behavior</span>
+                                    <span class="trait">Unusual Appearance</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/2/29/AngryGuy.png/revision/latest/smart/width/40/height/30?cb=20250609143431" alt="Angry Guy" class="character-avatar">
+                            <div class="character-info">
+                                <h4>Angry Guy</h4>
+                                <p>Always agitated and aggressive. May be genuine human stress or visitor aggression. Requires careful handling.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Aggressive</span>
+                                    <span class="trait">High Stress</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/5/59/Lawguycloseup.jpg/revision/latest/smart/width/40/height/30?cb=20250919012129" alt="Armchair Lawyer Guy" class="character-avatar">
+                            <div class="character-info">
+                                <h4>Armchair Lawyer Guy</h4>
+                                <p>Uses complex legal terminology to argue for entry. Very persuasive and knowledgeable about regulations.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Persuasive</span>
+                                    <span class="trait">Well-spoken</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/b/bc/Ymipclose.jpg/revision/latest/smart/width/40/height/30?cb=20250918055323" alt="Bandana Guy" class="character-avatar">
+                            <div class="character-info">
+                                <h4>Bandana Guy</h4>
+                                <p>Casual appearance with hidden features. Often attempts to appear friendly and non-threatening.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Casual</span>
+                                    <span class="trait">Friendly Demeanor</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/7/74/BarGuyCloseUp.jpg/revision/latest/smart/width/40/height/30?cb=20241002171806" alt="Bar Guy" class="character-avatar">
+                            <div class="character-info">
+                                <h4>Bar Guy</h4>
+                                <p>Claims to be a bartender seeking shelter. May have valuable information about other survivors.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Social</span>
+                                    <span class="trait">Information Broker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-category">
+                    <h3>🏢 Authority Figures</h3>
+                    <div class="character-list">
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/6/67/Bpaclose.jpg/revision/latest/smart/width/40/height/30?cb=20250921212853" alt="Border Patrol Agent" class="character-avatar">
+                            <div class="character-info">
+                                <h4>Border Patrol Agent</h4>
+                                <p>Official government agent with proper identification. May have crucial information about the visitor threat.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Authority</span>
+                                    <span class="trait">Official Business</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/9/9e/Fema.png/revision/latest/smart/width/40/height/30?cb=20240926213419" alt="FEMA Agent" class="character-avatar">
+                            <div class="character-info">
+                                <h4>FEMA Agent</h4>
+                                <p>Emergency management official with updates on the crisis. High priority for shelter access.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Emergency Services</span>
+                                    <span class="trait">Critical Information</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/e/e2/Reporter1.jpg/revision/latest/smart/width/40/height/30?cb=20240927063335" alt="Reporter" class="character-avatar">
+                            <div class="character-info">
+                                <h4>Reporter</h4>
+                                <p>Media representative seeking shelter and story. May have witnessed important events or have connections.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Media</span>
+                                    <span class="trait">Information Source</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-category">
+                    <h3>👪 Family Groups</h3>
+                    <div class="character-list">
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/a/ae/Bestsonclose.jpg/revision/latest/smart/width/40/height/30?cb=20250921154136" alt="Best Son" class="character-avatar">
+                            <div class="character-info">
+                                <h4>Best Son</h4>
+                                <p>Seeks shelter for his family. Claims to be protecting loved ones, but behavior may seem too perfect.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Family Oriented</span>
+                                    <span class="trait">Protective</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/9/9b/Husband_and_Wife_Close_Up.png/revision/latest/smart/width=40/height/30?cb=20250916210612" alt="Husband and Wife" class="character-avatar">
+                            <div class="character-info">
+                                <h4>Husband and Wife</h4>
+                                <p>Married couple seeking safety together. Their synchronized behavior may be natural or suspiciously coordinated.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Couple</span>
+                                    <span class="trait">Coordinated Behavior</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/8/87/Mother.png/revision/latest/smart/width/40/height/30?cb=20250609223401" alt="Neglectful Mother" class="character-avatar">
+                            <div class="character-info">
+                                <h4>Neglectful Mother</h4>
+                                <p>Appears with child but shows concerning lack of attention. May be genuine trauma or visitor unfamiliarity with human parenting.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Parent</span>
+                                    <span class="trait">Unusual Behavior</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-category">
+                    <h3>🔮 Mysterious Figures</h3>
+                    <div class="character-list">
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/5/56/Death_Herself.gif/revision/latest/smart/width/40/height/30?cb=20250922164216" alt="Death" class="character-avatar">
+                            <div class="character-info">
+                                <h4>Death</h4>
+                                <p>Supernatural figure claiming to be the embodiment of death. Speaks in riddles and prophecies about the future.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Supernatural</span>
+                                    <span class="trait">Cryptic Speech</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/e/e6/Deathcultleader.jpg/revision/latest/smart/width/40/height/30?cb=20250917041806" alt="Death Cult Leader" class="character-avatar">
+                            <div class="character-info">
+                                <h4>Death Cult Leader</h4>
+                                <p>Charismatic figure with followers. May have knowledge about the true nature of visitors and their origins.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Cult Leader</span>
+                                    <span class="trait">Knowledgeable</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <img src="https://static.wikia.nocookie.net/no-i-am-not-a-human/images/f/f7/Yakobclose.jpg/revision/latest/smart/width/40/height/30?cb=20250921175139" alt="Immortal Man" class="character-avatar">
+                            <div class="character-info">
+                                <h4>Immortal Man</h4>
+                                <p>Claims to have lived for centuries. Speaks of historical events with impossible first-hand knowledge.</p>
+                                <div class="character-traits">
+                                    <span class="trait">Ancient</span>
+                                    <span class="trait">Historical Knowledge</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Scripts -->
+    <section id="character-scripts" class="guide-section">
+        <div class="container">
+            <h2 class="section-title">Character Scripts</h2>
+            <div class="scripts-intro">
+                <p>Study these example dialogues and conversation patterns to better identify visitor behaviors. Pay attention to speech patterns, emotional responses, and story consistency.</p>
+            </div>
+            <div class="scripts-grid">
+                <div class="script-category">
+                    <h3>🗣️ Common Opening Lines</h3>
+                    <div class="script-examples">
+                        <div class="script-example">
+                            <div class="character-name">Suspicious Character</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Please, I need shelter! The storm is getting worse and I can see them out there..."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Vague references, dramatic language, attempts to create urgency
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Genuine Human</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Hi, I'm looking for shelter from the solar radiation. My house was damaged and I need a safe place."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Specific, practical language, realistic concerns
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Authority Figure</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Official business. I'm Agent Miller with FEMA. I need access to your shelter to coordinate relief efforts."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Direct, professional tone, clear purpose stated
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="script-category">
+                    <h3>❓ Response Patterns to Questions</h3>
+                    <div class="script-examples">
+                        <div class="script-example">
+                            <div class="character-name">Visitor Evasion</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line player">
+                                    <span class="speaker">You:</span> "Where were you before coming here?"
+                                </div>
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Does it matter? The important thing is that I'm here now and I need help."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Deflecting questions, avoiding direct answers
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Human Response</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line player">
+                                    <span class="speaker">You:</span> "Where were you before coming here?"
+                                </div>
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "I was at my apartment on Oak Street. The windows broke during the last solar flare, so I had to leave."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Specific details, logical explanation, personal context
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Inconsistent Story</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line player">
+                                    <span class="speaker">You:</span> "You mentioned earlier that you were alone. Now you say you have family?"
+                                </div>
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "I... I meant that they're safe elsewhere. I didn't mean to confuse you."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Contradictory statements, nervous backtracking
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="script-category">
+                    <h3>😨 Emotional Response Patterns</h3>
+                    <div class="script-examples">
+                        <div class="script-example">
+                            <div class="character-name">Visitor Emotions</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "I'm very scared about what's happening. This fear is... what humans call fear, right?"
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Unnatural emotional description, questioning basic emotions
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Genuine Fear</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "I haven't slept in days. Every time I close my eyes, I see what happened to my neighbors."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Natural emotional expression, specific trauma references
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Over-the-top Acting</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Oh, the horror! The absolute terror of it all! I shall never recover from this tragedy!"
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Dramatic, theatrical language, unnatural emotional intensity
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="script-category">
+                    <h3>🧠 Testing Questions and Responses</h3>
+                    <div class="script-examples">
+                        <div class="script-example">
+                            <div class="character-name">Memory Test</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line player">
+                                    <span class="speaker">You:</span> "What did you eat for breakfast three days ago?"
+                                </div>
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Breakfast is an important meal that humans consume in the morning hours. I believe I had... typical human food."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Generic answers, difficulty with specific personal memories
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Cultural References</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line player">
+                                    <span class="speaker">You:</span> "Have you seen any good movies lately?"
+                                </div>
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Movies are motion pictures that humans watch for entertainment. I have observed this human custom."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Explanatory rather than experiential, lack of personal connection
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Physical Sensations</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line player">
+                                    <span class="speaker">You:</span> "How does the solar radiation feel on your skin?"
+                                </div>
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "The sensation is... unpleasant. Human skin is sensitive to radiation damage."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis:</span> Clinical description rather than personal experience
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Edible Items -->
+    <section id="edible-items" class="guide-section dark-section">
+        <div class="container">
+            <h2 class="section-title">Edible Items</h2>
+            <div class="edible-intro">
+                <p>Food and consumables are vital for survival in No, I'm not a Human. Different items provide various benefits and can be found, traded for, or crafted throughout your journey.</p>
+            </div>
+            <div class="edible-categories">
+                <div class="edible-category">
+                    <h3>🍞 Basic Food Items</h3>
+                    <div class="edible-items-grid">
+                        <div class="edible-item">
+                            <div class="edible-icon">🍞</div>
+                            <h4>Bread</h4>
+                            <p><strong>Effect:</strong> Restores 15 health</p>
+                            <p><strong>Energy:</strong> +10</p>
+                            <p><strong>Description:</strong> Basic sustenance, commonly found</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🥫</div>
+                            <h4>Canned Food</h4>
+                            <p><strong>Effect:</strong> Restores 25 health</p>
+                            <p><strong>Energy:</strong> +20</p>
+                            <p><strong>Description:</strong> Preserved food, long-lasting</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🥩</div>
+                            <h4>Meat</h4>
+                            <p><strong>Effect:</strong> Restores 30 health</p>
+                            <p><strong>Energy:</strong> +25</p>
+                            <p><strong>Description:</strong> Protein-rich, substantial meal</p>
+                            <span class="edible-rarity">Uncommon</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🥕</div>
+                            <h4>Vegetables</h4>
+                            <p><strong>Effect:</strong> Restores 10 health</p>
+                            <p><strong>Energy:</strong> +15</p>
+                            <p><strong>Description:</strong> Fresh produce, vitamins</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edible-category">
+                    <h3>⚗️ Medical Consumables</h3>
+                    <div class="edible-items-grid">
+                        <div class="edible-item">
+                            <div class="edible-icon">💊</div>
+                            <h4>Painkillers</h4>
+                            <p><strong>Effect:</strong> Reduces pain effects</p>
+                            <p><strong>Energy:</strong> +15</p>
+                            <p><strong>Description:</strong> Temporary pain relief</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🧪</div>
+                            <h4>Antibiotics</h4>
+                            <p><strong>Effect:</strong> Cures infections</p>
+                            <p><strong>Energy:</strong> +5</p>
+                            <p><strong>Description:</strong> Fights bacterial infections</p>
+                            <span class="edible-rarity">Uncommon</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🩸</div>
+                            <h4>Blood Pack</h4>
+                            <p><strong>Effect:</strong> Restores 40 health</p>
+                            <p><strong>Energy:</strong> +20</p>
+                            <p><strong>Description:</strong> Emergency blood transfusion</p>
+                            <span class="edible-rarity">Rare</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🌿</div>
+                            <h4>Herbal Medicine</h4>
+                            <p><strong>Effect:</strong> Restores 20 health</p>
+                            <p><strong>Energy:</strong> +10</p>
+                            <p><strong>Description:</strong> Natural healing properties</p>
+                            <span class="edible-rarity">Uncommon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edible-category">
+                    <h3>⚡ Energy Boosters</h3>
+                    <div class="edible-items-grid">
+                        <div class="edible-item">
+                            <div class="edible-icon">🥤</div>
+                            <h4>Energy Drink</h4>
+                            <p><strong>Effect:</strong> +30 energy</p>
+                            <p><strong>Duration:</strong> 2 hours</p>
+                            <p><strong>Description:</strong> Quick energy boost</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">☕</div>
+                            <h4>Coffee</h4>
+                            <p><strong>Effect:</strong> +20 energy</p>
+                            <p><strong>Duration:</strong> 1 hour</p>
+                            <p><strong>Description:</strong> Improves alertness</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🍫</div>
+                            <h4>Chocolate</h4>
+                            <p><strong>Effect:</strong> +15 energy</p>
+                            <p><strong>Health:</strong> +5</p>
+                            <p><strong>Description:</strong> Mood improvement</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">💉</div>
+                            <h4>Adrenaline Shot</h4>
+                            <p><strong>Effect:</strong> +50 energy</p>
+                            <p><strong>Duration:</strong> 30 minutes</p>
+                            <p><strong>Description:</strong> Emergency energy boost</p>
+                            <span class="edible-rarity">Rare</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edible-category">
+                    <h3>🍺 Luxury Items</h3>
+                    <div class="edible-items-grid">
+                        <div class="edible-item">
+                            <div class="edible-icon">🍺</div>
+                            <h4>Beer</h4>
+                            <p><strong>Effect:</strong> +5 health</p>
+                            <p><strong>Special:</strong> Reduces stress</p>
+                            <p><strong>Description:</strong> Alcoholic beverage</p>
+                            <span class="edible-rarity">Uncommon</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🥃</div>
+                            <h4>Whiskey</h4>
+                            <p><strong>Effect:</strong> +10 health</p>
+                            <p><strong>Special:</strong> Pain relief</p>
+                            <p><strong>Description:</strong> Strong alcohol</p>
+                            <span class="edible-rarity">Rare</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🍷</div>
+                            <h4>Wine</h4>
+                            <p><strong>Effect:</strong> +8 health</p>
+                            <p><strong>Special:</strong> Social bonus</p>
+                            <p><strong>Description:</strong> Fine wine</p>
+                            <span class="edible-rarity">Rare</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🍰</div>
+                            <h4>Cake</h4>
+                            <p><strong>Effect:</strong> +20 health</p>
+                            <p><strong>Energy:</strong> +15</p>
+                            <p><strong>Description:</strong> Special occasion food</p>
+                            <span class="edible-rarity">Rare</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -968,6 +1765,9 @@
         </div>
     </section>
 
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
