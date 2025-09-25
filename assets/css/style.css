@@ -464,7 +464,7 @@ body {
 /* Guide Page Styles */
 .guide-hero {
     min-height: 60vh;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    background: #000000;
     display: flex;
     align-items: center;
     padding-top: 120px;
@@ -1988,6 +1988,13 @@ body {
     object-fit: cover;
     margin-bottom: 1rem;
     border: 2px solid rgba(0, 255, 136, 0.3);
+    background: #222;
+    display: block;
+}
+
+.achievement-item {
+    position: relative;
+    overflow: hidden;
 }
 
 .achievement-requirements {
@@ -2083,6 +2090,49 @@ body {
     padding: 0.2rem 0.6rem;
     border-radius: 12px;
     font-size: 0.8rem;
+}
+
+/* Compact Character List Styles */
+.compact-character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.8rem;
+    padding: 1rem 0;
+}
+
+.compact-character-item {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 255, 136, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.compact-character-item:hover {
+    background: rgba(0, 0, 0, 0.6);
+    border-color: rgba(0, 255, 136, 0.3);
+    transform: translateY(-2px);
+}
+
+.char-name {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    flex: 1;
+    margin-right: 0.5rem;
+}
+
+.char-trait {
+    background: rgba(0, 255, 136, 0.15);
+    color: #00ff88;
+    padding: 0.3rem 0.6rem;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
 /* Character Scripts Styles */
@@ -2408,6 +2458,24 @@ body {
 
     .character-avatar {
         margin: 0 auto;
+    }
+
+    .compact-character-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 0.6rem;
+    }
+
+    .compact-character-item {
+        padding: 0.6rem;
+    }
+
+    .char-name {
+        font-size: 0.85rem;
+    }
+
+    .char-trait {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.4rem;
     }
 
     .edible-items-grid {

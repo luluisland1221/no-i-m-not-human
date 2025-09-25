@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
 
+    
     // Sidebar collapse functionality
     const sidebarCollapseBtn = document.getElementById('sidebarCollapseBtn');
     const guideSidebar = document.querySelector('.guide-sidebar');
