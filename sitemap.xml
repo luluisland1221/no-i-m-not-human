@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- 主页 -->
+    <url>
+        <loc>https://noimnothuman.xyz/</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- 游戏指南页 -->
+    <url>
+        <loc>https://noimnothuman.xyz/guide.html</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 游戏特性页 -->
+    <url>
+        <loc>https://noimnothuman.xyz/index.html#features</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 社区页 -->
+    <url>
+        <loc>https://noimnothuman.xyz/index.html#community</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 下载页 -->
+    <url>
+        <loc>https://noimnothuman.xyz/download/</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 社区论坛 -->
+    <url>
+        <loc>https://noimnothuman.xyz/community/</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- 游戏特性详情 -->
+    <url>
+        <loc>https://noimnothuman.xyz/features/</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 指南页面锚点 -->
+    <url>
+        <loc>https://noimnothuman.xyz/guide.html#achievements</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://noimnothuman.xyz/guide.html#characters</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://noimnothuman.xyz/guide.html#character-scripts</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://noimnothuman.xyz/guide.html#edible-items</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://noimnothuman.xyz/guide.html#save-method</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://noimnothuman.xyz/guide.html#day-night-cycle</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://noimnothuman.xyz/guide.html#game-mechanics</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://noimnothuman.xyz/guide.html#endings</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://noimnothuman.xyz/guide.html#tips-tricks</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
