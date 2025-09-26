@@ -2098,6 +2098,8 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 1rem;
     padding: 1rem 0;
+    /* Force layout refresh - 2025-09-26 */
+    container-type: inline-size;
 }
 
 .compact-character-item {
