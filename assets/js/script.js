@@ -4,6 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
 
+    // Configuration for noimnothuman.xyz
+    const config = {
+        domain: 'noimnothuman.xyz',
+        imageUrl: 'https://images.noimnothuman.xyz', // R2 CDN URL after migration
+        apiEndpoint: 'https://api.noimnothuman.xyz'
+    };
+
     
     // Sidebar collapse functionality
     const sidebarCollapseBtn = document.getElementById('sidebarCollapseBtn');

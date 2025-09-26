@@ -1,0 +1,14 @@
+# Exclude all images from GitHub
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+*.bmp
+*.tiff
+
+# Keep essential files
+!images.jpg
+!assets/images/screenshot*.jpg
+!assets/images/achievements/achievement-icon.png
