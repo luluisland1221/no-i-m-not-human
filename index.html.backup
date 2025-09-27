@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No, I'm not a Human - Ultimate Horror Survival Game | Steam Game</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-08LZE77RLT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-08LZE77RLT');
+    </script>
+    <meta name="description" content="Complete guide to No, I'm not a Human - the paranoia-driven horror survival game. Master visitor identification, unlock all endings, and survive the apocalypse with our comprehensive walkthrough and survival strategies.">
+    <meta name="keywords" content="No I'm not a Human, horror game, survival game, Steam game, visitor identification, Trioskaz, Critical Reflex, indie horror, psychological horror, game guide, walkthrough">
+    <meta name="author" content="noimnothuman.xyz">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://noimnothuman.xyz">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="No, I'm not a Human - Ultimate Horror Survival Game Guide">
+    <meta property="og:description" content="Complete guide to No, I'm not a Human - the paranoia-driven horror survival game. Learn visitor identification, all endings, survival tips, and walkthrough strategies.">
+    <meta property="og:url" content="https://noimnothuman.xyz">
+    <meta property="og:site_name" content="No, I'm not a Human Game Guide">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="No, I'm not a Human - Ultimate Horror Survival Game Guide">
+    <meta name="twitter:description" content="Complete guide to No, I'm not a Human horror survival game. Visitor identification, endings, and survival strategies.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;700&family=Creepster&family=Griffy&family=Nosifer&family=Butcherman&family=Eater&family=Merriweather:wght@300;400;700&family=Crimson+Text:wght@400;600&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "No, I'm not a Human - Ultimate Game Guide",
+        "alternateName": "noimnothuman.xyz",
+        "url": "https://noimnothuman.xyz",
+        "description": "Complete guide to No, I'm not a Human - the paranoia-driven horror survival game. Master visitor identification, unlock all endings, and survive the apocalypse.",
+        "inLanguage": ["en"],
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://noimnothuman.xyz/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "noimnothuman.xyz",
+            "url": "https://noimnothuman.xyz"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "No, I'm not a Human",
+        "alternateName": ["No I'm not a Human", "No Im not a Human"],
+        "description": "A paranoia-driven horror survival game where you identify Visitors disguised as humans during an apocalyptic scenario.",
+        "genre": ["Horror", "Survival", "Indie", "Psychological Horror"],
+        "platform": ["Steam", "PC", "Windows"],
+        "applicationCategory": "Game",
+        "operatingSystem": "Windows",
+        "gamePlatform": "Steam",
+        "gameLocation": "Post-apocalyptic Earth",
+        "numberOfPlayers": "1",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Critical Reflex",
+            "url": "https://store.steampowered.com/publisher/CriticalReflex"
+        },
+        "developer": {
+            "@type": "Organization",
+            "name": "Trioskaz",
+            "url": "https://store.steampowered.com/developer/Trioskaz"
+        },
+        "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "price": "4.99",
+            "priceCurrency": "USD",
+            "url": "https://store.steampowered.com/app/3180070/No_Im_not_a_Human/",
+            "seller": {
+                "@type": "Organization",
+                "name": "Steam"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "ratingCount": "150",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://noimnothuman.xyz"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>No, I'm not a Human</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./guide.html" class="nav-link">Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" class="nav-link" target="_blank">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#community" class="nav-link">Community</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">No, I'm not a Human</h1>
+                <p class="hero-subtitle">A paranoia-driven horror survival game where you identify Visitors disguised as humans during an apocalyptic scenario</p>
+                <div class="hero-buttons">
+                    <a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" class="btn btn-primary" target="_blank">Download on Steam</a>
+                    <a href="./guide.html" class="btn btn-secondary">View Game Guide</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images.jpg" alt="No, I'm not a Human Game Screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Features -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Game Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span>🔍</span>
+                    </div>
+                    <h3>Visitor Identification</h3>
+                    <p>Master the art of detecting Visitors disguised as humans through physical trait analysis and behavioral observation</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span>⚡</span>
+                    </div>
+                    <h3>Energy Management</h3>
+                    <p>Every action costs precious daily energy - balance investigation, shelter management, and survival decisions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span>🏠</span>
+                    </div>
+                    <h3>Shelter Management</h3>
+                    <p>Manage your apocalyptic shelter, provide for guests, and maintain vital resources in a world-ending scenario</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span>🎭</span>
+                    </div>
+                    <h3>Multiple Endings</h3>
+                    <p>Experience branching storylines with randomized elements that create unique challenges each playthrough</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Game -->
+    <section class="about-game">
+        <div class="container">
+            <h2 class="section-title">About No, I'm not a Human</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p><strong>No, I'm not a Human</strong> is a critically acclaimed paranoia-driven horror survival game developed by Trioskaz and published by Critical Reflex.</p>
+                    <p>In the near future, sudden abnormal solar activity causes global temperatures to rise dramatically. The daytime sun burns like molten lava, instantly scorching or killing any exposed living creatures. To survive, humanity is forced to live by day and rest by night: staying indoors with curtains drawn during the day, only venturing out at night to search for resources and shelter.</p>
+                    <p>However, the nights, while relatively safer, hide a more terrifying threat—the "Visitors" emerging from deep underground. These creatures look nearly identical to humans and can easily blend in with survivors, but possess extreme ferocity. The government (Federal Emergency Management Agency in the English version) continuously broadcasts identification clues through daily news and radio:</p>
+                    <div class="visitor-clues">
+                        <div class="clue-item">Abnormally white and flawless teeth</div>
+                        <div class="clue-item">Bloodshot eyes with red streaks</div>
+                        <div class="clue-item">No underarm hair or abnormal hair growth patterns</div>
+                    </div>
+                    <p>However, these characteristics are not absolute. Some Visitors don't exhibit all abnormal signs, while some humans occasionally show similar traits, increasing the difficulty of identification.</p>
+                    <p>Players assume the role of an unnamed protagonist living alone in a small house on the edge of town. Every night, someone knocks on the door seeking shelter—possibly genuine humans, or perhaps disguised Visitors. The protagonist must consume limited "energy" points to conduct appearance and dialogue checks, or use a shotgun when necessary. If you mistakenly kill a human identified as a Visitor, there's no direct punishment, but you may suffer nighttime consequences if you leave a real Visitor behind; if you allow a Visitor into your house, you will be killed in your sleep.</p>
+                    <p>As the story progresses, players witness through their windows the further collapse of the apocalypse: spreading wildfires, defeated military and police forces, anti-government riots, hospitals and cities gradually isolated and locked down. The scorching days and fearful nights alternately torment survivors, pushing humanity and morality to their limits. The game's ending branches based on your shelter judgments and interaction choices, presenting different portrayals of civilization's decline and humanity's light or dark side.</p>
+                    <div class="game-info">
+                        <div class="info-item">
+                            <strong>Developer:</strong> Trioskaz
+                        </div>
+                        <div class="info-item">
+                            <strong>Publisher:</strong> Critical Reflex
+                        </div>
+                        <div class="info-item">
+                            <strong>Platform:</strong> PC (Steam)
+                        </div>
+                        <div class="info-item">
+                            <strong>Price:</strong> $4.99
+                        </div>
+                        <div class="info-item">
+                            <strong>Rating:</strong> Overwhelmingly Positive
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Screenshots -->
+    <section class="screenshots">
+        <div class="container">
+            <h2 class="section-title">Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-item">
+                    <img src="assets/images/screenshot1.jpg" alt="Game Screenshot 1">
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/images/screenshot2.jpg" alt="Game Screenshot 2">
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/images/screenshot3.jpg" alt="Game Screenshot 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="news">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="news-grid">
+                <div class="news-item">
+                    <div class="news-date">March 15, 2024</div>
+                    <h3>Official Game Release</h3>
+                    <p>No, I'm not a Human is now officially released on all major platforms. Experience the terror today!</p>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">March 10, 2024</div>
+                    <h3>New Story Chapter</h3>
+                    <p>The "AI Awakening" story chapter has been added, bringing more thrilling content to the game</p>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">March 5, 2024</div>
+                    <h3>Player Guide Contest</h3>
+                    <p>Share your game strategies and experiences. Best guides will be rewarded with exclusive content</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="game-title">No, I'm not a Human</h3>
+                    <p>A horror adventure game exploring the boundary between AI and humanity</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="./guide.html">Guide</a></li>
+                        <li><a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" target="_blank">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="community/">Player Forum</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Discord</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 No, I'm not a Human. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
