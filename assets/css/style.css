@@ -474,7 +474,7 @@ body {
 .guide-content {
     width: 100%;
     margin: 0;
-    padding: 0 20px;
+    padding: 120px 20px 0 20px;
     text-align: center;
     background: #000000;
 }
@@ -2943,5 +2943,290 @@ body {
 
     .edible-item {
         padding: 1rem;
+    }
+}
+
+/* ====================================== */
+/* ENDINGS PAGE STYLES */
+/* ====================================== */
+
+/* Ending Cards */
+.ending-card {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    border: 2px solid rgba(0, 255, 136, 0.2);
+    margin-bottom: 3rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.ending-card:hover {
+    border-color: rgba(0, 255, 136, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
+}
+
+.ending-card h3 {
+    font-family: 'Creepster', cursive;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #00ff88;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid rgba(0, 255, 136, 0.2);
+}
+
+.ending-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.ending-image {
+    text-align: center;
+}
+
+.ending-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 255, 136, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.ending-details h4 {
+    color: #00ff88;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.ending-quote {
+    font-style: italic;
+    color: #ff6b6b;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.ending-details h5 {
+    color: #ffd93d;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.ending-details ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ending-details ol li {
+    margin-bottom: 0.8rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.ending-details ul {
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.ending-details ul li {
+    margin-bottom: 0.6rem;
+    color: #ccc;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.ending-details ul li:before {
+    content: "💡";
+    position: absolute;
+    left: 0;
+}
+
+/* Info Grid for Overview */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-item {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-left: 4px solid #00ff88;
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateX(5px);
+}
+
+.info-item h4 {
+    color: #00ff88;
+    margin-bottom: 0.8rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Anthology Endings Grid */
+.anthology-endings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.anthology-ending {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    transition: all 0.3s ease;
+}
+
+.anthology-ending:hover {
+    border-color: rgba(0, 255, 136, 0.5);
+}
+
+.anthology-ending h4 {
+    color: #00ff88;
+    margin-bottom: 1rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.anthology-ending p {
+    color: #ccc;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.anthology-ending strong {
+    color: #ffd93d;
+}
+
+/* Character Grid for Tips Section */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.character-item {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    transition: all 0.3s ease;
+}
+
+.character-item:hover {
+    border-color: rgba(0, 255, 136, 0.5);
+    transform: translateY(-3px);
+}
+
+.character-item h4 {
+    color: #00ff88;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.character-item p {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Achievement List */
+.achievement-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.achievement-item {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-left: 4px solid #ffd93d;
+    transition: transform 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateX(5px);
+}
+
+.achievement-item h4 {
+    color: #ffd93d;
+    margin-bottom: 0.8rem;
+}
+
+.achievement-item p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Ending Cards */
+@media (max-width: 1024px) {
+    .ending-content {
+        grid-template-columns: 250px 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ending-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .ending-image {
+        margin-bottom: 1.5rem;
+    }
+
+    .ending-image img {
+        max-width: 200px;
+    }
+
+    .ending-card h3 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .info-grid,
+    .anthology-endings-grid,
+    .character-grid,
+    .achievement-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .ending-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .ending-details h4 {
+        font-size: 1.3rem;
+    }
+
+    .ending-quote {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
     }
 }
