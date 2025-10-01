@@ -3381,3 +3381,48 @@ body {
         font-size: 3rem;
     }
 }
+
+/* Ending Categories Styles */
+.ending-categories {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ending-categories h3 {
+    color: #00ff88;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-family: 'Orbitron', monospace;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ending-categories ul {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.ending-categories li {
+    margin-bottom: 0.8rem;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.ending-categories strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Enhanced Game Mechanics Section */
+.guide-section h3 {
+    color: #ffd93d;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Orbitron', monospace;
+}
+
+.guide-section ul li strong {
+    color: #00ff88;
+}
