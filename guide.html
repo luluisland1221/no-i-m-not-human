@@ -95,52 +95,6 @@
 
     <!-- Main Content Area (Full Width) -->
     <div class="guide-main-content">
-        <!-- Left Sidebar Navigation -->
-        <div class="guide-sidebar">
-            <!-- Collapse Button -->
-            <button class="sidebar-collapse-btn" id="sidebarCollapseBtn">
-                <span class="collapse-icon">☰</span>
-            </button>
-
-            <div class="sidebar-section">
-                <h3>Game Systems</h3>
-                <ul>
-                    <li><a href="#game-mechanics-enhanced" data-tooltip="Core Mechanics"><span class="nav-icon">⚙️</span> <span class="nav-text">Core Mechanics</span></a></li>
-                    <li><a href="#daily-detection-methods" data-tooltip="Daily Detection"><span class="nav-icon">🔍</span> <span class="nav-text">Daily Detection</span></a></li>
-                    <li><a href="#energy-management" data-tooltip="Energy Management"><span class="nav-icon">⚡</span> <span class="nav-text">Energy Management</span></a></li>
-                    <li><a href="#story-timeline" data-tooltip="Story Timeline"><span class="nav-icon">📅</span> <span class="nav-text">Story Timeline</span></a></li>
-                </ul>
-            </div>
-
-            <div class="sidebar-section">
-                <h3>Content Hubs</h3>
-                <ul>
-                    <li><a href="characters.html" data-tooltip="Characters"><span class="nav-icon">👥</span> <span class="nav-text">Characters →</span></a></li>
-                    <li><a href="achievements.html" data-tooltip="Achievements"><span class="nav-icon">🏆</span> <span class="nav-text">Achievements →</span></a></li>
-                    <li><a href="ending.html" data-tooltip="Endings"><span class="nav-icon">🎭</span> <span class="nav-text">Endings →</span></a></li>
-                </ul>
-            </div>
-
-            <div class="sidebar-section">
-                <h3>Game Mechanics</h3>
-                <ul>
-                    <li><a href="#character-scripts" data-tooltip="Character Scripts"><span class="nav-icon">📝</span> <span class="nav-text">Character Scripts</span></a></li>
-                    <li><a href="#edible-items" data-tooltip="Edible Items"><span class="nav-icon">🍔</span> <span class="nav-text">Edible Items</span></a></li>
-                    <li><a href="#save-method" data-tooltip="Save Method"><span class="nav-icon">💾</span> <span class="nav-text">Save Method</span></a></li>
-                    <li><a href="#day-night-cycle" data-tooltip="Day & Night Cycle"><span class="nav-icon">🌙</span> <span class="nav-text">Day & Night</span></a></li>
-                    <li><a href="#phone-numbers" data-tooltip="Phone Numbers"><span class="nav-icon">📞</span> <span class="nav-text">Phone Numbers</span></a></li>
-                </ul>
-            </div>
-
-            <div class="sidebar-section">
-                <h3>Advanced Content</h3>
-                <ul>
-                    <li><a href="#advanced-strategies" data-tooltip="Advanced Strategies"><span class="nav-icon">🧠</span> <span class="nav-text">Advanced Strategies</span></a></li>
-                    <li><a href="#pro-tips" data-tooltip="Pro Tips"><span class="nav-icon">💡</span> <span class="nav-text">Pro Tips</span></a></li>
-                </ul>
-            </div>
-        </div>
-
         <!-- Content Area -->
         <div class="guide-content">
             <!-- Enhanced Game Mechanics Section -->
@@ -219,13 +173,19 @@
                     <h2 class="section-title">🔍 Daily Detection Methods</h2>
                     <div class="detection-intro">
                         <p>Each day brings new methods to identify Visitors. The news reveals new identification traits that you must use to distinguish between humans and impostors. These methods become progressively more advanced.</p>
+                        <div class="guide-image-container">
+                            <img src="https://images.noimnothuman.xyz/guide/detection-guide-1.jpg" alt="Daily Detection Methods Guide" class="guide-image">
+                        </div>
                     </div>
 
-                    <div class="detection-methods-grid">
-                        <div class="detection-day">
-                            <h3>Day 1</h3>
-                            <div class="method-card">
-                                <h4>🦷 Flawless White Teeth</h4>
+                    <div class="timeline-container">
+                        <div class="timeline-item left">
+                            <div class="timeline-date">
+                                <h3>Day 1</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">🦷</div>
+                                <h4>Flawless White Teeth</h4>
                                 <p>Visitors have perfect, unnaturally white teeth that look too good to be natural.</p>
                                 <div class="detection-tip">
                                     <strong>Detection Method:</strong> Ask them to smile or laugh naturally during conversation.
@@ -233,10 +193,13 @@
                             </div>
                         </div>
 
-                        <div class="detection-day">
-                            <h3>Day 2</h3>
-                            <div class="method-card">
-                                <h4>✋ Nails</h4>
+                        <div class="timeline-item right">
+                            <div class="timeline-date">
+                                <h3>Day 2</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">✋</div>
+                                <h4>Nails</h4>
                                 <p>Visitor nails appear different from human nails - they may be too perfect or have unusual colors.</p>
                                 <div class="detection-tip">
                                     <strong>Detection Method:</strong> Observe their hands during conversation or when they gesture.
@@ -244,10 +207,13 @@
                             </div>
                         </div>
 
-                        <div class="detection-day">
-                            <h3>Day 3</h3>
-                            <div class="method-card">
-                                <h4>👁️ Blood-Red Eyes</h4>
+                        <div class="timeline-item left">
+                            <div class="timeline-date">
+                                <h3>Day 3</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">👁️</div>
+                                <h4>Blood-Red Eyes</h4>
                                 <p>Visitors reveal blood-red eyes when stressed or when asked specific questions.</p>
                                 <div class="detection-tip">
                                     <strong>Detection Method:</strong> Ask challenging questions or shine a light in their eyes.
@@ -255,10 +221,13 @@
                             </div>
                         </div>
 
-                        <div class="detection-day">
-                            <h3>Day 4</h3>
-                            <div class="method-card">
-                                <h4>🦗 Hairless Armpits</h4>
+                        <div class="timeline-item right">
+                            <div class="timeline-date">
+                                <h3>Day 4</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">🦗</div>
+                                <h4>Hairless Armpits</h4>
                                 <p>Visitors lack natural body hair in their armpits - a clear biological difference.</p>
                                 <div class="detection-tip">
                                     <strong>Detection Method:</strong> Observe when they raise their arms or stretch.
@@ -266,10 +235,13 @@
                             </div>
                         </div>
 
-                        <div class="detection-day">
-                            <h3>Day 5</h3>
-                            <div class="method-card">
-                                <h4>📸 Aura Photography</h4>
+                        <div class="timeline-item left">
+                            <div class="timeline-date">
+                                <h3>Day 5</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">📸</div>
+                                <h4>Aura Photography</h4>
                                 <p>Special photography reveals unusual aura patterns around Visitors.</p>
                                 <div class="detection-tip">
                                     <strong>Detection Method:</strong> Use any camera or photography opportunity available.
@@ -277,10 +249,13 @@
                             </div>
                         </div>
 
-                        <div class="detection-day">
-                            <h3>Day 7</h3>
-                            <div class="method-card">
-                                <h4>🐛 Bugs in Ears</h4>
+                        <div class="timeline-item right">
+                            <div class="timeline-date">
+                                <h3>Day 7</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">🐛</div>
+                                <h4>Bugs in Ears</h4>
                                 <p>Visitors have small insects or parasites in their ear canals.</p>
                                 <div class="detection-tip">
                                     <strong>Detection Method:</strong> Close examination of their ears during conversation.
@@ -288,10 +263,13 @@
                             </div>
                         </div>
 
-                        <div class="detection-day">
-                            <h3>Day 8</h3>
-                            <div class="method-card">
-                                <h4>🩸 Bleeding Gums</h4>
+                        <div class="timeline-item left">
+                            <div class="timeline-date">
+                                <h3>Day 8</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">🩸</div>
+                                <h4>Bleeding Gums</h4>
                                 <p>Visitor gums bleed spontaneously or when eating certain foods.</p>
                                 <div class="detection-tip">
                                     <strong>Detection Method:</strong> Observe during meals or ask about dental health.
@@ -299,10 +277,13 @@
                             </div>
                         </div>
 
-                        <div class="detection-day">
-                            <h3>Day 9</h3>
-                            <div class="method-card">
-                                <h4>🔴 Skin Irritation</h4>
+                        <div class="timeline-item right">
+                            <div class="timeline-date">
+                                <h3>Day 9</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">🔴</div>
+                                <h4>Skin Irritation</h4>
                                 <p>Visitors develop unusual skin rashes or irritations on specific days.</p>
                                 <div class="detection-tip">
                                     <strong>Detection Method:</strong> Check exposed skin areas for abnormal conditions.
@@ -310,10 +291,13 @@
                             </div>
                         </div>
 
-                        <div class="detection-day">
-                            <h3>Day 10</h3>
-                            <div class="method-card">
-                                <h4>🍄 Fungus Growth</h4>
+                        <div class="timeline-item left">
+                            <div class="timeline-date">
+                                <h3>Day 10</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">🍄</div>
+                                <h4>Fungus Growth</h4>
                                 <p>Unusual fungal growth appears in Visitors' armpits.</p>
                                 <div class="detection-tip">
                                     <strong>Detection Method:</strong> Discreet examination of armpit area when possible.
@@ -321,10 +305,13 @@
                             </div>
                         </div>
 
-                        <div class="detection-day">
-                            <h3>Day 11</h3>
-                            <div class="method-card">
-                                <h4>👀 Rapidly Moving Pupils</h4>
+                        <div class="timeline-item right">
+                            <div class="timeline-date">
+                                <h3>Day 11</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">👀</div>
+                                <h4>Rapidly Moving Pupils</h4>
                                 <p>Visitor pupils move at unusual speeds when asked certain questions.</p>
                                 <div class="detection-tip">
                                     <strong>Detection Method:</strong> Ask rapid questions and observe eye movement patterns.
@@ -401,38 +388,78 @@
                     <h2 class="section-title">📅 Story Timeline & Key Events</h2>
                     <div class="timeline-intro">
                         <p>Understanding the story timeline helps you prepare for critical events and make strategic decisions that determine your survival and ending.</p>
+                        <div class="guide-image-container">
+                            <img src="https://images.noimnothuman.xyz/guide/timeline-guide-1.jpg" alt="Story Timeline Guide" class="guide-image">
+                        </div>
                     </div>
 
-                    <div class="timeline-content">
-                        <div class="phase-overview">
-                            <h3>📖 Phase 1: Days 1-3 - Initial Chaos</h3>
-                            <p>The initial outbreak period. Learn basic survival and meet your first Visitors. Energy management and initial trust building are critical.</p>
-
-                            <h3>📈 Phase 2: Days 4-7 - Escalation</h3>
-                            <p>FEMA agents begin appearing. Detection methods become more complex. Important to establish reliable human alliances.</p>
-
-                            <h3>🏁 Phase 3: Days 8-15 - Endgame</h3>
-                            <p>The final confrontation approaches. Major decisions determine your ending. Resource scarcity becomes critical.</p>
+                    <div class="timeline-container">
+                        <div class="timeline-item left">
+                            <div class="timeline-date">
+                                <h3>Day 1</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">🏠</div>
+                                <h4>Neighbor's Warning</h4>
+                                <p>A neighbor explains the core rule: you must not live alone. This establishes the fundamental survival mechanic and sets the stage for the entire game.</p>
+                                <div class="detection-tip">
+                                    <strong>Key Impact:</strong> Establishes the "no living alone" rule and introduces the Visitor concept
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="key-events">
-                            <h3>🎯 Critical Timeline Events</h3>
-                            <div class="events-list">
-                                <div class="event-item">
-                                    <h4>Day 1: Neighbor's Warning</h4>
-                                    <p>A neighbor explains the core rule: you must not live alone. This establishes the fundamental survival mechanic.</p>
+                        <div class="timeline-item right">
+                            <div class="timeline-date">
+                                <h3>Day 3</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">🚨</div>
+                                <h4>First FEMA Visit</h4>
+                                <p>Government agents arrive for the first time. Your response affects future interactions and story branches. This marks the beginning of official involvement.</p>
+                                <div class="detection-tip">
+                                    <strong>Key Impact:</strong> Determines your relationship with authorities and affects future interactions
                                 </div>
-                                <div class="event-item">
-                                    <h4>Day 3: First FEMA Visit</h4>
-                                    <p>Government agents arrive for the first time. Your response affects future interactions and story branches.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item left">
+                            <div class="timeline-date">
+                                <h3>Day 7</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">📢</div>
+                                <h4>Major Revelation</h4>
+                                <p>Critical story information revealed through news. Often changes detection methods or introduces new threats. This is a major turning point in the narrative.</p>
+                                <div class="detection-tip">
+                                    <strong>Key Impact:</strong> Usually introduces new detection methods or significant plot developments
                                 </div>
-                                <div class="event-item">
-                                    <h4>Day 7: Major Revelation</h4>
-                                    <p>Critical story information revealed through news. Often changes detection methods or introduces new threats.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right">
+                            <div class="timeline-date">
+                                <h3>Day 14</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">🔧</div>
+                                <h4>Final Decision</h4>
+                                <p>The crucial choice that determines the best ending. Often involves boarding up windows or making a final stand. Your decisions here directly impact your ending.</p>
+                                <div class="detection-tip">
+                                    <strong>Key Impact:</strong> Determines which ending you achieve - survival, violent, or story-based
                                 </div>
-                                <div class="event-item">
-                                    <h4>Day 14: Final Decision</h4>
-                                    <p>The crucial choice that determines the best ending. Often involves boarding up windows or making a final stand.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item left">
+                            <div class="timeline-date">
+                                <h3>Day 15</h3>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">🏁</div>
+                                <h4>Final Confrontation</h4>
+                                <p>The culmination of all your choices and survival strategies. This is where all your preparation pays off and your ending is finalized.</p>
+                                <div class="detection-tip">
+                                    <strong>Key Impact:</strong> All previous decisions converge to determine your ultimate fate
                                 </div>
                             </div>
                         </div>
