@@ -1,0 +1,2090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No, I'm not a Human - Game Mechanics & Advanced Strategy Guide</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-08LZE77RLT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-08LZE77RLT');
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6031811659039199"
+     crossorigin="anonymous"></script>
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6031811659039199"
+     crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://noimnothuman.xyz/guide/">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.noimnothuman.xyz">
+
+    <!-- Preload key images -->
+    <link rel="preload" href="https://images.noimnothuman.xyz/assets/images/characters/DeliveryMan.png" as="image">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;700&family=Creepster&family=Griffy&family=Nosifer&family=Butcherman&family=Eater&family=Merriweather:wght@300;400;700&family=Crimson+Text:wght@400;600&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1><a href="index.html" style="color: #00ff88; text-decoration: none;">No, I'm not a Human</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./characters.html" class="nav-link">Characters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./achievements.html" class="nav-link">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./ending.html" class="nav-link">Endings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./guide.html" class="nav-link active">Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./download.html" class="nav-link">Download</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area (Full Width) -->
+        <div class="guide-main-content">
+            <!-- Left Sidebar Navigation (Global for entire page) -->
+            <div class="guide-sidebar">
+                    <!-- Collapse Button -->
+                    <button class="sidebar-collapse-btn" id="sidebarCollapseBtn">
+                        <span class="collapse-icon">☰</span>
+                    </button>
+                    <div class="sidebar-section">
+                        <h3>No, I'm not a Human Game Information</h3>
+                        <ul>
+                            <li><a href="#achievements" data-tooltip="Achievements"><span class="nav-icon">🏆</span> <span class="nav-text">Achievements</span></a></li>
+                            <li><a href="#characters" data-tooltip="Characters"><span class="nav-icon">👥</span> <span class="nav-text">Characters</span></a></li>
+                            <li><a href="#character-scripts" data-tooltip="Character Scripts"><span class="nav-icon">📝</span> <span class="nav-text">Character Scripts</span></a></li>
+                            <li><a href="#edible-items" data-tooltip="Edible Items"><span class="nav-icon">🍔</span> <span class="nav-text">Edible Items</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-section">
+                        <h3>No, I'm not a Human Game Basics</h3>
+                        <ul>
+                            <li><a href="#save-method" data-tooltip="Save Method"><span class="nav-icon">💾</span> <span class="nav-text">Save Method</span></a></li>
+                            <li><a href="#day-night-cycle" data-tooltip="Day & Night Cycle"><span class="nav-icon">🌙</span> <span class="nav-text">Day & Night Cycle</span></a></li>
+                            <li><a href="#game-mechanics" data-tooltip="Game Mechanics"><span class="nav-icon">⚙️</span> <span class="nav-text">Game Mechanics</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-section">
+                        <h3>Visitor Detection</h3>
+                        <ul>
+                            <li><a href="#visitor-identification" data-tooltip="Visitor Identification Guide"><span class="nav-icon">🔍</span> <span class="nav-text">Visitor Identification Guide</span></a></li>
+                            <li><a href="#phone-numbers" data-tooltip="All Phone Numbers & Functions"><span class="nav-icon">📞</span> <span class="nav-text">All Phone Numbers & Functions</span></a></li>
+                            <li><a href="#character-guide" data-tooltip="Character Conditions & Traits"><span class="nav-icon">🧩</span> <span class="nav-text">Character Conditions & Traits</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-section">
+                        <h3>Walkthrough</h3>
+                        <ul>
+                            <li><a href="#fixed-events" data-tooltip="Fixed Events List"><span class="nav-icon">📅</span> <span class="nav-text">Fixed Events List</span></a></li>
+                            <li><a href="#consumables" data-tooltip="Consumables Effects"><span class="nav-icon">💊</span> <span class="nav-text">Consumables Effects</span></a></li>
+                            <li><a href="#story-walkthrough" data-tooltip="Complete Story Walkthrough"><span class="nav-icon">🎮</span> <span class="nav-text">Complete Story Walkthrough</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-section">
+                        <h3>Endings & Unlockables</h3>
+                        <ul>
+                            <li><a href="#all-endings" data-tooltip="All Endings Guide"><span class="nav-icon">🎭</span> <span class="nav-text">All Endings Guide</span></a></li>
+                            <li><a href="#tips-tricks" data-tooltip="Tips & Tricks"><span class="nav-icon">💡</span> <span class="nav-text">Tips & Tricks</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            <!-- Guide Home -->
+            <section class="guide-hero" style="padding-top: 120px;">
+                <div class="container">
+                    <div class="guide-content">
+                        <h1 class="guide-title">Complete Game Guide</h1>
+                        <p class="guide-subtitle">Master the art of survival and visitor identification in No, I'm not a Human</p>
+
+                        <!-- Guide Navigation -->
+                        <div class="guide-navigation">
+                            <div class="nav-section">
+                                <h3>No, I'm not a Human Game Basics</h3>
+                                <ul>
+                                    <li><a href="#save-method">Save Method</a></li>
+                                    <li><a href="#day-night-cycle">Day & Night Cycle</a></li>
+                                    <li><a href="#game-mechanics">Game Mechanics</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-section">
+                                <h3>Visitor Detection</h3>
+                                <ul>
+                                    <li><a href="#visitor-identification">Visitor Identification Guide</a></li>
+                                    <li><a href="#phone-numbers">All Phone Numbers & Functions</a></li>
+                                    <li><a href="#character-guide">Character Conditions & Traits</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-section">
+                                <h3>Walkthrough</h3>
+                                <ul>
+                                    <li><a href="#fixed-events">Fixed Events List</a></li>
+                                    <li><a href="#consumables">Consumables Effects</a></li>
+                                    <li><a href="#story-walkthrough">Complete Story Walkthrough</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-section">
+                                <h3>Endings & Unlockables</h3>
+                                <ul>
+                                    <li><a href="#all-endings">All Endings Guide</a></li>
+                                    <li><a href="#tips-tricks">Tips & Tricks</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Sections (No extra container) -->
+
+    <!-- Achievements -->
+    <section id="achievements" class="guide-section">
+        <div class="container">
+            <h2 class="section-title">No, I'm not a Human Achievements Guide</h2>
+            <div class="achievements-intro">
+                <p>Complete list of all 20 achievements available in the Full Release of "No, I'm not a Human". Achievements cover exploration, story progression, character interactions, and completionist challenges.</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-category">
+                    <h3>🏠 Exploration & Discovery</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/House_with_history_Achievment.jpg" alt="A House with History" class="achievement-image">
+                            <h4>A House with History</h4>
+                            <p>Uncover the hidden stories within your home</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Thoroughly explore every room and interact with all objects. Check bedroom items, storage boxes, bathroom shelves, living room decorations, office documents, and kitchen cabinets.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Everywhere_at_the_End_of_Time.jpg" alt="Everywhere at the End of Time" class="achievement-image">
+                            <h4>Everywhere at the End of Time</h4>
+                            <p>Witness every possible conclusion</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Complete the game multiple times to discover all possible endings and story outcomes.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Lost_in_the_Roots.jpg" alt="Lost in the Roots" class="achievement-image">
+                            <h4>Lost in the Roots</h4>
+                            <p>Discover the forest's ancient immortality secrets</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Encounter and learn from the mysterious Immortal Man in the forest depths.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Theusualsuspects.jpg" alt="The Usual Suspects" class="achievement-image">
+                            <h4>The Usual Suspects</h4>
+                            <p>Encounter every character in the game</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Interact with and meet all possible characters that appear throughout your journey.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3>☕ Daily Life & Consumption</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Breakfast_of_Champions.jpg" alt="Breakfast of Champions" class="achievement-image">
+                            <h4>Breakfast of Champions</h4>
+                            <p>Start your day with coffee and cigarettes</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Enjoy both a cigarette and coffee within the same day for the perfect morning routine.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Sommelier.jpg" alt="Sommelier" class="achievement-image">
+                            <h4>Sommelier</h4>
+                            <p>Sample every consumable in the game</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Taste all available food and drink items including beer, coffee, kombucha, and mushrooms.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Storywasalittledry.jpg" alt="Story Was a Little Dry" class="achievement-image">
+                            <h4>Story Was a Little Dry</h4>
+                            <p>Complete the story without save assistance</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Finish any game ending without using kombucha or other save-scumming methods.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Yourfluffymaster.jpg" alt="Your Fluffy Master" class="achievement-image">
+                            <h4>Your Fluffy Master</h4>
+                            <p>Care for your feline companion</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Give food to the cat when it appears and needs attention.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3>📞 Communication & Information</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Phone_Book.jpg" alt="Phone Book" class="achievement-image">
+                            <h4>Phone Book</h4>
+                            <p>Dial every available phone number</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Use your phone to call every single number available in your contacts list.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Radioactive.jpg" alt="Radioactive" class="achievement-image">
+                            <h4>Radioactive</h4>
+                            <p>Tune into all radio broadcasts</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Listen to and decode every radio message that broadcasts throughout the days.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Idiot_Box.jpg" alt="Idiot Box" class="achievement-image">
+                            <h4>Idiot Box</h4>
+                            <p>Become a complete couch potato</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Watch television programs whenever the opportunity arises during each day.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Special_Delivery.jpg" alt="Special Delivery" class="achievement-image">
+                            <h4>Special Delivery</h4>
+                            <p>Place an order with delivery service</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Get the ForRest delivery number, call to place an order, and receive your package the following night.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3>🎯 Visitor Detection & Combat</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Notonmywatch.jpg" alt="Not on my watch!" class="achievement-image">
+                            <h4>Not on my watch!</h4>
+                            <p>Stop a Visitor in their tracks</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Successfully identify and eliminate a Visitor threat.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Firsttime.jpg" alt="First time?" class="achievement-image">
+                            <h4>First time?</h4>
+                            <p>Make a tragic mistake</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Accidentally eliminate an innocent human guest.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/TV_Made_Me_Do_It.jpg" alt="TV Made Me Do It" class="achievement-image">
+                            <h4>TV Made Me Do It</h4>
+                            <p>Perform your first visitor inspection</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Request to examine someone for visitor traits after inviting them inside.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Frenemy.jpg" alt="Frenemy" class="achievement-image">
+                            <h4>Frenemy</h4>
+                            <p>Eliminate the same character in both forms</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> In different playthroughs, eliminate the same character when they appear as both human and Visitor forms.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3>🏆 Story Progression & Endings</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/The_End.jpg" alt="The End?" class="achievement-image">
+                            <h4>The End?</h4>
+                            <p>Endure until the final moments</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Unlock the second ending by surviving through all challenges.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Family_Dinner.jpg" alt="Family Dinner" class="achievement-image">
+                            <h4>Family Dinner</h4>
+                            <p>Welcome everyone who seeks shelter</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Allow every visitor who requests refuge to enter your home without exception.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Harsh_Compromise.jpg" alt="Harsh Compromise" class="achievement-image">
+                            <h4>Harsh Compromise</h4>
+                            <p>Accept a questionable bribe</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Take a bribe from someone you've previously turned away at your door.
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="https://images.noimnothuman.xyz/assets/images/achievements/Watch_and_learn.jpg" alt="Watch and learn" class="achievement-image">
+                            <h4>Watch and learn</h4>
+                            <p>Show a visitor the consequences of violence</p>
+                            <div class="achievement-requirements">
+                                <strong>Requirements:</strong> Eliminate the young man dressed in purple clothing.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters -->
+    <section id="characters" class="guide-section dark-section">
+        <div class="container">
+            <h2 class="section-title">All Characters in No, I'm not a Human</h2>
+            <div class="characters-overview">
+                <p>Meet the diverse cast of characters you'll encounter in No, I'm not a Human. Each character has unique traits, behaviors, and storylines that will test your ability to distinguish between human survivors and visitor impostors.</p>
+            </div>
+            <div class="characters-grid">
+                <div class="character-category">
+                    <h3>👥 Regular Visitors (14)</h3>
+                    <div class="compact-character-list">
+                          <div class="compact-character-item">
+                            <a href="guide/characters/angry-guy.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/AngryGuy.png" alt="Angry Guy" class="char-image">
+                                <span class="char-name">Angry Guy</span>
+                                <span class="char-trait">Aggressive</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/armchair-lawyer-guy.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/ArmchairLawyerGuy.png" alt="Armchair Lawyer Guy" class="char-image">
+                                <span class="char-name">Armchair Lawyer Guy</span>
+                                <span class="char-trait">Persuasive</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/bandana-guy.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/BandanaGuy.jpg" alt="Bandana Guy" class="char-image">
+                                <span class="char-name">Bandana Guy</span>
+                                <span class="char-trait">Casual</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/bar-guy.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/BarGuy.jpg" alt="Bar Guy" class="char-image">
+                                <span class="char-name">Bar Guy</span>
+                                <span class="char-trait">Social</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/bearded-guy.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/BeardedGuyCloseUp.jpg" alt="Bearded Guy" class="char-image">
+                                <span class="char-name">Bearded Guy</span>
+                                <span class="char-trait">Paranoid</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/blinded-man.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Blindedmanclose.jpg" alt="Blinded Man" class="char-image">
+                                <span class="char-name">Blinded Man</span>
+                                <span class="char-trait">Disabled</span>
+                            </a>
+                        </div>
+                          <div class="compact-character-item">
+                            <a href="guide/characters/cabby-man.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Cabbymanvisitoreyes.jpg" alt="Cabby Man" class="char-image">
+                                <span class="char-name">Cabby Man</span>
+                                <span class="char-trait">Driver</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/cashier-girl.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Cashier_gal.png" alt="Cashier Girl" class="char-image">
+                                <span class="char-name">Cashier Girl</span>
+                                <span class="char-trait">Retail</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/cat-lady.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Cat.png" alt="Cat Lady" class="char-image">
+                                <span class="char-name">Cat Lady</span>
+                                <span class="char-trait">Eccentric</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/cheerful-man.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Cheerfulmanvisitorteeth.jpg" alt="Cheerful Man" class="char-image">
+                                <span class="char-name">Cheerful Man</span>
+                                <span class="char-trait">Friendly</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/coat-guy.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Ignore_the_ugly_guy_at_the_back.png" alt="Coat Guy" class="char-image">
+                                <span class="char-name">Coat Guy</span>
+                                <span class="char-trait">Formal</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/delivery-man.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/DeliveryMan.png" alt="Delivery Man" class="char-image">
+                                <span class="char-name">Delivery Man</span>
+                                <span class="char-trait">Courier</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/disfigured-guy.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Disfigured_guy.png" alt="Disfigured Guy" class="char-image">
+                                <span class="char-name">Disfigured Guy</span>
+                                <span class="char-trait">Damaged</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-category">
+                    <h3>🏢 Authority Figures (8)</h3>
+                    <div class="compact-character-list">
+                        <div class="compact-character-item">
+                            <a href="guide/characters/border-patrol-agent.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/BorderPatrolAgent.png" alt="Border Patrol Agent" class="char-image">
+                                <span class="char-name">Border Patrol Agent</span>
+                                <span class="char-trait">Authority</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/egghead-guy.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/EggheadGuy.png" alt="Egghead Guy" class="char-image">
+                                <span class="char-name">Egghead Guy</span>
+                                <span class="char-trait">Intellectual</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/factory-guy.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Factoryguyclose.jpg" alt="Factory Guy" class="char-image">
+                                <span class="char-name">Factory Guy</span>
+                                <span class="char-trait">Worker</span>
+                            </a>
+                        </div>
+                            <div class="compact-character-item">
+                            <a href="guide/characters/fema-agent.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/FEMAAgent.jpg" alt="FEMA Agent" class="char-image">
+                                <span class="char-name">FEMA Agent</span>
+                                <span class="char-trait">Official</span>
+                            </a>
+                        </div>
+                            <div class="compact-character-item">
+                            <a href="guide/characters/kindergarten-teacher.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/KindergartenTeacher.png" alt="Kindergarten Teacher" class="char-image">
+                                <span class="char-name">Kindergarten Teacher</span>
+                                <span class="char-trait">Education</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/reporter.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Reporter.jpg" alt="Reporter" class="char-image">
+                                <span class="char-name">Reporter</span>
+                                <span class="char-trait">Media</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-category">
+                    <h3>👪 Family Groups (7)</h3>
+                    <div class="compact-character-list">
+                        <div class="compact-character-item">
+                            <a href="guide/characters/best-son.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/BestSon.png" alt="Best Son" class="char-image">
+                                <span class="char-name">Best Son</span>
+                                <span class="char-trait">Protective</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/husband-and-wife.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/HusbandandWife.png" alt="Husband and Wife" class="char-image">
+                                <span class="char-name">Husband and Wife</span>
+                                <span class="char-trait">Couple</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/neglectful-mother.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/NeglectfulMother.png" alt="Neglectful Mother" class="char-image">
+                                <span class="char-name">Neglectful Mother</span>
+                                <span class="char-trait">Parent</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/little-girl.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Girl_eyes.jpg" alt="Little Girl" class="char-image">
+                                <span class="char-name">Little Girl</span>
+                                <span class="char-trait">Child</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/old-lady.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/OldLady.jpg" alt="Old Lady" class="char-image">
+                                <span class="char-name">Old Lady</span>
+                                <span class="char-trait">Elderly</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/parentless-teenager.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/ParentlessTeenager.jpg" alt="Parentless Teenager" class="char-image">
+                                <span class="char-name">Parentless Teenager</span>
+                                <span class="char-trait">Youth</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/raincoat-child.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/RaincoatChild.jpg" alt="Raincoat Child" class="char-image">
+                                <span class="char-name">Raincoat Child</span>
+                                <span class="char-trait">Child</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-category">
+                    <h3>🔮 Mysterious Figures (10)</h3>
+                    <div class="compact-character-list">
+                        <div class="compact-character-item">
+                            <a href="guide/characters/death.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Death.png" alt="Death" class="char-image">
+                                <span class="char-name">Death</span>
+                                <span class="char-trait">Supernatural</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/death-cult-leader.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/DeathCultLeader.png" alt="Death Cult Leader" class="char-image">
+                                <span class="char-name">Death Cult Leader</span>
+                                <span class="char-trait">Cult</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/homeless-man.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/HomelessMan.png" alt="Homeless Man" class="char-image">
+                                <span class="char-name">Homeless Man</span>
+                                <span class="char-trait">Transient</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/immortal-man.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Yakobclose.jpg" alt="Immortal Man" class="char-image">
+                                <span class="char-name">Immortal Man</span>
+                                <span class="char-trait">Ancient</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/intruder.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Intruder.png" alt="Intruder" class="char-image">
+                                <span class="char-name">Intruder</span>
+                                <span class="char-trait">Threat</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/mushroom-man.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/MushroomMan.jpg" alt="Mushroom Man" class="char-image">
+                                <span class="char-name">Mushroom Man</span>
+                                <span class="char-trait">Fungal</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/nikita-the-wind-based-intruder.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/NikitatheWind.png" alt="Nikita the Wind" class="char-image">
+                                <span class="char-name">Nikita the Wind</span>
+                                <span class="char-trait">Elemental</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/stand-up-guy.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/StandUpGuy.jpg" alt="Stand Up Guy" class="char-image">
+                                <span class="char-name">Stand Up Guy</span>
+                                <span class="char-trait">Comic</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/sun-guy.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/SunGuyCloseUp.jpg" alt="Sun Guy" class="char-image">
+                                <span class="char-name">Sun Guy</span>
+                                <span class="char-trait">Radiant</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/sweaty-man.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Swclose.jpg" alt="Sweaty Man" class="char-image">
+                                <span class="char-name">Sweaty Man</span>
+                                <span class="char-trait">Nervous</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-category">
+                    <h3>⚡ Special Characters (35)</h3>
+                    <div class="compact-character-list">
+                              <div class="compact-character-item">
+                            <a href="guide/characters/miner.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Miner.jpg" alt="Miner" class="char-image">
+                                <span class="char-name">Miner</span>
+                                <span class="char-trait">Underground</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/neighbor.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Neighbor.png" alt="Neighbor" class="char-image">
+                                <span class="char-name">Neighbor</span>
+                                <span class="char-trait">Local</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/positive-guy.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Positive_Guy_close_up.jpg" alt="Positive Guy" class="char-image">
+                                <span class="char-name">Positive Guy</span>
+                                <span class="char-trait">Optimist</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/suit-guy.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Suitguy1.png" alt="Suit Guy" class="char-image">
+                                <span class="char-name">Suit Guy</span>
+                                <span class="char-trait">Business</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/surgeon.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/SurgeonCloseUp.jpg" alt="Surgeon" class="char-image">
+                                <span class="char-name">Surgeon</span>
+                                <span class="char-trait">Medical</span>
+                            </a>
+                        </div>
+                              <div class="compact-character-item">
+                            <a href="guide/characters/the-sisters.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/TheSisters.jpg" alt="The Sisters" class="char-image">
+                                <span class="char-name">The Sisters</span>
+                                <span class="char-trait">Group</span>
+                            </a>
+                        </div>
+                              <div class="compact-character-item">
+                            <a href="guide/characters/wounded-man.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/WOUNDED_MAN_-_VISITOR_-_TEETH.png" alt="Wounded Man" class="char-image">
+                                <span class="char-name">Wounded Man</span>
+                                <span class="char-trait">Injured</span>
+                            </a>
+                        </div>
+                                          <div class="compact-character-item">
+                            <a href="guide/characters/big-momma.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Woman1.png" alt="Big Momma" class="char-image">
+                                <span class="char-name">Big Momma</span>
+                                <span class="char-trait">Matriarch</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/fortune-teller.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/FortuneTeller.png" alt="Fortune Teller" class="char-image">
+                                <span class="char-name">Fortune Teller</span>
+                                <span class="char-trait">Mystic</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/gravedigger.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Grave_digger_closeup.jpg" alt="Gravedigger" class="char-image">
+                                <span class="char-name">Gravedigger</span>
+                                <span class="char-trait">Morbid</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/nun.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Comparison_of_the_image_of_a_nun_and_a_character_from_the_video_Christ_the_Saviour_Ensemble_and_Mother_Earth_Our_icons.png" alt="Nun" class="char-image">
+                                <span class="char-name">Nun</span>
+                                <span class="char-trait">Religious</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/seductive-woman.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Seductive_Woman_-_close_up.jpg" alt="Seductive Woman" class="char-image">
+                                <span class="char-name">Seductive Woman</span>
+                                <span class="char-trait">Alluring</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/stoner.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Stoner-close.png" alt="Stoner" class="char-image">
+                                <span class="char-name">Stoner</span>
+                                <span class="char-trait">Relaxed</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/theorist.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/VRcloseup.jpg" alt="Theorist" class="char-image">
+                                <span class="char-name">Theorist</span>
+                                <span class="char-trait">Academic</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/vigilante.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/TheVigilante.png" alt="Vigilante" class="char-image">
+                                <span class="char-name">Vigilante</span>
+                                <span class="char-trait">Justice</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/weather-reporter.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Weather_Man.png" alt="Weather Reporter" class="char-image">
+                                <span class="char-name">Weather Reporter</span>
+                                <span class="char-trait">Meteorological</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/widowed-woman.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Go_girl_go.png" alt="Widowed Woman" class="char-image">
+                                <span class="char-name">Widowed Woman</span>
+                                <span class="char-trait">Grieving</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/wireface.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Wireface-close.png" alt="Wireface" class="char-image">
+                                <span class="char-name">Wireface</span>
+                                <span class="char-trait">Mechanical</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/death-cult-peon.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Peon1close.jpg" alt="Death Cult Peons" class="char-image">
+                                <span class="char-name">Death Cult Peons</span>
+                                <span class="char-trait">Cultist</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/fetus.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Old_Man.png" alt="Fetus" class="char-image">
+                                <span class="char-name">Fetus</span>
+                                <span class="char-trait">Unborn</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/music-conductor.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/Gangrene_Conductor.png" alt="Music Conductor" class="char-image">
+                                <span class="char-name">Music Conductor</span>
+                                <span class="char-trait">Musical</span>
+                            </a>
+                        </div>
+                        <div class="compact-character-item">
+                            <a href="guide/characters/protagonist.html" class="char-link">
+                                <img src="https://images.noimnothuman.xyz/assets/images/characters/The_Miner.jpg" alt="Protagonist" class="char-image">
+                                <span class="char-name">Protagonist</span>
+                                <span class="char-trait">Main Character</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Scripts -->
+    <section id="character-scripts" class="guide-section">
+        <div class="container">
+            <h2 class="section-title">Character Scripts</h2>
+            <div class="scripts-intro">
+                <p>Study these example dialogues and conversation patterns to better identify visitor behaviors. Pay attention to speech patterns, emotional responses, and story consistency.</p>
+            </div>
+            <div class="scripts-grid">
+                <div class="script-category">
+                    <h3>🗣️ Common Opening Lines</h3>
+                    <div class="script-examples">
+                        <div class="script-example">
+                            <div class="character-name">Suspicious Character</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Please, I need shelter! The storm is getting worse and I can see them out there..."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Vague references, dramatic language, attempts to create urgency
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Genuine Human</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Hi, I'm looking for shelter from the solar radiation. My house was damaged and I need a safe place."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Specific, practical language, realistic concerns
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Authority Figure</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Official business. I'm Agent Miller with FEMA. I need access to your shelter to coordinate relief efforts."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Direct, professional tone, clear purpose stated
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="script-category">
+                    <h3>❓ Response Patterns to Questions</h3>
+                    <div class="script-examples">
+                        <div class="script-example">
+                            <div class="character-name">Visitor Evasion</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line player">
+                                    <span class="speaker">You:</span> "Where were you before coming here?"
+                                </div>
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Does it matter? The important thing is that I'm here now and I need help."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Deflecting questions, avoiding direct answers
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Human Response</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line player">
+                                    <span class="speaker">You:</span> "Where were you before coming here?"
+                                </div>
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "I was at my apartment on Oak Street. The windows broke during the last solar flare, so I had to leave."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Specific details, logical explanation, personal context
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Inconsistent Story</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line player">
+                                    <span class="speaker">You:</span> "You mentioned earlier that you were alone. Now you say you have family?"
+                                </div>
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "I... I meant that they're safe elsewhere. I didn't mean to confuse you."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Contradictory statements, nervous backtracking
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="script-category">
+                    <h3>😨 Emotional Response Patterns</h3>
+                    <div class="script-examples">
+                        <div class="script-example">
+                            <div class="character-name">Visitor Emotions</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "I'm very scared about what's happening. This fear is... what humans call fear, right?"
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Unnatural emotional description, questioning basic emotions
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Genuine Fear</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "I haven't slept in days. Every time I close my eyes, I see what happened to my neighbors."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Natural emotional expression, specific trauma references
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Over-the-top Acting</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Oh, the horror! The absolute terror of it all! I shall never recover from this tragedy!"
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Dramatic, theatrical language, unnatural emotional intensity
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="script-category">
+                    <h3>🧠 Testing Questions and Responses</h3>
+                    <div class="script-examples">
+                        <div class="script-example">
+                            <div class="character-name">Memory Test</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line player">
+                                    <span class="speaker">You:</span> "What did you eat for breakfast three days ago?"
+                                </div>
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Breakfast is an important meal that humans consume in the morning hours. I believe I had... typical human food."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Generic answers, difficulty with specific personal memories
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Cultural References</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line player">
+                                    <span class="speaker">You:</span> "Have you seen any good movies lately?"
+                                </div>
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "Movies are motion pictures that humans watch for entertainment. I have observed this human custom."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis">Analysis:</span> Explanatory rather than experiential, lack of personal connection
+                                </div>
+                            </div>
+                        </div>
+                        <div class="script-example">
+                            <div class="character-name">Physical Sensations</div>
+                            <div class="dialogue">
+                                <div class="dialogue-line player">
+                                    <span class="speaker">You:</span> "How does the solar radiation feel on your skin?"
+                                </div>
+                                <div class="dialogue-line character">
+                                    <span class="speaker">Character:</span> "The sensation is... unpleasant. Human skin is sensitive to radiation damage."
+                                </div>
+                                <div class="dialogue-line analysis">
+                                    <span class="analysis:</span> Clinical description rather than personal experience
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Edible Items -->
+    <section id="edible-items" class="guide-section dark-section">
+        <div class="container">
+            <h2 class="section-title">Edible Items</h2>
+            <div class="edible-intro">
+                <p>Food and consumables are vital for survival in No, I'm not a Human. Different items provide various benefits and can be found, traded for, or crafted throughout your journey.</p>
+            </div>
+            <div class="edible-categories">
+                <div class="edible-category">
+                    <h3>🍞 Basic Food Items</h3>
+                    <div class="edible-items-grid">
+                        <div class="edible-item">
+                            <div class="edible-icon">🍞</div>
+                            <h4>Bread</h4>
+                            <p><strong>Effect:</strong> Restores 15 health</p>
+                            <p><strong>Energy:</strong> +10</p>
+                            <p><strong>Description:</strong> Basic sustenance, commonly found</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🥫</div>
+                            <h4>Canned Food</h4>
+                            <p><strong>Effect:</strong> Restores 25 health</p>
+                            <p><strong>Energy:</strong> +20</p>
+                            <p><strong>Description:</strong> Preserved food, long-lasting</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🥩</div>
+                            <h4>Meat</h4>
+                            <p><strong>Effect:</strong> Restores 30 health</p>
+                            <p><strong>Energy:</strong> +25</p>
+                            <p><strong>Description:</strong> Protein-rich, substantial meal</p>
+                            <span class="edible-rarity">Uncommon</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🥕</div>
+                            <h4>Vegetables</h4>
+                            <p><strong>Effect:</strong> Restores 10 health</p>
+                            <p><strong>Energy:</strong> +15</p>
+                            <p><strong>Description:</strong> Fresh produce, vitamins</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edible-category">
+                    <h3>⚗️ Medical Consumables</h3>
+                    <div class="edible-items-grid">
+                        <div class="edible-item">
+                            <div class="edible-icon">💊</div>
+                            <h4>Painkillers</h4>
+                            <p><strong>Effect:</strong> Reduces pain effects</p>
+                            <p><strong>Energy:</strong> +15</p>
+                            <p><strong>Description:</strong> Temporary pain relief</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🧪</div>
+                            <h4>Antibiotics</h4>
+                            <p><strong>Effect:</strong> Cures infections</p>
+                            <p><strong>Energy:</strong> +5</p>
+                            <p><strong>Description:</strong> Fights bacterial infections</p>
+                            <span class="edible-rarity">Uncommon</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🩸</div>
+                            <h4>Blood Pack</h4>
+                            <p><strong>Effect:</strong> Restores 40 health</p>
+                            <p><strong>Energy:</strong> +20</p>
+                            <p><strong>Description:</strong> Emergency blood transfusion</p>
+                            <span class="edible-rarity">Rare</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🌿</div>
+                            <h4>Herbal Medicine</h4>
+                            <p><strong>Effect:</strong> Restores 20 health</p>
+                            <p><strong>Energy:</strong> +10</p>
+                            <p><strong>Description:</strong> Natural healing properties</p>
+                            <span class="edible-rarity">Uncommon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edible-category">
+                    <h3>⚡ Energy Boosters</h3>
+                    <div class="edible-items-grid">
+                        <div class="edible-item">
+                            <div class="edible-icon">🥤</div>
+                            <h4>Energy Drink</h4>
+                            <p><strong>Effect:</strong> +30 energy</p>
+                            <p><strong>Duration:</strong> 2 hours</p>
+                            <p><strong>Description:</strong> Quick energy boost</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">☕</div>
+                            <h4>Coffee</h4>
+                            <p><strong>Effect:</strong> +20 energy</p>
+                            <p><strong>Duration:</strong> 1 hour</p>
+                            <p><strong>Description:</strong> Improves alertness</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🍫</div>
+                            <h4>Chocolate</h4>
+                            <p><strong>Effect:</strong> +15 energy</p>
+                            <p><strong>Health:</strong> +5</p>
+                            <p><strong>Description:</strong> Mood improvement</p>
+                            <span class="edible-rarity">Common</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">💉</div>
+                            <h4>Adrenaline Shot</h4>
+                            <p><strong>Effect:</strong> +50 energy</p>
+                            <p><strong>Duration:</strong> 30 minutes</p>
+                            <p><strong>Description:</strong> Emergency energy boost</p>
+                            <span class="edible-rarity">Rare</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edible-category">
+                    <h3>🍺 Luxury Items</h3>
+                    <div class="edible-items-grid">
+                        <div class="edible-item">
+                            <div class="edible-icon">🍺</div>
+                            <h4>Beer</h4>
+                            <p><strong>Effect:</strong> +5 health</p>
+                            <p><strong>Special:</strong> Reduces stress</p>
+                            <p><strong>Description:</strong> Alcoholic beverage</p>
+                            <span class="edible-rarity">Uncommon</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🥃</div>
+                            <h4>Whiskey</h4>
+                            <p><strong>Effect:</strong> +10 health</p>
+                            <p><strong>Special:</strong> Pain relief</p>
+                            <p><strong>Description:</strong> Strong alcohol</p>
+                            <span class="edible-rarity">Rare</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🍷</div>
+                            <h4>Wine</h4>
+                            <p><strong>Effect:</strong> +8 health</p>
+                            <p><strong>Special:</strong> Social bonus</p>
+                            <p><strong>Description:</strong> Fine wine</p>
+                            <span class="edible-rarity">Rare</span>
+                        </div>
+                        <div class="edible-item">
+                            <div class="edible-icon">🍰</div>
+                            <h4>Cake</h4>
+                            <p><strong>Effect:</strong> +20 health</p>
+                            <p><strong>Energy:</strong> +15</p>
+                            <p><strong>Description:</strong> Special occasion food</p>
+                            <span class="edible-rarity">Rare</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Save Method -->
+    <section id="save-method" class="guide-section">
+        <div class="container">
+            <h2 class="section-title">Save Method</h2>
+            <div class="guide-content">
+                <div class="save-methods">
+                    <div class="save-type">
+                        <h3>🔄 Auto-Save System</h3>
+                        <p>The game automatically saves at key moments:</p>
+                        <ul>
+                            <li>End of each night phase</li>
+                            <li>Before major story events</li>
+                            <li>After important decisions</li>
+                            <li>When discovering new clues</li>
+                        </ul>
+                    </div>
+                    <div class="save-type">
+                        <h3>💾 Manual Save</h3>
+                        <p>Manual save options available:</p>
+                        <ul>
+                            <li>Through the main menu</li>
+                            <li>At specific save points in shelter</li>
+                            <li>Before critical decision moments</li>
+                            <li>Save slots: 5 manual + 3 auto-save</li>
+                        </ul>
+                    </div>
+                    <div class="save-type">
+                        <h3>⚠️ Save Tips</h3>
+                        <ul>
+                            <li>Save before major visitor decisions</li>
+                            <li>Keep multiple save files for different endings</li>
+                            <li>Auto-save cannot be disabled</li>
+                            <li>Some critical moments prevent saving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Day & Night Difference -->
+    <section id="day-night-cycle" class="guide-section dark-section">
+        <div class="container">
+            <h2 class="section-title">Day & Night Cycle</h2>
+            <div class="cycle-comparison">
+                <div class="cycle-phase">
+                    <h3>🌅 Day Phase</h3>
+                    <div class="phase-features">
+                        <div class="phase-item">
+                            <span class="phase-icon">🏠</span>
+                            <div>
+                                <strong>Shelter Management:</strong> Repair doors, windows, and security systems
+                            </div>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-icon">📻</span>
+                            <div>
+                                <strong>Government Broadcasts:</strong> Receive visitor identification updates
+                            </div>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-icon">🔧</span>
+                            <div>
+                                <strong>Resource Management:</strong> Organize supplies and ammunition
+                            </div>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-icon">🛡️</span>
+                            <div>
+                                <strong>Safety:</strong> Protected from extreme solar radiation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cycle-phase">
+                    <h3>🌙 Night Phase</h3>
+                    <div class="phase-features">
+                        <div class="phase-item">
+                            <span class="phase-icon">🚪</span>
+                            <div>
+                                <strong>Visitor Arrivals:</strong> Strangers seek shelter and entry
+                            </div>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-icon">🔍</span>
+                            <div>
+                                <strong>Investigation Phase:</strong> Examine visitors for suspicious traits
+                            </div>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-icon">⚡</span>
+                            <div>
+                                <strong>Energy Consumption:</strong> All actions consume limited energy
+                            </div>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-icon">⚠️</span>
+                            <div>
+                                <strong>Risk Period:</strong> Maximum danger from visitor attacks
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phone Numbers -->
+    <section id="phone-numbers" class="guide-section">
+        <div class="container">
+            <h2 class="section-title">All Phone Numbers & Functions</h2>
+            <div class="phone-grid">
+                <div class="phone-item">
+                    <div class="phone-number">911</div>
+                    <div class="phone-function">Emergency Services</div>
+                    <div class="phone-desc">Call for immediate police or medical assistance</div>
+                    <div class="phone-availability">Available: Days 1-7</div>
+                </div>
+                <div class="phone-item">
+                    <div class="phone-number">555-0123</div>
+                    <div class="phone-function">FEMA Hotline</div>
+                    <div class="phone-desc">Official visitor identification updates and alerts</div>
+                    <div class="phone-availability">Available: Always</div>
+                </div>
+                <div class="phone-item">
+                    <div class="phone-number">555-0456</div>
+                    <div class="phone-function">Shelter Support</div>
+                    <div class="phone-desc">Technical assistance for shelter systems</div>
+                    <div class="phone-availability">Available: Days 3-10</div>
+                </div>
+                <div class="phone-item">
+                    <div class="phone-number">555-0789</div>
+                    <div class="phone-function">Medical Emergency</div>
+                    <div class="phone-desc">Urgent medical advice and assistance</div>
+                    <div class="phone-availability">Available: Days 1-14</div>
+                </div>
+                <div class="phone-item">
+                    <div class="phone-number">555-0321</div>
+                    <div class="phone-function">Neighbor Network</div>
+                    <div class="phone-desc">Connect with other survivors for information</div>
+                    <div class="phone-availability">Available: Days 5-12</div>
+                </div>
+                <div class="phone-item">
+                    <div class="phone-number">555-0654</div>
+                    <div class="phone-function">Military Command</div>
+                    <div class="phone-desc">Emergency military assistance and evacuation</div>
+                    <div class="phone-availability">Available: Days 8-15</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed Events -->
+    <section id="fixed-events" class="guide-section dark-section">
+        <div class="container">
+            <h2 class="section-title">Fixed Events List</h2>
+            <div class="events-timeline">
+                <div class="event-day">
+                    <h3>Day 1-3: Initial Chaos</h3>
+                    <div class="events-list">
+                        <div class="event-item">
+                            <span class="event-day-marker">Day 1</span>
+                            <div class="event-content">
+                                <h4>Solar Storm Begins</h4>
+                                <p>Initial solar activity spike, government warnings issued, first visitor sightings reported</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-day-marker">Day 2</span>
+                            <div class="event-content">
+                                <h4>Emergency Broadcast</h4>
+                                <p>FEMA issues first visitor identification guidelines, communication networks partially disrupted</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-day-marker">Day 3</span>
+                            <div class="event-content">
+                                <h4>Shelter Protocol Activated</h4>
+                                <p>Official shelter-in-place orders, first major visitor encounters in residential areas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-day">
+                    <h3>Day 4-7: Escalation</h3>
+                    <div class="events-list">
+                        <div class="event-item">
+                            <span class="event-day-marker">Day 4</span>
+                            <div class="event-content">
+                                <h4>Power Grid Failure</h4>
+                                <p>Widespread power outages begin, emergency services overwhelmed</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-day-marker">Day 5</span>
+                            <div class="event-content">
+                                <h4>First Mass Evacuation</h4>
+                                <p>Government attempts organized evacuation, resulting in mixed success</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-day-marker">Day 7</span>
+                            <div class="event-content">
+                                <h4>Visitor Adaptation</h4>
+                                <p>Visitors begin showing more sophisticated disguise capabilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-day">
+                    <h3>Day 8-15: Critical Phase</h3>
+                    <div class="events-list">
+                        <div class="event-item">
+                            <span class="event-day-marker">Day 10</span>
+                            <div class="event-content">
+                                <h4>Medical System Collapse</h4>
+                                <p>Hospitals overwhelmed, supply chains completely disrupted</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-day-marker">Day 12</span>
+                            <div class="event-content">
+                                <h4>Military Withdrawal</h4>
+                            <p>Armed forces retreat to secure zones, civilian areas left vulnerable</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-day-marker">Day 15</span>
+                            <div class="event-content">
+                                <h4>Final Broadcast</h4>
+                                <p>Last government transmission, final instructions for survivors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consumables -->
+    <section id="consumables" class="guide-section">
+        <div class="container">
+            <h2 class="section-title">Consumables Effects</h2>
+            <div class="consumables-grid">
+                <div class="consumable-category">
+                    <h3>🏥 Medical Supplies</h3>
+                    <div class="consumable-items">
+                        <div class="consumable-item">
+                            <h4>First Aid Kit</h4>
+                            <p>Restores 50 health, stops bleeding</p>
+                            <span class="consumable-rarity">Common</span>
+                        </div>
+                        <div class="consumable-item">
+                            <h4>Painkillers</h4>
+                            <p>Reduces pain effects, +10 energy</p>
+                            <span class="consumable-rarity">Common</span>
+                        </div>
+                        <div class="consumable-item">
+                            <h4>Antibiotics</h4>
+                            <p>Cures infections, prevents disease</p>
+                            <span class="consumable-rarity">Uncommon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="consumable-category">
+                    <h3>⚡ Energy Items</h3>
+                    <div class="consumable-items">
+                        <div class="consumable-item">
+                            <h4>Energy Drink</h4>
+                            <p>+25 energy, temporary alertness boost</p>
+                            <span class="consumable-rarity">Common</span>
+                        </div>
+                        <div class="consumable-item">
+                            <h4>Caffeine Pills</h4>
+                            <p>+15 energy, improves investigation accuracy</p>
+                            <span class="consumable-rarity">Common</span>
+                        </div>
+                        <div class="consumable-item">
+                            <h4>Adrenaline Shot</h4>
+                            <p>+50 energy, enhanced physical abilities</p>
+                            <span class="consumable-rarity">Rare</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="consumable-category">
+                    <h3>🔍 Investigation Tools</h3>
+                    <div class="consumable-items">
+                        <div class="consumable-item">
+                            <h4>Flashlight</h4>
+                            <p>Improves night vision, reveals hidden details</p>
+                            <span class="consumable-rarity">Common</span>
+                        </div>
+                        <div class="consumable-item">
+                            <h4>Magnifying Glass</h4>
+                            <p>Enhanced visual inspection, -5 energy cost</p>
+                            <span class="consumable-rarity">Uncommon</span>
+                        </div>
+                        <div class="consumable-item">
+                            <h4>UV Light</h4>
+                            <p>Reveals invisible visitor markings</p>
+                            <span class="consumable-rarity">Rare</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="consumable-category">
+                    <h3>🛡️ Defense Items</h3>
+                    <div class="consumable-items">
+                        <div class="consumable-item">
+                            <h4>Wooden Boards</h4>
+                            <p>Reinforces doors/windows, +10 defense</p>
+                            <span class="consumable-rarity">Common</span>
+                        </div>
+                        <div class="consumable-item">
+                            <h4>Barbed Wire</h4>
+                            <p>Creates barriers, damages intruders</p>
+                            <span class="consumable-rarity">Uncommon</span>
+                        </div>
+                        <div class="consumable-item">
+                            <h4>Motion Sensors</h4>
+                            <p>Early warning system, detects movement</p>
+                            <span class="consumable-rarity">Rare</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Walkthrough -->
+    <section id="story-walkthrough" class="guide-section dark-section">
+        <div class="container">
+            <h2 class="section-title">Complete Story Walkthrough</h2>
+            <div class="walkthrough-content">
+                <div class="walkthrough-phase">
+                    <h3>Phase 1: Days 1-3 - Understanding the Threat</h3>
+                    <div class="walkthrough-steps">
+                        <div class="step-item">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4>Initial Setup</h4>
+                                <p>Begin by securing your shelter. Board up windows, check emergency supplies, and familiarize yourself with the basic controls. The first visitors will be relatively easy to identify.</p>
+                                <div class="step-tips">
+                                    <strong>Tips:</strong> Save frequently, use minimal energy on first investigations
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4>Learning Visitor Traits</h4>
+                                <p>FEMA broadcasts will begin teaching identification methods. Pay close attention to descriptions of abnormal teeth, bloodshot eyes, and unusual hair growth patterns.</p>
+                                <div class="step-tips">
+                                    <strong>Tips:</strong> Take notes on broadcast information, some clues are time-sensitive
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="walkthrough-phase">
+                    <h3>Phase 2: Days 4-7 - Rising Stakes</h3>
+                    <div class="walkthrough-steps">
+                        <div class="step-item">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4>Increased Visitor Activity</h4>
+                                <p>Visitors become more frequent and sophisticated. Some may exhibit only partial traits or attempt to conceal their features. Energy management becomes critical.</p>
+                                <div class="step-tips">
+                                    <strong>Tips:</strong> Prioritize high-energy investigations for suspicious visitors
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">4</span>
+                            <div class="step-content">
+                                <h4>Resource Scarcity</h4>
+                                <p>Supplies begin running low. You'll need to balance investigation energy with resource gathering and shelter maintenance.</p>
+                                <div class="step-tips">
+                                    <strong>Tips:</strong> Keep backup supplies, don't neglect shelter repairs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="walkthrough-phase">
+                    <h3>Phase 3: Days 8-15 - Survival Endgame</h3>
+                    <div class="walkthrough-steps">
+                        <div class="step-item">
+                            <span class="step-number">5</span>
+                            <div class="step-content">
+                                <h4>Breaking Point</h4>
+                                <p>Government services collapse. You're truly alone. Visitors become desperate and more aggressive. Major story decisions will determine your fate.</p>
+                                <div class="step-tips">
+                                    <strong>Tips:</strong> Make save files before major decisions, consider long-term consequences
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">6</span>
+                            <div class="step-content">
+                                <h4>Final Confrontation</h4>
+                                <p>The truth about visitors begins to emerge. Your choices throughout the game will determine which ending you receive and the fate of your character.</p>
+                                <div class="step-tips">
+                                    <strong>Tips:</strong> Review all collected evidence, trust your instincts
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Features -->
+    <section id="character-guide" class="guide-section">
+        <div class="container">
+            <h2 class="section-title">Character Conditions & Traits</h2>
+            <div class="character-grid">
+                <div class="character-category">
+                    <h3>👥 Human Survivors</h3>
+                    <div class="character-types">
+                        <div class="character-type">
+                            <h4>Desperate Families</h4>
+                            <p><strong>Appearance:</strong> Normal to disheveled, genuine fear and exhaustion</p>
+                            <p><strong>Behavior:</strong> Cooperative, grateful, willing to share resources</p>
+                            <p><strong>Appearance Conditions:</strong> Days 1-10, groups of 2-4 people</p>
+                        </div>
+                        <div class="character-type">
+                            <h4>Lone Travelers</h4>
+                            <p><strong>Appearance:</strong> Worn clothing, carrying supplies, visible fatigue</p>
+                            <p><strong>Behavior:</strong> Cautious but honest, may have valuable information</p>
+                            <p><strong>Appearance Conditions:</strong> Days 3-12, single visitors</p>
+                        </div>
+                        <div class="character-type">
+                            <h4>Injured Persons</h4>
+                            <p><strong>Appearance:</strong> Visible injuries, bleeding, seeking medical help</p>
+                            <p><strong>Behavior:</strong> In pain but genuine, may need immediate assistance</p>
+                            <p><strong>Appearance Conditions:</strong> Days 5-14, medical supplies required</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="character-category">
+                    <h3>👽 Visitor Types</h3>
+                    <div class="character-types">
+                        <div class="character-type">
+                            <h4>Novice Visitors</h4>
+                            <p><strong>Appearance:</strong> Obvious visitor traits (perfect teeth, bloodshot eyes)</p>
+                            <p><strong>Behavior:</strong> Nervous, inconsistent stories, unusual requests</p>
+                            <p><strong>Appearance Conditions:</strong> Days 1-7, easier to identify</p>
+                        </div>
+                        <div class="character-type">
+                            <h4>Adapted Visitors</h4>
+                            <p><strong>Appearance:</strong> Subtle or concealed traits, better disguises</p>
+                            <p><strong>Behavior:</strong> More confident, sophisticated deception tactics</p>
+                            <p><strong>Appearance Conditions:</strong> Days 4-12, harder to detect</p>
+                        </div>
+                        <div class="character-type">
+                            <h4>Elite Visitors</h4>
+                            <p><strong>Appearance:</strong> Nearly perfect human imitation, minimal visible traits</p>
+                            <p><strong>Behavior:</strong> Extremely convincing, may attempt psychological manipulation</p>
+                            <p><strong>Appearance Conditions:</strong> Days 8-15, very difficult to identify</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="character-category">
+                    <h3>🎭 Special Encounters</h3>
+                    <div class="character-types">
+                        <div class="character-type">
+                            <h4>Government Officials</h4>
+                            <p><strong>Appearance:</strong> Professional attire, identification badges</p>
+                            <p><strong>Behavior:</strong> Authoritative, may have crucial information</p>
+                            <p><strong>Appearance Conditions:</strong> Days 2-6, story-critical encounters</p>
+                        </div>
+                        <div class="character-type">
+                            <h4>Repeat Visitors</h4>
+                            <p><strong>Appearance:</strong> May return with different appearance or story</p>
+                            <p><strong>Behavior:</strong> Testing your memory and consistency</p>
+                            <p><strong>Appearance Conditions:</strong> Various days, trust testing</p>
+                        </div>
+                        <div class="character-type">
+                            <h4>The Mysterious Stranger</h4>
+                            <p><strong>Appearance:</strong> Unusually calm, knowing demeanor</p>
+                            <p><strong>Behavior:</strong> Drops hints about visitor origins and true nature</p>
+                            <p><strong>Appearance Conditions:</strong> Days 10-15, reveals plot secrets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visitor Identification Tutorial -->
+    <section id="visitor-identification" class="guide-section dark-section">
+        <div class="container">
+            <h2 class="section-title">No, I'm not a Human Visitor Identification Guide</h2>
+            <div class="identification-training">
+                <div class="training-section">
+                    <h3>🔍 Physical Examination Method</h3>
+                    <div class="examination-steps">
+                        <div class="exam-step">
+                            <span class="step-icon">1️⃣</span>
+                            <div>
+                                <h4>Initial Visual Assessment</h4>
+                                <p>Begin with a quick overall appearance check. Look for obvious signs: unusual pallor, perfect teeth, bloodshot eyes. Cost: 10 energy</p>
+                            </div>
+                        </div>
+                        <div class="exam-step">
+                            <span class="step-icon">2️⃣</span>
+                            <div>
+                                <h4>Close Physical Examination</h4>
+                                <p>Request closer inspection of specific features. Check teeth, eyes, and hair patterns. Cost: 15 energy</p>
+                            </div>
+                        </div>
+                        <div class="exam-step">
+                            <span class="step-icon">3️⃣</span>
+                            <div>
+                                <h4>Behavioral Observation</h4>
+                                <p>Engage in conversation to assess speech patterns, emotional responses, and story consistency. Cost: 20 energy</p>
+                            </div>
+                        </div>
+                        <div class="exam-step">
+                            <span class="step-icon">4️⃣</span>
+                            <div>
+                                <h4>Belongings Inspection</h4>
+                                <p>Examine carried items for suspicious or non-human objects. Cost: 25 energy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training-section">
+                    <h3>⚠️ Key Identification Markers</h3>
+                    <div class="markers-grid">
+                        <div class="marker-card high-priority">
+                            <div class="marker-icon">😬</div>
+                            <h4>Dental Anomalies</h4>
+                            <p><strong>Primary Indicator:</strong> Abnormally white, perfectly aligned teeth</p>
+                            <p><strong>Secondary Signs:</strong> Unnatural smile, too many teeth, metallic appearance</p>
+                            <p><strong>Detection Method:</strong> Direct visual inspection, request to show teeth</p>
+                            <div class="marker-reliability">Reliability: 85%</div>
+                        </div>
+                        <div class="marker-card high-priority">
+                            <div class="marker-icon">👁️</div>
+                            <h4>Ocular Abnormalities</h4>
+                            <p><strong>Primary Indicator:</strong> Bloodshot eyes with red streaks</p>
+                            <p><strong>Secondary Signs:</strong> Unusual pupil dilation, reflective retinas, lack of blinking</p>
+                            <p><strong>Detection Method:</strong> Close eye examination, light response test</p>
+                            <div class="marker-reliability">Reliability: 75%</div>
+                        </div>
+                        <div class="marker-card medium-priority">
+                            <div class="marker-icon">💪</div>
+                            <h4>Dermal Patterns</h4>
+                            <p><strong>Primary Indicator:</strong> Unusual skin texture or temperature</p>
+                            <p><strong>Secondary Signs:</strong> No body hair, abnormal healing, scarring patterns</p>
+                            <p><strong>Detection Method:</strong> Physical contact examination, clothing inspection</p>
+                            <div class="marker-reliability">Reliability: 70%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training-section">
+                    <h3>🧠 Advanced Detection Techniques</h3>
+                    <div class="techniques-list">
+                        <div class="technique-item">
+                            <h4>Psychological Evaluation</h4>
+                            <p>Ask personal questions about their past, family, or emotional experiences. Visitors often struggle with complex emotional responses or detailed human memories.</p>
+                            <div class="technique-effectiveness">Effectiveness: High</div>
+                        </div>
+                        <div class="technique-item">
+                            <h4>Sensory Testing</h4>
+                            <p>Test reactions to various stimuli: strong smells, loud noises, temperature changes. Visitors may exhibit abnormal sensory responses.</p>
+                            <div class="technique-effectiveness">Effectiveness: Medium</div>
+                        </div>
+                        <div class="technique-item">
+                            <h4>Consistency Checking</h4>
+                            <p>Ask the same questions in different ways. Visitors often contradict themselves or forget their fabricated stories.</p>
+                            <div class="technique-effectiveness">Effectiveness: Very High</div>
+                        </div>
+                        <div class="technique-item">
+                            <h4>Physical Response Testing</h4>
+                            <p>Observe reactions to physical proximity, personal space invasion, or sudden movements. Visitors may have unnatural reflexes or lack of personal boundaries.</p>
+                            <div class="technique-effectiveness">Effectiveness: Medium</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Endings Guide -->
+    <section id="all-endings" class="guide-section">
+        <div class="container">
+            <h2 class="section-title">All Endings Guide</h2>
+            <div class="endings-complete">
+                <div class="endings-intro">
+                    <p>No, I'm not a Human features multiple branching endings based on your decisions throughout the game. Each ending requires specific choices and conditions to unlock.</p>
+                </div>
+
+                <div class="endings-grid">
+                    <div class="ending-card main-ending">
+                        <div class="ending-icon">🏆</div>
+                        <h3>Survivor Ending</h3>
+                        <div class="ending-requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>Correctly identify 90%+ of visitors</li>
+                                <li>Maintain shelter integrity above 75%</li>
+                                <li>Save at least 10 human lives</li>
+                                <li>Collect all key evidence items</li>
+                                <li>Reach Day 15 with positive reputation</li>
+                            </ul>
+                        </div>
+                        <div class="ending-strategy">
+                            <h4>Strategy:</h4>
+                            <p>Focus on accurate identification, be conservative with energy, and help genuine humans whenever possible. Keep detailed notes on visitor patterns.</p>
+                        </div>
+                    </div>
+
+                    <div class="ending-card main-ending">
+                        <div class="ending-icon">🔬</div>
+                        <h3>Discovery Ending</h3>
+                        <div class="ending-requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>Investigate every visitor thoroughly</li>
+                                <li>Find all hidden clues and documents</li>
+                                <li>Decipher the visitor's true origin</li>
+                                <li>Complete all research objectives</li>
+                                <li>Confront the source of the invasion</li>
+                            </ul>
+                        </div>
+                        <div class="ending-strategy">
+                            <h4>Strategy:</h4>
+                            <p>Prioritize investigation over survival. Use energy on deep examinations, search every location, and piece together the complete story.</p>
+                        </div>
+                    </div>
+
+                    <div class="ending-card main-ending">
+                        <div class="ending-icon">🤝</div>
+                        <h3>Community Ending</h3>
+                        <div class="ending-requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>Help at least 15 different survivors</li>
+                                <li>Build trust with repeat visitors</li>
+                                <li>Establish communication networks</li>
+                                <li>Share resources generously</li>
+                                <li>Maintain positive relationships</li>
+                            </ul>
+                        </div>
+                        <div class="ending-strategy">
+                            <h4>Strategy:</h4>
+                            <p>Be compassionate and trusting. Help everyone you can, even if it means taking risks. Build a network of allies and share resources.</p>
+                        </div>
+                    </div>
+
+                    <div class="ending-card bad-ending">
+                        <div class="ending-icon">💀</div>
+                        <h3>Tragic Ending</h3>
+                        <div class="ending-requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>Make 5+ major identification errors</li>
+                                <li>Allow critical shelter damage</li>
+                                <li>Lose key allies through poor decisions</li>
+                                <li>Fail to uncover essential information</li>
+                                <li>Reach Day 15 with low survival rate</li>
+                            </ul>
+                        </div>
+                        <div class="ending-strategy">
+                            <h4>Strategy:</h4>
+                            <p>This ending occurs naturally through poor play. To avoid it, save frequently and learn from mistakes.</p>
+                        </div>
+                    </div>
+
+                    <div class="ending-card special-ending">
+                        <div class="ending-icon">🎭</div>
+                        <h3>Hidden Truth Ending</h3>
+                        <div class="ending-requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>Complete specific dialogue choices with key NPCs</li>
+                                <li>Find all hidden audio logs</li>
+                                <li>Solve the radio frequency puzzle</li>
+                                <li>Access the government bunker</li>
+                                <li>Uncover the conspiracy</li>
+                            </ul>
+                        </div>
+                        <div class="ending-strategy">
+                            <h4>Strategy:</h4>
+                            <p>Pay attention to subtle clues, explore every dialogue option, and don't trust official broadcasts completely.</p>
+                        </div>
+                    </div>
+
+                    <div class="ending-card special-ending">
+                        <div class="ending-icon">🌟</div>
+                        <h3>Sacrifice Ending</h3>
+                        <div class="ending-requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>Save others at personal expense</li>
+                                <li>Make selfless choices consistently</li>
+                                <li>Sacrifice resources for the greater good</li>
+                                <li>Protect vulnerable survivors</li>
+                                <li>Face the final choice with compassion</li>
+                            </ul>
+                        </div>
+                        <div class="ending-strategy">
+                            <h4>Strategy:</h4>
+                            <p>Always put others before yourself. Make difficult choices that benefit the community even if they harm you personally.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ending-tips">
+                    <h3>General Tips for All Endings</h3>
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <strong>Multiple Save Files:</strong> Keep different save files to explore various ending paths
+                        </div>
+                        <div class="tip-item">
+                            <strong>Dialogue Matters:</strong> Your conversation choices affect relationships and story outcomes
+                        </div>
+                        <div class="tip-item">
+                            <strong>Timing is Key:</strong> Some endings require specific actions on certain days
+                        </div>
+                        <div class="tip-item">
+                            <strong>Reputation System:</strong> Your actions affect how others perceive and interact with you
+                        </div>
+                        <div class="tip-item">
+                            <strong>Exploration Rewards:</strong> Thoroughly exploring each area reveals hidden endings
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Useful Tips -->
+    <section id="tips-tricks" class="guide-section dark-section">
+        <div class="container">
+            <h2 class="section-title">Tips & Tricks</h2>
+
+            <div class="tips-categories">
+                <div class="tips-category">
+                    <h3>🎯 Beginner Tips</h3>
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <strong>Save Often:</strong> Create multiple save files before major decisions
+                        </div>
+                        <div class="tip-item">
+                            <strong>Start Conservative:</strong> Use minimal energy on initial investigations
+                        </div>
+                        <div class="tip-item">
+                            <strong>Observe Carefully:</strong> Pay attention to visual and behavioral details
+                        </div>
+                        <div class="tip-item">
+                            <strong>Trust Your Instincts:</strong> If something feels wrong, it probably is
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tips-category">
+                    <h3>⚡ Energy Management</h3>
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <strong>Prioritize High-Risk Visitors:</strong> Focus energy on suspicious individuals
+                        </div>
+                        <div class="tip-item">
+                            <strong>Balance Investigations:</strong> Mix quick checks with thorough examinations
+                        </div>
+                        <div class="tip-item">
+                            <strong>Use Energy Items Wisely:</strong> Save boost items for critical moments
+                        </div>
+                        <div class="tip-item">
+                            <strong>Plan Ahead:</strong> Consider energy needs for the entire night
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tips-category">
+                    <h3>🔍 Advanced Detection</h3>
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <strong>Look for Multiple Signs:</strong> Never rely on a single trait
+                        </div>
+                        <div class="tip-item">
+                            <strong>Consider Context:</strong> Some humans may show stress-induced traits
+                        </div>
+                        <div class="tip-item">
+                            <strong>Test Consistency:</strong> Ask the same questions different ways
+                        </div>
+                        <div class="tip-item">
+                            <strong>Use Tools Effectively:</strong> UV lights and magnifying glasses reveal hidden details
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tips-category">
+                    <h3>🏠 Shelter Management</h3>
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <strong>Daily Maintenance:</strong> Check and repair defenses regularly
+                        </div>
+                        <div class="tip-item">
+                            <strong>Resource Stockpiling:</strong> Keep backup supplies for emergencies
+                        </div>
+                        <div class="tip-item">
+                            <strong>Strategic Upgrades:</strong> Prioritize essential security systems
+                        </div>
+                        <div class="tip-item">
+                            <strong>Escape Routes:</strong> Maintain multiple exit strategies
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="common-mistakes">
+                <h3>Common Mistakes to Avoid</h3>
+                <div class="mistakes-grid">
+                    <div class="mistake-item">
+                        <span class="mistake-icon">❌</span>
+                        <div>
+                            <strong>Over-investigation:</strong> Wasting energy on obviously safe visitors
+                        </div>
+                    </div>
+                    <div class="mistake-item">
+                        <span class="mistake-icon">❌</span>
+                        <div>
+                            <strong>Hasty Decisions:</strong> Making choices without sufficient evidence
+                        </div>
+                    </div>
+                    <div class="mistake-item">
+                        <span class="mistake-icon">❌</span>
+                        <div>
+                            <strong>Neglecting Shelter:</strong> Focusing only on visitors, not defenses
+                        </div>
+                    </div>
+                    <div class="mistake-item">
+                        <span class="mistake-icon">❌</span>
+                        <div>
+                            <strong>Ignoring Broadcasts:</strong> Missing crucial identification updates
+                        </div>
+                    </div>
+                    <div class="mistake-item">
+                        <span class="mistake-icon">❌</span>
+                        <div>
+                            <strong>Poor Resource Management:</strong> Running out of critical supplies
+                        </div>
+                    </div>
+                    <div class="mistake-item">
+                        <span class="mistake-icon">❌</span>
+                        <div>
+                            <strong>Trust Issues:</strong> Being too suspicious or too trusting
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-strategies">
+                <h3>Pro Strategies</h3>
+                <div class="strategies-list">
+                    <div class="strategy-item">
+                        <h4>📊 Pattern Recognition</h4>
+                        <p>Learn visitor types and their common traits. Experienced players can identify patterns that make detection much easier.</p>
+                    </div>
+                    <div class="strategy-item">
+                        <h4>⏰ Timing Optimization</h4>
+                        <p>Certain visitors appear at specific times. Plan your energy usage around known high-risk periods.</p>
+                    </div>
+                    <div class="strategy-item">
+                        <h4>🔄 Adaptive Strategy</h4>
+                        <p>Adjust your approach based on current conditions. Sometimes aggression is necessary, other times caution is key.</p>
+                    </div>
+                    <div class="strategy-item">
+                        <h4>🎭 Psychological Tactics</h4>
+                        <p>Use conversation and psychological pressure to reveal visitor traits. Many visitors break under careful questioning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="game-title">No, I'm not a Human</h3>
+                    <p>A horror adventure game exploring the boundary between AI and humanity</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="#characters">Guide</a></li>
+                        <li><a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" target="_blank">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Guide Sections</h4>
+                    <ul>
+                        <li><a href="#game-mechanics">Game Mechanics</a></li>
+                        <li><a href="#visitor-identification">Visitor ID</a></li>
+                        <li><a href="#survival-strategy">Strategy</a></li>
+                        <li><a href="#tips-tricks">Pro Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Discord</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 No, I'm not a Human. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
