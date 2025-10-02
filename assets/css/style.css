@@ -674,7 +674,7 @@ body {
 }
 
 .guide-section {
-    padding: 80px 0;
+    padding: 40px 0;
     background: #0a0a0a;
 }
 
@@ -1808,21 +1808,6 @@ body {
     overflow: visible;
 }
 
-/* Ensure consistent padding for guide titles */
-.guide-title {
-    font-family: 'Creepster', cursive;
-    font-weight: 400;
-    font-size: 8rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    background: linear-gradient(45deg, #00ff88, #0088ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    line-height: 1.2;
-    padding-left: 0;
-    padding-right: 0;
-}
 
 /* Remove old guide-content CSS references */
 .guide-content {
@@ -3586,6 +3571,66 @@ body {
 .guide-image:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 25px rgba(0, 255, 136, 0.5);
+}
+
+/* Guide Intro Styles */
+.guide-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+
+.guide-intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+.guide-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.guide-buttons .btn {
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.guide-buttons .btn-primary {
+    background: linear-gradient(135deg, #00ff88, #0088ff);
+    color: #000;
+    border: 2px solid #00ff88;
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+}
+
+.guide-buttons .btn-primary:hover {
+    background: transparent;
+    color: #00ff88;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 255, 136, 0.5);
+}
+
+.guide-buttons .btn-secondary {
+    background: transparent;
+    color: #00ff88;
+    border: 2px solid #00ff88;
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.2);
+}
+
+.guide-buttons .btn-secondary:hover {
+    background: linear-gradient(135deg, #00ff88, #0088ff);
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 255, 136, 0.5);
 }
 
 /* Responsive Timeline */

@@ -1,12 +1,15 @@
+# Main pages
 https://noimnothuman.xyz/
-https://noimnothuman.xyz/download.html
-https://noimnothuman.xyz/features/
-https://noimnothuman.xyz/guide/
-https://noimnothuman.xyz/community/
 https://noimnothuman.xyz/characters.html
 https://noimnothuman.xyz/achievements.html
 https://noimnothuman.xyz/ending.html
 https://noimnothuman.xyz/guide.html
+https://noimnothuman.xyz/download.html
+
+# Legacy and additional pages
+https://noimnothuman.xyz/features/
+https://noimnothuman.xyz/guide/
+https://noimnothuman.xyz/community/
 https://noimnothuman.xyz/guide/characters/angry-guy.html
 https://noimnothuman.xyz/guide/characters/armchair-lawyer-guy.html
 https://noimnothuman.xyz/guide/characters/bandana-guy.html
