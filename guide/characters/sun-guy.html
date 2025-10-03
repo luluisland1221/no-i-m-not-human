@@ -31,9 +31,33 @@
         }
         .character-container {
             background: #000 !important;
+            max-width: 1400px !important;
+            margin: 0 auto !important;
+            padding: 2rem !important;
         }
         .character-main {
             background: #000 !important;
+        }
+
+        /* 覆盖原有的grid布局，改用table布局 */
+        .character-container {
+            display: block !important;
+        }
+
+        /* 确保右侧内容有合理宽度 */
+        .character-section {
+            max-width: none !important;
+            width: 100% !important;
+            background: rgba(0, 0, 0, 0.2) !important;
+            border-radius: 12px !important;
+            padding: 2rem !important;
+            margin-bottom: 2rem !important;
+            border: 1px solid rgba(0, 255, 136, 0.1) !important;
+        }
+
+        /* 确保table中的右侧td充分利用空间 */
+        table {
+            table-layout: fixed !important;
         }
     </style>
 
@@ -43,10 +67,9 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Sun Guy",
-        "alternateName": "Radiant Entity",
-        "description": "A being of light and warmth who brings an almost blinding optimism that may mask something otherworldly",
+        "description": "A casual character with a relaxed demeanor, often appearing approachable and easy-going",
         "gender": "Male",
-        "knowsAbout": ["light", "warmth", "optimism", "radiance", "energy"]
+        "knowsAbout": ["Casual encounters", "Relaxed interactions", "Approachable behavior"]
     }
     </script>
 </head>
@@ -57,22 +80,26 @@
             <div class="nav-logo">
                 <h1><a href="../../index.html" style="color: #00ff88; text-decoration: none;">No, I'm not a Human</a></h1>
             </div>
-            <div class="nav-menu">
-                <a href="../../index.html" class="nav-link">Home</a>
-                <a href="../../guide.html" class="nav-link active">Guide</a>
-                <a href="../../characters.html" class="nav-link">Characters</a>
-                <a href="../../achievements.html" class="nav-link">Achievements</a>
-                <a href="../../ending.html" class="nav-link">Endings</a>
-                <a href="../../download.html" class="nav-link">Download</a>
-            </div>
-                
-                
-                    <a href="../download.html" class="nav-link">Download</a>
-                
-                
-                    <a href="../community.html" class="nav-link">Community</a>
-                
-            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../guide.html" class="nav-link">Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../characters.html" class="nav-link active">Characters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../achievements.html" class="nav-link">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../ending.html" class="nav-link">Endings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../download.html" class="nav-link">Download</a>
+                </li>
+            </ul>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -91,161 +118,161 @@
 
     <!-- Character Main Content -->
     <div class="character-container">
-        <div class="character-sidebar">
-            <!-- Character Card -->
-            <div class="character-card">
-                <div class="character-avatar">
-                    <img src="https://images.noimnothuman.xyz/assets/images/characters/SunGuyCloseUp.jpg" alt="Sun Guy" class="char-image">
-                </div>
-            </div>
+        <table style="width: 100%; max-width: 1400px; border-collapse: collapse; vertical-align: top; margin: 0 auto;">
+            <tr>
+                <!-- 左侧角色信息区域 -->
+                <td style="width: 320px; padding-right: 2rem; vertical-align: top;">
+                    <!-- Character Card -->
+                    <div class="character-card">
+                        <div class="character-avatar">
+                            <img src="https://images.noimnothuman.xyz/assets/images/characters/SunGuyCloseUp.jpg" alt="Sun Guy" class="char-image">
+                        </div>
+                    </div>
 
-            <!-- Character Information -->
-            <div class="character-info">
+                    <!-- Character Information -->
+                    <div class="character-info">
                 <h3>Basic Information</h3>
                 <div class="info-item">
                     <span class="info-label">Name:</span>
                     <span class="info-value">Sun Guy</span>
                 </div>
-                <div class="info-item">
-                    <span class="info-label">Aliases:</span>
-                    <span class="info-value">Radiant Entity</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Species:</span>
-                    <span class="info-value">RevealRandom</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Gender:</span>
-                    <span class="info-value">Male</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Occupation:</span>
-                    <span class="info-value">Light Bringer</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Debut:</span>
-                    <span class="info-value">Randomized</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Room:</span>
-                    <span class="info-value">Office</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Type:</span>
-                    <span class="info-value">Visitor</span>
-                </div>
-            </div>
-
-            <!-- Quick Navigation -->
-            <div class="quick-nav">
-                <h3>Quick Navigation</h3>
-                <ul>
-                    <li><a href="#overview">Overview</a>
-                    <li><a href="#background">Background Story</a>
-                    <li><a href="#identification">Identification</a>
-                    <li><a href="#behavior">Behavior Patterns</a>
-                    <li><a href="#relationships">Relationships</a>
-                    <li><a href="#strategy">Strategy</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="character-main">
-            <!-- Overview Section -->
-            <section id="overview" class="character-section">
-                <h2>Character Overview</h2>
-                <p>The Sun Guy is a radiant being who embodies overwhelming optimism and light. His presence brings an almost supernatural warmth and brightness that can be both comforting and unnerving. His boundless positivity may mask a nature that is fundamentally alien to human experience.</p>
-
-                <div class="character-traits">
-                    <div class="trait">
-                        <h4>First Impression</h4>
-                        <p>Appears with an almost blinding aura of light and cheerfulness</p>
-                    </div>
-                    <div class="trait">
-                        <h4>Key Behavior</h4>
-                        <p>Exudes relentless optimism that can feel artificial or overwhelming</p>
-                    </div>
-                    <div class="trait">
-                        <h4>Light Connection</h4>
-                        <p>Speaks of light, warmth, and solar energy as if they were personal attributes</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Background Story Section -->
-            <section id="background" class="character-section">
-                <h2>Background Story</h2>
-                <div class="background-content">
-                    <h3>The Solar Consciousness</h3>
-                    <p>The Sun Guy claims to be a manifestation of solar consciousness, a being that has existed within the sun's energy for eons before developing awareness and curiosity about Earth. According to him, he is one of many such entities who have begun to explore human civilization as the planet enters a new phase of cosmic alignment.</p>
-
-                    <h3>Light as Language</h3>
-                    <p>His story suggests that he communicates primarily through light and warmth, with human language being a secondary form of expression he adopted to interact with humans. He speaks of light as a living thing, as something that can nurture, heal, or burn depending on its intensity and purpose.</p>
-
-                    <h3>The Dark Attraction</h3>
-                    <p>He explains that entities like him are drawn to places of darkness and despair, not to cause harm but to bring balance. However, his methods of bringing "light" to dark situations can be overwhelming or even destructive to human sensibilities, as his understanding of healing differs greatly from human concepts of comfort.</p>
-                </div>
-            </section>
-
-            <!-- Identification Section -->
-            <section id="identification" class="character-section">
-                <h2>Identification Guide</h2>
-                <div class="identification-checks">
-                    <h3>Physical Checks</h3>
-                    <div class="check-items">
-                        <div class="check-item">
-                            <span class="check-type">Teeth</span>
-                            <span class="check-result">May appear unnaturally bright or luminescent</span>
+                        <div class="info-item">
+                            <span class="info-label">Species:</span>
+                            <span class="info-value">RevealRandom</span>
                         </div>
-                        <div class="check-item">
-                            <span class="check-type">Hands</span>
-                            <span class="check-result">May radiate unusual warmth or light</span>
+                        <div class="info-item">
+                            <span class="info-label">Gender:</span>
+                            <span class="info-value">Male</span>
                         </div>
-                        <div class="check-item">
-                            <span class="check-type">Eyes</span>
-                            <span class="check-result">May appear as glowing or overly bright</span>
+                        <div class="info-item">
+                            <span class="info-label">Occupation:</span>
+                            <span class="info-value">Randomized</span>
                         </div>
-                        <div class="check-item">
-                            <span class="check-type">Armpits</span>
-                            <span class="check-result">May show light emission or lack of sweat</span>
+                        <div class="info-item">
+                            <span class="info-label">Debut:</span>
+                            <span class="info-value">Randomized</span>
                         </div>
-                        <div class="check-item">
-                            <span class="check-type">Photo</span>
-                            <span class="check-result">May appear overexposed or glowing</span>
+                        <div class="info-item">
+                            <span class="info-label">Room:</span>
+                            <span class="info-value">Office</span>
                         </div>
-                        <div class="check-item">
-                            <span class="check-type">Ears</span>
-                            <span class="check-result">May appear radiant or light-emitting</span>
+                        <div class="info-item">
+                            <span class="info-label">Type:</span>
+                            <span class="info-value">Visitor</span>
                         </div>
                     </div>
 
-                    <div class="identification-result">
-                        <h3>Identification Result</h3>
-                        <p><strong>Species:</strong> Light Entity (high probability based on characteristics)</p>
-                        <p><strong>Status:</strong> RevealRandom (true nature may be revealed through conversation)</p>
+                    <!-- Quick Navigation -->
+                    <div class="quick-nav">
+                        <h3>Quick Navigation</h3>
+                        <ul>
+                            <li><a href="#overview">Overview</a>
+                            <li><a href="#background">Background Story</a>
+                            <li><a href="#identification">Identification</a>
+                            <li><a href="#behavior">Behavior Patterns</a>
+                            <li><a href="#relationships">Relationships</a>
+                            <li><a href="#strategy">Strategy</a>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </td>
 
-            <!-- Behavior Patterns Section -->
+                <!-- 右侧内容区域 - 明确设置宽度 -->
+                <td style="width: calc(100% - 320px - 2rem); vertical-align: top; padding-left: 2rem; min-width: 800px;">
+                    <!-- Overview Section -->
+                    <section id="overview" class="character-section">
+                        <h2>Character Overview</h2>
+                        <p>The Bandana Guy is a visitor who presents himself with a casual, relaxed appearance. His bandana accessory gives him a distinctive look, and his approachable demeanor makes him seem less threatening than other characters.</p>
+
+                        <div class="character-traits">
+                            <div class="trait">
+                                <h4>Casual Appearance</h4>
+                                <p>Dressed informally with a bandana, giving a relaxed impression</p>
+                            </div>
+                            <div class="trait">
+                                <h4>Approachable</h4>
+                                <p>Maintains a friendly, easy-going attitude in interactions</p>
+                            </div>
+                            <div class="trait">
+                                <h4>Non-threatening</h4>
+                                <p>Presents himself as harmless and unassuming</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Background Story Section -->
+                    <section id="background" class="character-section">
+                        <h2>Background Story</h2>
+                        <div class="background-content">
+                            <h3>Everyday Appearance</h3>
+                            <p>The Bandana Guy appears to be an ordinary person with casual attire. His bandana could suggest various backgrounds - from outdoor work to fashion statement to practical purposes.</p>
+
+                            <h3>Purpose for Visiting</h3>
+                            <p>His reasons for seeking entry may vary, but his casual approach suggests he might be seeking shelter, help, or simply passing through. The bandana could be hiding something or could be part of his genuine appearance.</p>
+
+                            <h3>Behavioral Traits</h3>
+                            <p>He maintains a relaxed demeanor that can make others feel at ease, but this casual attitude might be masking deeper intentions or hiding his true nature.</p>
+                        </div>
+                    </section>
+
+                    <!-- Identification Section -->
+                    <section id="identification" class="character-section">
+                        <h2>Identification Guide</h2>
+                        <div class="identification-checks">
+                            <h3>Physical Checks</h3>
+                            <div class="check-items">
+                                <div class="check-item">
+                                    <span class="check-type">Teeth</span>
+                                    <span class="check-result">Human appearance</span>
+                                </div>
+                                <div class="check-item">
+                                    <span class="check-type">Hands</span>
+                                    <span class="check-result">Normal human hands</span>
+                                </div>
+                                <div class="check-item">
+                                    <span class="check-type">Eyes</span>
+                                    <span class="check-result">Human-like eyes</span>
+                                </div>
+                                <div class="check-item">
+                                    <span class="check-type">Armpits</span>
+                                    <span class="check-result">No abnormalities detected</span>
+                                </div>
+                                <div class="check-item">
+                                    <span class="check-type">Photo</span>
+                                    <span class="check-result">Matches human appearance</span>
+                                </div>
+                                <div class="check-item">
+                                    <span class="check-type">Ears</span>
+                                    <span class="check-result">Normal human ears</span>
+                                </div>
+                            </div>
+
+                            <div class="identification-result">
+                                <h3>Identification Result</h3>
+                                <p><strong>Species:</strong> Human (based on physical examination)</p>
+                                <p><strong>Status:</strong> RevealRandom (true nature may be revealed through story progression)</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Behavior Patterns Section -->
             <section id="behavior" class="character-section">
                 <h2>Behavior Patterns</h2>
                 <div class="behavior-patterns">
                     <div class="pattern">
-                        <h4>Overwhelming Positivity</h4>
-                        <p>Displays relentless optimism that can feel artificial or unsettling</p>
+                        <h4>Casual Conversation</h4>
+                        <p>Engages in relaxed, informal dialogue</p>
                     </div>
                     <div class="pattern">
-                        <h4>Light Emission</h4>
-                        <p>May literally glow or emit light, especially in dark environments</p>
+                        <h4>Non-aggressive Approach</h4>
+                        <p>Avoids confrontational or threatening behavior</p>
                     </div>
                     <div class="pattern">
-                        <h4>Temperature Effects</h4>
-                        <p>Presence often accompanied by unusual warmth or heat</p>
+                        <h4>Adaptive Responses</h4>
+                        <p>Adjusts his approach based on the protagonist's reactions</p>
                     </div>
                     <div class="pattern">
-                        <h4>Shadow Avoidance</h4>
-                        <p>Seems uncomfortable with or avoids dark areas and shadows</p>
+                        <h4>Bandana Significance</h4>
+                        <p>The bandana may have symbolic or practical importance</p>
                     </div>
                 </div>
             </section>
@@ -256,19 +283,15 @@
                 <div class="relationships">
                     <div class="relationship">
                         <h4>The Protagonist</h4>
-                        <p>Views as someone in need of enlightenment, relationship based on overwhelming positivity</p>
+                        <p>Attempts to establish a friendly, casual relationship</p>
                     </div>
                     <div class="relationship">
-                        <h4>Other Light Beings</h4>
-                        <p>May speak of similar entities drawn to darkness</p>
+                        <h4>Other Visitors</h4>
+                        <p>May interact differently with other characters based on their nature</p>
                     </div>
                     <div class="relationship">
-                        <h4>The Sun</h4>
-                        <p>Claims connection to solar energy and consciousness</p>
-                    </div>
-                    <div class="relationship">
-                        <h4>Darkness</h4>
-                        <p>Appears driven to combat darkness wherever found</p>
+                        <h4>Authority Figures</h4>
+                        <p>Shows typical casual attitude toward rules and regulations</p>
                     </div>
                 </div>
             </section>
@@ -278,29 +301,31 @@
                 <h2>Interaction Strategy</h2>
                 <div class="strategy-tips">
                     <div class="tip">
-                        <h4>Initial Approach</h4>
-                        <p>Prepare for overwhelming positivity, maintain skepticism</p>
+                        <h4>Observe Closely</h4>
+                        <p>Pay attention to his casual demeanor - it might be hiding something</p>
                     </div>
                     <div class="tip">
-                        <h4>Light Testing</h4>
-                        <p>Observe any actual light emission or unusual brightness</p>
+                        <h4>Question Motives</h4>
+                        <p>Consider why he's being so casual and approachable</p>
                     </div>
                     <div class="tip">
-                        <h4>Temperature Awareness</h4>
-                        <p>Monitor temperature changes in his presence</p>
+                        <h4>Check Bandana</h4>
+                        <p>The bandana might be hiding unusual features</p>
                     </div>
                     <div class="tip">
-                        <h4>Darkness Test</h4>
-                        <p>Test reactions to darkness or shadowed areas</p>
+                        <h4>Test Reactions</h4>
+                        <p>See how he responds to different types of interactions</p>
                     </div>
                 </div>
             </section>
 
             <!-- Back to Guide Link -->
             <div class="back-to-guide">
-                <a href="../../guide.html#characters" class="btn-back">鈫?Back to Character Guide</a>
+                <a href="../../guide.html#characters" class="btn-back">← Back to Character Guide</a>
             </div>
-        </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <!-- Footer -->
@@ -314,18 +339,19 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="../index.html">Home</a>
-                    <li><a href="../../guide.html">Game Guide</a>
-                    <li><a href="../../guide.html#characters">Characters</a>
+                    <li><a href="../characters.html">Characters</a>
+                    <li><a href="../achievements.html">Achievements</a>
+                    <li><a href="../ending.html">Endings</a>
                     <li><a href="../download.html">Download</a>
                 </div>
             </div>
             <div class="footer-section">
-                <h4>Resources</h4>
+                <h4>Game Content</h4>
                 <ul>
-                    <li><a href="../../guide.html#achievements">Achievements</a>
-                    <li><a href="../../guide.html#character-scripts">Character Scripts</a>
-                    <li><a href="../../guide.html#edible-items">Edible Items</a>
-                    <li><a href="../community.html">Community</a>
+                    <li><a href="../characters.html">Character Identification Guide</a>
+                    <li><a href="../achievements.html">Complete Achievement List</a>
+                    <li><a href="../ending.html">All Game Endings</a>
+                    <li><a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" target="_blank">Steam Store</a>
                 </div>
             </div>
         </div>

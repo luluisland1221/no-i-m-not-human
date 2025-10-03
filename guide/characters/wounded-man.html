@@ -31,9 +31,33 @@
         }
         .character-container {
             background: #000 !important;
+            max-width: 1400px !important;
+            margin: 0 auto !important;
+            padding: 2rem !important;
         }
         .character-main {
             background: #000 !important;
+        }
+
+        /* 覆盖原有的grid布局，改用table布局 */
+        .character-container {
+            display: block !important;
+        }
+
+        /* 确保右侧内容有合理宽度 */
+        .character-section {
+            max-width: none !important;
+            width: 100% !important;
+            background: rgba(0, 0, 0, 0.2) !important;
+            border-radius: 12px !important;
+            padding: 2rem !important;
+            margin-bottom: 2rem !important;
+            border: 1px solid rgba(0, 255, 136, 0.1) !important;
+        }
+
+        /* 确保table中的右侧td充分利用空间 */
+        table {
+            table-layout: fixed !important;
         }
     </style>
 
@@ -43,10 +67,9 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Wounded Man",
-        "alternateName": "Fugitive",
-        "description": "A mysterious visitor claiming to be shot by FEMA while fleeing quarantine zone",
+        "description": "A casual character with a relaxed demeanor, often appearing approachable and easy-going",
         "gender": "Male",
-        "knowsAbout": ["FEMA", "quarantine zone", "Vigilante", "survival"]
+        "knowsAbout": ["Casual encounters", "Relaxed interactions", "Approachable behavior"]
     }
     </script>
 </head>
@@ -57,22 +80,26 @@
             <div class="nav-logo">
                 <h1><a href="../../index.html" style="color: #00ff88; text-decoration: none;">No, I'm not a Human</a></h1>
             </div>
-            <div class="nav-menu">
-                <a href="../../index.html" class="nav-link">Home</a>
-                <a href="../../guide.html" class="nav-link active">Guide</a>
-                <a href="../../characters.html" class="nav-link">Characters</a>
-                <a href="../../achievements.html" class="nav-link">Achievements</a>
-                <a href="../../ending.html" class="nav-link">Endings</a>
-                <a href="../../download.html" class="nav-link">Download</a>
-            </div>
-                
-                
-                    <a href="../download.html" class="nav-link">Download</a>
-                
-                
-                    <a href="../community.html" class="nav-link">Community</a>
-                
-            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../guide.html" class="nav-link">Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../characters.html" class="nav-link active">Characters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../achievements.html" class="nav-link">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../ending.html" class="nav-link">Endings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../download.html" class="nav-link">Download</a>
+                </li>
+            </ul>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -91,167 +118,161 @@
 
     <!-- Character Main Content -->
     <div class="character-container">
-        <div class="character-sidebar">
-            <!-- Character Card -->
-            <div class="character-card">
-                <div class="character-avatar">
-                    <img src="https://images.noimnothuman.xyz/assets/images/characters/WOUNDED_MAN_-_VISITOR_-_TEETH.png" alt="Wounded Man" class="char-image">
-                </div>
-            </div>
+        <table style="width: 100%; max-width: 1400px; border-collapse: collapse; vertical-align: top; margin: 0 auto;">
+            <tr>
+                <!-- 左侧角色信息区域 -->
+                <td style="width: 320px; padding-right: 2rem; vertical-align: top;">
+                    <!-- Character Card -->
+                    <div class="character-card">
+                        <div class="character-avatar">
+                            <img src="https://images.noimnothuman.xyz/assets/images/characters/WOUNDED_MAN_-_VISITOR_-_TEETH.png" alt="Wounded Man" class="char-image">
+                        </div>
+                    </div>
 
-            <!-- Character Information -->
-            <div class="character-info">
+                    <!-- Character Information -->
+                    <div class="character-info">
                 <h3>Basic Information</h3>
                 <div class="info-item">
                     <span class="info-label">Name:</span>
                     <span class="info-value">Wounded Man</span>
                 </div>
-                <div class="info-item">
-                    <span class="info-label">Aliases:</span>
-                    <span class="info-value">Fugitive</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Species:</span>
-                    <span class="info-value">RevealRandom</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Gender:</span>
-                    <span class="info-value">Male</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Occupation:</span>
-                    <span class="info-value">Randomized</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Debut:</span>
-                    <span class="info-value">Randomized</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Room:</span>
-                    <span class="info-value">Office</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Type:</span>
-                    <span class="info-value">Visitor</span>
-                </div>
-            </div>
-
-            <!-- Quick Navigation -->
-            <div class="quick-nav">
-                <h3>Quick Navigation</h3>
-                <ul>
-                    <li><a href="#overview">Overview</a>
-                    <li><a href="#background">Background Story</a>
-                    <li><a href="#identification">Identification</a>
-                    <li><a href="#behavior">Behavior Patterns</a>
-                    <li><a href="#relationships">Relationships</a>
-                    <li><a href="#strategy">Strategy</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="character-main">
-            <!-- Overview Section -->
-            <section id="overview" class="character-section">
-                <h2>Character Overview</h2>
-                <p>The Wounded Man is a mysterious visitor who appears at the protagonist's door claiming to have been shot by FEMA employees while fleeing a quarantine zone. His story is complex and evolves over multiple conversations, revealing layers of deception and truth.</p>
-
-                <div class="character-traits">
-                    <div class="trait">
-                        <h4>First Impression</h4>
-                        <p>Initially presents as a victim of FEMA violence, seeking shelter and medical help</p>
-                    </div>
-                    <div class="trait">
-                        <h4>Key Behavior</h4>
-                        <p>Attempts to bribe protagonist with consumable items if denied entry</p>
-                    </div>
-                    <div class="trait">
-                        <h4>Story Evolution</h4>
-                        <p>His narrative becomes inconsistent over time, revealing hidden truths</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Background Story Section -->
-            <section id="background" class="character-section">
-                <h2>Background Story</h2>
-                <div class="background-content">
-                    <h3>The Initial Story</h3>
-                    <p>At the door, he tells the Protagonist that he was shot by a FEMA employee while fleeing the quarantine zone. He was sent here by his neighbor that was convinced he was a Visitor.</p>
-
-                    <h3>The Revealed Truth</h3>
-                    <p>After several days of talking, his story becomes inconsistent, making the Protagonist suspicious. He finally admits he had been partially lying. He reveals that:</p>
-                    <ul>
-                        <li>He was indeed sent to FEMA by his neighbor
-                        <li>He escaped the facility without being hurt
-                        <li>Having no place to return, since his neighbor already saw a threat in him
-                        <li>He wandered the streets looking for shelter
-                    </div>
-
-                    <h3>The Vigilante Encounter</h3>
-                    <p>He eventually met his actual shooter: a guy with a "shotgun on his back, necklace of teeth and fingers." This refers to the Vigilante, the same character that terrorizes the Protagonist's neighborhood.</p>
-                </div>
-            </section>
-
-            <!-- Identification Section -->
-            <section id="identification" class="character-section">
-                <h2>Identification Guide</h2>
-                <div class="identification-checks">
-                    <h3>Physical Checks</h3>
-                    <div class="check-items">
-                        <div class="check-item">
-                            <span class="check-type">Teeth</span>
-                            <span class="check-result">Human appearance</span>
+                        <div class="info-item">
+                            <span class="info-label">Species:</span>
+                            <span class="info-value">RevealRandom</span>
                         </div>
-                        <div class="check-item">
-                            <span class="check-type">Hands</span>
-                            <span class="check-result">Normal human hands</span>
+                        <div class="info-item">
+                            <span class="info-label">Gender:</span>
+                            <span class="info-value">Male</span>
                         </div>
-                        <div class="check-item">
-                            <span class="check-type">Eyes</span>
-                            <span class="check-result">Human-like eyes</span>
+                        <div class="info-item">
+                            <span class="info-label">Occupation:</span>
+                            <span class="info-value">Randomized</span>
                         </div>
-                        <div class="check-item">
-                            <span class="check-type">Armpits</span>
-                            <span class="check-result">No abnormalities detected</span>
+                        <div class="info-item">
+                            <span class="info-label">Debut:</span>
+                            <span class="info-value">Randomized</span>
                         </div>
-                        <div class="check-item">
-                            <span class="check-type">Photo</span>
-                            <span class="check-result">Matches human appearance</span>
+                        <div class="info-item">
+                            <span class="info-label">Room:</span>
+                            <span class="info-value">Office</span>
                         </div>
-                        <div class="check-item">
-                            <span class="check-type">Ears</span>
-                            <span class="check-result">Normal human ears</span>
+                        <div class="info-item">
+                            <span class="info-label">Type:</span>
+                            <span class="info-value">Visitor</span>
                         </div>
                     </div>
 
-                    <div class="identification-result">
-                        <h3>Identification Result</h3>
-                        <p><strong>Species:</strong> Human (based on physical examination)</p>
-                        <p><strong>Status:</strong> RevealRandom (true nature may be revealed through story progression)</p>
+                    <!-- Quick Navigation -->
+                    <div class="quick-nav">
+                        <h3>Quick Navigation</h3>
+                        <ul>
+                            <li><a href="#overview">Overview</a>
+                            <li><a href="#background">Background Story</a>
+                            <li><a href="#identification">Identification</a>
+                            <li><a href="#behavior">Behavior Patterns</a>
+                            <li><a href="#relationships">Relationships</a>
+                            <li><a href="#strategy">Strategy</a>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </td>
 
-            <!-- Behavior Patterns Section -->
+                <!-- 右侧内容区域 - 明确设置宽度 -->
+                <td style="width: calc(100% - 320px - 2rem); vertical-align: top; padding-left: 2rem; min-width: 800px;">
+                    <!-- Overview Section -->
+                    <section id="overview" class="character-section">
+                        <h2>Character Overview</h2>
+                        <p>The Bandana Guy is a visitor who presents himself with a casual, relaxed appearance. His bandana accessory gives him a distinctive look, and his approachable demeanor makes him seem less threatening than other characters.</p>
+
+                        <div class="character-traits">
+                            <div class="trait">
+                                <h4>Casual Appearance</h4>
+                                <p>Dressed informally with a bandana, giving a relaxed impression</p>
+                            </div>
+                            <div class="trait">
+                                <h4>Approachable</h4>
+                                <p>Maintains a friendly, easy-going attitude in interactions</p>
+                            </div>
+                            <div class="trait">
+                                <h4>Non-threatening</h4>
+                                <p>Presents himself as harmless and unassuming</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Background Story Section -->
+                    <section id="background" class="character-section">
+                        <h2>Background Story</h2>
+                        <div class="background-content">
+                            <h3>Everyday Appearance</h3>
+                            <p>The Bandana Guy appears to be an ordinary person with casual attire. His bandana could suggest various backgrounds - from outdoor work to fashion statement to practical purposes.</p>
+
+                            <h3>Purpose for Visiting</h3>
+                            <p>His reasons for seeking entry may vary, but his casual approach suggests he might be seeking shelter, help, or simply passing through. The bandana could be hiding something or could be part of his genuine appearance.</p>
+
+                            <h3>Behavioral Traits</h3>
+                            <p>He maintains a relaxed demeanor that can make others feel at ease, but this casual attitude might be masking deeper intentions or hiding his true nature.</p>
+                        </div>
+                    </section>
+
+                    <!-- Identification Section -->
+                    <section id="identification" class="character-section">
+                        <h2>Identification Guide</h2>
+                        <div class="identification-checks">
+                            <h3>Physical Checks</h3>
+                            <div class="check-items">
+                                <div class="check-item">
+                                    <span class="check-type">Teeth</span>
+                                    <span class="check-result">Human appearance</span>
+                                </div>
+                                <div class="check-item">
+                                    <span class="check-type">Hands</span>
+                                    <span class="check-result">Normal human hands</span>
+                                </div>
+                                <div class="check-item">
+                                    <span class="check-type">Eyes</span>
+                                    <span class="check-result">Human-like eyes</span>
+                                </div>
+                                <div class="check-item">
+                                    <span class="check-type">Armpits</span>
+                                    <span class="check-result">No abnormalities detected</span>
+                                </div>
+                                <div class="check-item">
+                                    <span class="check-type">Photo</span>
+                                    <span class="check-result">Matches human appearance</span>
+                                </div>
+                                <div class="check-item">
+                                    <span class="check-type">Ears</span>
+                                    <span class="check-result">Normal human ears</span>
+                                </div>
+                            </div>
+
+                            <div class="identification-result">
+                                <h3>Identification Result</h3>
+                                <p><strong>Species:</strong> Human (based on physical examination)</p>
+                                <p><strong>Status:</strong> RevealRandom (true nature may be revealed through story progression)</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Behavior Patterns Section -->
             <section id="behavior" class="character-section">
                 <h2>Behavior Patterns</h2>
                 <div class="behavior-patterns">
                     <div class="pattern">
-                        <h4>Bribery Attempt</h4>
-                        <p>If denied entry, will offer consumable items as bribe</p>
+                        <h4>Casual Conversation</h4>
+                        <p>Engages in relaxed, informal dialogue</p>
                     </div>
                     <div class="pattern">
-                        <h4>Story Inconsistency</h4>
-                        <p>Narrative changes over multiple conversations, revealing deception</p>
+                        <h4>Non-aggressive Approach</h4>
+                        <p>Avoids confrontational or threatening behavior</p>
                     </div>
                     <div class="pattern">
-                        <h4>Survival Instinct</h4>
-                        <p>Shows desperation and willingness to do whatever it takes to survive</p>
+                        <h4>Adaptive Responses</h4>
+                        <p>Adjusts his approach based on the protagonist's reactions</p>
                     </div>
                     <div class="pattern">
-                        <h4>Vigilante Connection</h4>
-                        <p>Has encountered the Vigilante, indicating deeper story involvement</p>
+                        <h4>Bandana Significance</h4>
+                        <p>The bandana may have symbolic or practical importance</p>
                     </div>
                 </div>
             </section>
@@ -262,19 +283,15 @@
                 <div class="relationships">
                     <div class="relationship">
                         <h4>The Protagonist</h4>
-                        <p>Seeks shelter and help, relationship based on deception and eventual truth-telling</p>
+                        <p>Attempts to establish a friendly, casual relationship</p>
                     </div>
                     <div class="relationship">
-                        <h4>Neighbor</h4>
-                        <p>The person who sent him to FEMA, convinced he was a Visitor</p>
+                        <h4>Other Visitors</h4>
+                        <p>May interact differently with other characters based on their nature</p>
                     </div>
                     <div class="relationship">
-                        <h4>The Vigilante</h4>
-                        <p>Met his actual shooter, establishing connection to neighborhood threats</p>
-                    </div>
-                    <div class="relationship">
-                        <h4>FEMA</h4>
-                        <p>Claims to have been in their custody, though this was partially fabricated</p>
+                        <h4>Authority Figures</h4>
+                        <p>Shows typical casual attitude toward rules and regulations</p>
                     </div>
                 </div>
             </section>
@@ -284,29 +301,31 @@
                 <h2>Interaction Strategy</h2>
                 <div class="strategy-tips">
                     <div class="tip">
-                        <h4>Initial Approach</h4>
-                        <p>Listen to his story but remain skeptical of inconsistencies</p>
+                        <h4>Observe Closely</h4>
+                        <p>Pay attention to his casual demeanor - it might be hiding something</p>
                     </div>
                     <div class="tip">
-                        <h4>Multiple Conversations</h4>
-                        <p>Engage in several talks to reveal the true story</p>
+                        <h4>Question Motives</h4>
+                        <p>Consider why he's being so casual and approachable</p>
                     </div>
                     <div class="tip">
-                        <h4>Decision Making</h4>
-                        <p>Consider his connection to the Vigilante when deciding his fate</p>
+                        <h4>Check Bandana</h4>
+                        <p>The bandana might be hiding unusual features</p>
                     </div>
                     <div class="tip">
-                        <h4>Resource Management</h4>
-                        <p>He may offer valuable items if you engage with his bribery attempts</p>
+                        <h4>Test Reactions</h4>
+                        <p>See how he responds to different types of interactions</p>
                     </div>
                 </div>
             </section>
 
             <!-- Back to Guide Link -->
             <div class="back-to-guide">
-                <a href="../../guide.html#characters" class="btn-back">鈫?Back to Character Guide</a>
+                <a href="../../guide.html#characters" class="btn-back">← Back to Character Guide</a>
             </div>
-        </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <!-- Footer -->
@@ -320,18 +339,19 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="../index.html">Home</a>
-                    <li><a href="../../guide.html">Game Guide</a>
-                    <li><a href="../../guide.html#characters">Characters</a>
+                    <li><a href="../characters.html">Characters</a>
+                    <li><a href="../achievements.html">Achievements</a>
+                    <li><a href="../ending.html">Endings</a>
                     <li><a href="../download.html">Download</a>
                 </div>
             </div>
             <div class="footer-section">
-                <h4>Resources</h4>
+                <h4>Game Content</h4>
                 <ul>
-                    <li><a href="../../guide.html#achievements">Achievements</a>
-                    <li><a href="../../guide.html#character-scripts">Character Scripts</a>
-                    <li><a href="../../guide.html#edible-items">Edible Items</a>
-                    <li><a href="../community.html">Community</a>
+                    <li><a href="../characters.html">Character Identification Guide</a>
+                    <li><a href="../achievements.html">Complete Achievement List</a>
+                    <li><a href="../ending.html">All Game Endings</a>
+                    <li><a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" target="_blank">Steam Store</a>
                 </div>
             </div>
         </div>
