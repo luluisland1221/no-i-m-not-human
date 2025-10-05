@@ -4382,10 +4382,15 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-/* Giscus customization */
+/* Utterances customization */
+.comments-container .utterances {
+    max-width: 100%;
+}
+
 .comments-container iframe {
     border-radius: 10px;
     overflow: hidden;
+    background: transparent;
 }
 
 /* Responsive design for comments */
