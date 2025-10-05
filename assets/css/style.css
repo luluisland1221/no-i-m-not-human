@@ -4349,3 +4349,16 @@ body {
     }
 }
 }
+.hero-buttons .btn-primary {
+    background: linear-gradient(135deg, #00ff88, #0088ff);
+    color: #000;
+    border: 2px solid #00ff88;
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+}
+
+.hero-buttons .btn-primary:hover {
+    background: transparent;
+    color: #00ff88;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 255, 136, 0.5);
+}
