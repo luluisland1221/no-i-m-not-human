@@ -1,7 +1,15 @@
 # No, I'm not a Human - Ultimate Game Guide
 
-[![Website](https://img.shields.io/badge/Website-noimnothuman.xyz-00ff88?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMCAydjEyTDIgMjJ2LTEyYzAtMS4xLjktMiAyLTJoNnptMCAxNmgtNHYxMGg0djEwWk0xNCAydjEyTDYgMjJ2LTEyYzAtMS4xLjktMiAyLTJoNloiLz48L3N2Zz4=)](https://noimnothuman.xyz/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-thebadge&logo=github)](https://github.com/luluisland1221/no-i-m-not-human)
+## 🌐 Quick Links
+
+### 🚀 **[🌐 Visit Website - noimnothuman.xyz](https://noimnothuman.xyz/)**
+
+### 📁 **[💻 GitHub Repository](https://github.com/luluisland1221/no-i-m-not-human)**
+
+---
+
+[![Website](https://img.shields.io/badge/🌐_Website-noimnothuman.xyz-00ff88?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMCAydjEyTDIgMjJ2LTEyYzAtMS4xLjktMiAyLTJoNnptMCAxNmgtNHYxMGg0djEwWk0xNCAydjEyTDYgMjJ2LTEyYzAtMS4xLjktMiAyLTJoNloiLz48L3N2Zz4=)](https://noimnothuman.xyz/)
+[![GitHub](https://img.shields.io/badge/💻_GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/luluisland1221/no-i-m-not-human)
 
 The most comprehensive guide for "No, I'm not a Human" - a paranoia-driven horror survival game where you must identify Visitors disguised as humans during an apocalyptic scenario.
 
