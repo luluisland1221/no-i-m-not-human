@@ -4349,16 +4349,49 @@ body {
     }
 }
 }
+/* Hero buttons gradient styling - override default btn-primary */
 .hero-buttons .btn-primary {
-    background: linear-gradient(135deg, #00ff88, #0088ff);
-    color: #000;
-    border: 2px solid #00ff88;
+    background: linear-gradient(135deg, #00ff88, #0088ff) !important;
+    color: #000 !important;
+    border: 2px solid #00ff88 !important;
     box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
 }
 
 .hero-buttons .btn-primary:hover {
-    background: transparent;
-    color: #00ff88;
+    background: transparent !important;
+    color: #00ff88 !important;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 255, 136, 0.5);
+}
+
+/* Comments Section Styles */
+.section-subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.comments-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Giscus customization */
+.comments-container iframe {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Responsive design for comments */
+@media (max-width: 768px) {
+    .comments-container {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
 }
