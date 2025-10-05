@@ -1,3 +1,0 @@
-# Google AdSense verification file
-# For publisher ID: pub-6031811659039199
-google.com, pub-6031811659039199, DIRECT, f08c47fec0942fa0
