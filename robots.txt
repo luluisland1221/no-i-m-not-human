@@ -9,7 +9,7 @@ Allow: /download/
 Allow: /features/
 
 # Sitemap location
-Sitemap: https://noimnothuman.xyz/sitemap.xml
+Sitemap: https://noimnothuman.xyz/sitemap.txt
 
 # Crawl delay (optional)
 Crawl-delay: 1
