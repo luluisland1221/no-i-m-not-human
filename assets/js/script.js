@@ -113,9 +113,11 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Typewriter effect
+    // Typewriter effect - only on index.html
     const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
+    const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/');
+
+    if (heroTitle && isIndexPage) {
         const text = heroTitle.textContent;
         heroTitle.textContent = '';
         let index = 0;
