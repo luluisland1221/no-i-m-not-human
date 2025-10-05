@@ -1,0 +1,8 @@
+            <div class="nav-menu">
+                <a href="../../index.html" class="nav-link">Home</a>
+                <a href="../../guide.html" class="nav-link active">Guide</a>
+                <a href="../../characters.html" class="nav-link">Characters</a>
+                <a href="../../achievements.html" class="nav-link">Achievements</a>
+                <a href="../../ending.html" class="nav-link">Endings</a>
+                <a href="../../download.html" class="nav-link">Download</a>
+            </div>

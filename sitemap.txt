@@ -20,6 +20,7 @@ https://noimnothuman.xyz/guide.html#night12
 https://noimnothuman.xyz/guide.html#night14
 https://noimnothuman.xyz/guide.html#strategy
 https://noimnothuman.xyz/download.html
+https://noimnothuman.xyz/about.html
 
 # Legacy and additional pages
 https://noimnothuman.xyz/features/

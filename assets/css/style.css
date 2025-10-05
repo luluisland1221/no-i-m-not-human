@@ -1782,8 +1782,8 @@ body {
 
 .guide-main-content .guide-section.dark-section {
     background: #000000;
-    margin: 0;
     width: 100%;
+    padding: 1rem 0;
 }
 
 .guide-main-content .guide-section .container {
@@ -2302,7 +2302,7 @@ body {
 
 .character-container {
     display: grid;
-    grid-template-columns: 380px 1fr;
+    grid-template-columns: 320px 1fr;
     gap: 2rem;
     max-width: 1400px;
     margin: 0 auto;
@@ -2310,8 +2310,6 @@ body {
 }
 
 .character-sidebar {
-    position: sticky;
-    top: 100px;
     height: fit-content;
 }
 
@@ -2324,7 +2322,7 @@ body {
     backdrop-filter: blur(10px);
     text-align: center;
     width: 100%;
-    height: 300px;
+    height: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2349,7 +2347,7 @@ body {
     background: rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(0, 255, 136, 0.3);
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 1.2rem;
     margin-bottom: 1.5rem;
     backdrop-filter: blur(10px);
 }
@@ -2647,12 +2645,7 @@ body {
 
 @media (max-width: 768px) {
     .character-container {
-        grid-template-columns: 1fr;
         padding: 1rem;
-    }
-
-    .character-sidebar {
-        position: static;
     }
 
     .character-hero {
@@ -3545,23 +3538,12 @@ body {
     text-align: center;
     margin: 2rem 0;
     padding: 1rem;
-    background: rgba(0, 20, 40, 0.6);
-    border: 1px solid #00ff88;
-    border-radius: 12px;
-    backdrop-filter: blur(5px);
 }
 
 .guide-image {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.guide-image:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 25px rgba(0, 255, 136, 0.5);
 }
 
 /* Guide Intro Styles */
