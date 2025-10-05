@@ -1,5 +1,5 @@
 # Robots.txt for noimnothuman.xyz
-# Last updated: 2025-09-26
+# Last updated: 2025-10-05
 
 User-agent: *
 Allow: /
@@ -7,6 +7,22 @@ Allow: /assets/
 Allow: /community/
 Allow: /download/
 Allow: /features/
+
+# Allow Google services specifically
+User-agent: Googlebot
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
 
 # Sitemap location
 Sitemap: https://noimnothuman.xyz/sitemap.txt
