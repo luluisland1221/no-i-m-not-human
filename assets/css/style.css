@@ -4044,3 +4044,308 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+
+/* Contact Page Styles */
+.content-section {
+    background: #000000 !important;
+    color: #ccc;
+    padding: 4rem 0;
+}
+
+.content-section.dark-section {
+    background: #000000 !important;
+    color: #ccc;
+}
+
+.content-section .container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px;
+    background: transparent;
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #00ff88;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.resource-card {
+    background: rgba(0, 255, 136, 0.1);
+    border: 1px solid #00ff88;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.resource-card:hover {
+    background: rgba(0, 255, 136, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+}
+
+.resource-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.resource-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.resource-card p {
+    color: #ccc;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.resource-link {
+    display: inline-block;
+    color: #00ff88;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.resource-link:hover {
+    color: #00ffaa;
+    text-decoration: underline;
+}
+
+.contribute-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contribute-text h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.contribute-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contribute-list {
+    margin: 3rem 0;
+}
+
+.contribute-item {
+    background: rgba(0, 255, 136, 0.05);
+    border-left: 4px solid #00ff88;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.contribute-item h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.contribute-item p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.contribute-cta {
+    background: rgba(0, 255, 136, 0.1);
+    border: 1px solid #00ff88;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.contribute-cta h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contribute-cta p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.faq-item {
+    background: rgba(0, 255, 136, 0.05);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.faq-item h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.faq-item p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.faq-item strong {
+    color: #00ff88;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.related-item {
+    background: rgba(0, 255, 136, 0.05);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.related-item h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.related-item ul {
+    list-style: none;
+}
+
+.related-item li {
+    margin-bottom: 0.8rem;
+}
+
+.related-item a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.related-item a:hover {
+    color: #00ff88;
+    text-decoration: underline;
+}
+
+.updates-timeline {
+    max-width: 800px;
+    margin: 3rem auto 0;
+}
+
+.update-item {
+    display: flex;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.update-item:last-child {
+    border-bottom: none;
+}
+
+.update-date {
+    flex: 0 0 150px;
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    font-weight: 600;
+    padding-top: 0.2rem;
+}
+
+.update-content {
+    flex: 1;
+}
+
+.update-content h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.update-content p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Contact Page Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .related-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contribute-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .contribute-item {
+        padding: 1rem;
+    }
+
+    .faq-item {
+        padding: 1.5rem;
+    }
+
+    .related-item {
+        padding: 1.5rem;
+    }
+
+    .update-item {
+        flex-direction: column;
+    }
+
+    .update-date {
+        margin-bottom: 0.5rem;
+        flex: none;
+    }
+}
+}

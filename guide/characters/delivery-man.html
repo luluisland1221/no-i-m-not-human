@@ -34,11 +34,17 @@
             max-width: 1400px !important;
             margin: 0 auto !important;
             padding: 2rem !important;
-            display: block !important;
         }
         .character-main {
             background: #000 !important;
         }
+
+        /* 覆盖原有的grid布局，改用table布局 */
+        .character-container {
+            display: block !important;
+        }
+
+        /* 确保右侧内容有合理宽度 */
         .character-section {
             max-width: none !important;
             width: 100% !important;
@@ -48,6 +54,11 @@
             margin-bottom: 2rem !important;
             border: 1px solid rgba(0, 255, 136, 0.1) !important;
         }
+
+        /* 确保table中的右侧td充分利用空间 */
+        table {
+            table-layout: fixed !important;
+        }
     </style>
 
     <!-- Structured Data -->
@@ -56,10 +67,9 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Delivery Man",
-        "alternateName": "Package Delivery Driver",
-        "description": "A delivery driver with access to multiple locations and knowledge of local addresses and residents",
+        "description": "A delivery driver whose job gives him access to multiple residences and knowledge of local residents, making him either a legitimate worker or a perfect spy",
         "gender": "Male",
-        "knowsAbout": ["package delivery", "local addresses", "logistics", "resident information"]
+        "knowsAbout": ["Package delivery", "Residential access", "Local knowledge", "Surveillance opportunities"]
     }
     </script>
 </head>
@@ -70,18 +80,7 @@
             <div class="nav-logo">
                 <h1><a href="../../index.html" style="color: #00ff88; text-decoration: none;">No, I'm not a Human</a></h1>
             </div>
-            <div class="nav-menu">
-                <a href="../../index.html" class="nav-link">Home</a>
-                <a href="../../guide.html" class="nav-link active">Guide</a>
-                <a href="../../characters.html" class="nav-link">Characters</a>
-                <a href="../../achievements.html" class="nav-link">Achievements</a>
-                <a href="../../ending.html" class="nav-link">Endings</a>
-                <a href="../../download.html" class="nav-link">Download</a>
-            </div>
-                
-                
-                
-                
+<ul class="nav-menu">                <li class="nav-item">                    <a href="../../index.html" class="nav-link">Home</a>                </li>                <li class="nav-item">                    <a href="../../characters.html" class="nav-link active">Characters</a>                </li>                <li class="nav-item">                    <a href="../../achievements.html" class="nav-link">Achievements</a>                </li>                <li class="nav-item">                    <a href="../../ending.html" class="nav-link">Endings</a>                </li>                <li class="nav-item">                    <a href="../../guide.html" class="nav-link">Guide</a>                </li>                <li class="nav-item">                    <a href="../../download.html" class="nav-link">Download</a>                </li>                <li class="nav-item">                    <a href="../../about.html" class="nav-link">About</a>                </li>                <li class="nav-item">                    <a href="../../contact.html" class="nav-link">Contact</a>                </li>            </ul>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -100,13 +99,25 @@
 
     <!-- Character Main Content -->
     <div class="character-container">
-        <div class="character-sidebar">
-            <!-- Character Card -->
-            <div class="character-card">
-                <div class="character-avatar">
-                    <img src="https://images.noimnothuman.xyz/assets/images/characters/DeliveryMan.png" alt="Delivery Man" class="char-image">
-                </div>
-            </div>
+        <table style="width: 100%; max-width: 1400px; border-collapse: collapse; vertical-align: top; margin: 0 auto;">
+            <tr>
+                <!-- 左侧角色信息区域 -->
+                <td style="width: 320px; padding-right: 2rem; vertical-align: top;">
+                    <!-- Character Card -->
+                    <div class="character-card">
+                        <div class="character-avatar">
+                            <img src="https://images.noimnothuman.xyz/assets/images/characters/AngryGuy.png" alt="Angry Guy" class="char-image">
+                        </div>
+                    </div>
+
+                    <!-- Character Information -->
+                    <div class="character-info">
+                        <h3>Basic Information</h3>
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Bandana Guy</span>
+                        </div>
+                        <div class="info-item">
 
             <!-- Character Information -->
             <div class="character-info">
@@ -114,36 +125,36 @@
                 <div class="info-item">
                     <span class="info-label">Name:</span>
                     <span class="info-value">Delivery Man</span>
-                </div>
+                </ul>
                 <div class="info-item">
                     <span class="info-label">Aliases:</span>
                     <span class="info-value">Package Delivery Driver, Courier</span>
-                </div>
+                </ul>
                 <div class="info-item">
                     <span class="info-label">Species:</span>
                     <span class="info-value">RevealRandom</span>
-                </div>
+                </ul>
                 <div class="info-item">
                     <span class="info-label">Gender:</span>
                     <span class="info-value">Male</span>
-                </div>
+                </ul>
                 <div class="info-item">
                     <span class="info-label">Occupation:</span>
                     <span class="info-value">Delivery Driver</span>
-                </div>
+                </ul>
                 <div class="info-item">
                     <span class="info-label">Debut:</span>
                     <span class="info-value">Randomized</span>
-                </div>
+                </ul>
                 <div class="info-item">
                     <span class="info-label">Room:</span>
                     <span class="info-value">Office</span>
-                </div>
+                </ul>
                 <div class="info-item">
                     <span class="info-label">Type:</span>
                     <span class="info-value">Visitor</span>
-                </div>
-            </div>
+                </ul>
+            </ul>
 
             <!-- Quick Navigation -->
             <div class="quick-nav">
@@ -155,9 +166,9 @@
                     <li><a href="#behavior">Behavior Patterns</a>
                     <li><a href="#relationships">Relationships</a>
                     <li><a href="#strategy">Strategy</a>
-                </div>
-            </div>
-        </div>
+                </ul>
+            </ul>
+        </ul>
 
         <div class="character-main">
             <!-- Overview Section -->
@@ -169,16 +180,16 @@
                     <div class="trait">
                         <h4>Professional Knowledge</h4>
                         <p>Demonstrates familiarity with delivery procedures, routes, and local addresses</p>
-                    </div>
+                    </ul>
                     <div class="trait">
                         <h4>Resident Information</h4>
                         <p>May have knowledge about various residents through delivery work</p>
-                    </div>
+                    </ul>
                     <div class="trait">
                         <h4>Access Privileges</h4>
                         <p>Claims to have legitimate reasons for being in multiple locations</p>
-                    </div>
-                </div>
+                    </ul>
+                </ul>
             </section>
 
             <!-- Background Story Section -->
@@ -193,7 +204,7 @@
 
                     <h3>The Questionable Motives</h3>
                     <p>Questions arise about why a delivery driver would need shelter. Is he facing legitimate trouble, or is his presence part of a larger investigation or reconnaissance mission?</p>
-                </div>
+                </ul>
             </section>
 
             <!-- Identification Section -->
@@ -205,35 +216,35 @@
                         <div class="check-item">
                             <span class="check-type">Teeth</span>
                             <span class="check-result">Normal human teeth</span>
-                        </div>
+                        </ul>
                         <div class="check-item">
                             <span class="check-type">Hands</span>
                             <span class="check-result">Working hands, possibly with minor calluses from handling packages</span>
-                        </div>
+                        </ul>
                         <div class="check-item">
                             <span class="check-type">Eyes</span>
                             <span class="check-result">Alert eyes used to navigating routes and reading addresses</span>
-                        </div>
+                        </ul>
                         <div class="check-item">
                             <span class="check-type">Armpits</span>
                             <span class="check-result">Normal appearance</span>
-                        </div>
+                        </ul>
                         <div class="check-item">
                             <span class="check-type">Photo</span>
                             <span class="check-result">Matches claimed identity, may show company uniform</span>
-                        </div>
+                        </ul>
                         <div class="check-item">
                             <span class="check-type">Ears</span>
                             <span class="check-result">Normal human ears</span>
-                        </div>
-                    </div>
+                        </ul>
+                    </ul>
 
                     <div class="identification-result">
                         <h3>Identification Result</h3>
                         <p><strong>Species:</strong> RevealRandom (professional appearance suggests human, but motives may be hidden)</p>
                         <p><strong>Status:</strong> Delivery background and local knowledge require verification</p>
-                    </div>
-                </div>
+                    </ul>
+                </ul>
             </section>
 
             <!-- Behavior Patterns Section -->
@@ -243,20 +254,20 @@
                     <div class="pattern">
                         <h4>Route Knowledge</h4>
                         <p>May demonstrate detailed knowledge of local streets and addresses</p>
-                    </div>
+                    </ul>
                     <div class="pattern">
                         <h4>Professional Terminology</h4>
                         <p>Uses delivery-specific language and industry jargon</p>
-                    </div>
+                    </ul>
                     <div class="pattern">
                         <h4>Time Awareness</h4>
                         <p>Shows understanding of schedules and timing typical of delivery work</p>
-                    </div>
+                    </ul>
                     <div class="pattern">
                         <h4>Resident Information</h4>
                         <p>May mention details about various residents from delivery observations</p>
-                    </div>
-                </div>
+                    </ul>
+                </ul>
             </section>
 
             <!-- Relationships Section -->
@@ -266,20 +277,20 @@
                     <div class="relationship">
                         <h4>The Protagonist</h4>
                         <p>May offer information about local residents in exchange for shelter</p>
-                    </div>
+                    </ul>
                     <div class="relationship">
                         <h4>Delivery Company</h4>
                         <p>References employers or supervisors in the delivery business</p>
-                    </div>
+                    </ul>
                     <div class="relationship">
                         <h4>Regular Customers</h4>
                         <p>May discuss frequent delivery recipients in the area</p>
-                    </div>
+                    </ul>
                     <div class="relationship">
                         <h4>Other Delivery Personnel</h4>
                         <p>References coworkers or competitors in the delivery industry</p>
-                    </div>
-                </div>
+                    </ul>
+                </ul>
             </section>
 
             <!-- Strategy Section -->
@@ -289,28 +300,28 @@
                     <div class="tip">
                         <h4>Information Gathering</h4>
                         <p>Collect valuable information about other residents and neighborhood activities</p>
-                    </div>
+                    </ul>
                     <div class="tip">
                         <h4>Professional Verification</h4>
                         <p>Ask delivery-specific questions to verify his claimed occupation</p>
-                    </div>
+                    </ul>
                     <div class="tip">
                         <h4>Address Testing</h4>
                         <p>Test his knowledge of local addresses and resident information</p>
-                    </div>
+                    </ul>
                     <div class="tip">
                         <h4>Motive Assessment</h4>
                         <p>Evaluate why a delivery driver would need emergency shelter</p>
-                    </div>
-                </div>
+                    </ul>
+                </ul>
             </section>
 
             <!-- Back to Guide Link -->
             <div class="back-to-guide">
                 <a href="../../guide.html#characters" class="btn-back">鈫?Back to Character Guide</a>
-            </div>
-        </div>
-    </div>
+            </ul>
+        </ul>
+    </ul>
 
     <!-- Footer -->
     <footer class="footer">
@@ -318,7 +329,7 @@
             <div class="footer-section">
                 <h3>No, I'm not a Human</h3>
                 <p>Complete guide to the paranoia-driven horror survival game</p>
-            </div>
+            </ul>
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
@@ -327,8 +338,8 @@
                     <li><a href="../achievements.html">Achievements</a>
                     <li><a href="../ending.html">Endings</a>
                     <li><a href="../download.html">Download</a>
-                </div>
-            </div>
+                </ul>
+            </ul>
             <div class="footer-section">
                 <h4>Game Content</h4>
                 <ul>
@@ -336,12 +347,12 @@
                     <li><a href="../achievements.html">Complete Achievement List</a>
                     <li><a href="../ending.html">All Game Endings</a>
                     <li><a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" target="_blank">Steam Store</a>
-                </div>
-            </div>
-        </div>
+                </ul>
+            </ul>
+        </ul>
         <div class="footer-bottom">
             <p>&copy; 2024 noimnothuman.xyz. This is a fan-made guide and is not affiliated with Trioskaz or Critical Reflex.</p>
-        </div>
+        </ul>
     </footer>
 
     <script src="../../assets/js/script.js"></script>
