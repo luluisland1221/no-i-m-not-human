@@ -23,6 +23,9 @@ https://noimnothuman.xyz/download.html
 https://noimnothuman.xyz/about.html
 https://noimnothuman.xyz/contact.html
 
+# Documentation
+https://github.com/luluisland1221/no-i-m-not-human/blob/main/README.md
+
 # Legacy and additional pages
 https://noimnothuman.xyz/features/
 https://noimnothuman.xyz/guide/
