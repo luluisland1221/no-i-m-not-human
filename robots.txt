@@ -25,6 +25,7 @@ User-agent: Googlebot-Video
 Allow: /
 
 # Sitemap location
+Sitemap: https://noimnothuman.xyz/sitemap_index.xml
 Sitemap: https://noimnothuman.xyz/sitemap.txt
 Sitemap: https://noimnothuman.xyz/sitemap.xml
 
