@@ -26,6 +26,7 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://noimnothuman.xyz/sitemap.txt
+Sitemap: https://noimnothuman.xyz/sitemap.xml
 
 # Crawl delay (optional)
 Crawl-delay: 1
