@@ -209,6 +209,121 @@
       "dangerous_characters": ["vigilante.html", "intruder.html"],
       "supernatural": ["the-sisters.html", "immortal-man.html"],
       "wind_related": []
+    },
+    "bandana-guy.html": {
+      "male_random": ["suit-guy.html", "cozy-man.html"],
+      "random_appearance": ["cheerful-man.html", "stoner.html"],
+      "appearance_features": ["coat-guy.html", "bearded-guy.html"]
+    },
+    "bearded-guy.html": {
+      "male_random": ["suit-guy.html", "cozy-man.html"],
+      "random_appearance": ["cheerful-man.html", "stoner.html"],
+      "appearance_features": ["blonde-guy.html", "brunette-guy.html"]
+    },
+    "best-son.html": {
+      "family_characters": ["husband-and-wife.html", "neighbor.html"],
+      "male_random": ["stand-up-guy.html", "cheerful-man.html"],
+      "young_characters": ["little-girl.html", "parentless-teenager.html"]
+    },
+    "big-momma.html": {
+      "female_characters": ["cat-lady.html", "widowed-woman.html"],
+      "family_characters": ["neglectful-mother.html"],
+      "adult_characters": ["old-lady.html", "nun.html"]
+    },
+    "blonde-guy.html": {
+      "male_random": ["brunette-guy.html", "bearded-guy.html"],
+      "random_appearance": ["cheerful-man.html", "stoner.html"],
+      "appearance_features": ["suit-guy.html", "coat-guy.html"]
+    },
+    "brunette-guy.html": {
+      "male_random": ["blonde-guy.html", "bearded-guy.html"],
+      "random_appearance": ["cozy-man.html", "stand-up-guy.html"],
+      "appearance_features": ["cabby-man.html", "coat-guy.html"]
+    },
+    "cabby-man.html": {
+      "professional_roles": ["delivery-man.html", "taxi-driver.html"],
+      "male_random": ["suit-guy.html", "coat-guy.html"],
+      "service_characters": ["cashier-girl.html"]
+    },
+    "coat-guy.html": {
+      "male_random": ["suit-guy.html", "bearded-guy.html"],
+      "random_appearance": ["cozy-man.html", "cheerful-man.html"],
+      "appearance_features": ["blonde-guy.html", "brunette-guy.html"]
+    },
+    "cozy-man.html": {
+      "male_random": ["cheerful-man.html", "stoner.html"],
+      "friendly_characters": ["stand-up-guy.html"],
+      "random_appearance": ["bearded-guy.html", "coat-guy.html"]
+    },
+    "death.html": {
+      "supernatural": ["intruder.html", "the-sisters.html"],
+      "mysterious_characters": ["fortune-teller.html", "theorist.html"],
+      "death_related": ["death-cult-leader.html", "gravedigger.html"]
+    },
+    "delivery-man-backup.html": {
+      "professional_roles": ["delivery-man.html", "taxi-driver.html"],
+      "service_characters": ["cashier-girl.html"],
+      "male_characters": ["cabby-man.html", "suit-guy.html"]
+    },
+    "egghead-guy.html": {
+      "male_random": ["cozy-man.html", "stoner.html"],
+      "intellectual_characters": ["theorist.html", "armchair-lawyer-guy.html"],
+      "random_appearance": ["blonde-guy.html", "brunette-guy.html"]
+    },
+    "factory-guy.html": {
+      "professional_roles": ["delivery-man.html", "surgeon.html"],
+      "male_random": ["cozy-man.html", "bearded-guy.html"],
+      "working_characters": ["homeless-man.html", "stoner.html"]
+    },
+    "fetus.html": {
+      "mysterious_characters": ["death.html", "intruder.html"],
+      "supernatural": ["the-sisters.html", "immortal-man.html"],
+      "unique_characters": ["nikita-the-wind-based-intruder.html"]
+    },
+    "miner.html": {
+      "professional_roles": ["delivery-man.html", "gravedigger.html"],
+      "male_random": ["cozy-man.html", "bearded-guy.html"],
+      "working_characters": ["factory-guy.html", "homeless-man.html"]
+    },
+    "mushroom-man.html": {
+      "supernatural": ["intruder.html", "the-sisters.html"],
+      "mysterious_characters": ["fortune-teller.html", "death.html"],
+      "unique_characters": ["immortal-man.html"]
+    },
+    "positive-guy.html": {
+      "friendly_characters": ["cheerful-man.html", "stand-up-guy.html"],
+      "male_random": ["stoner.html", "cozy-man.html"],
+      "random_appearance": ["bearded-guy.html", "blonde-guy.html"]
+    },
+    "protagonist.html": {
+      "main_characters": ["neighbor.html", "little-girl.html"],
+      "survivor_characters": ["delivery-man.html", "gravedigger.html"],
+      "player_related": []
+    },
+    "raincoat-child.html": {
+      "young_characters": ["little-girl.html", "child.html"],
+      "vulnerable_characters": ["parentless-teenager.html"],
+      "child_related": ["fetus.html"]
+    },
+    "reporter.html": {
+      "professional_roles": ["armchair-lawyer-guy.html", "theorist.html"],
+      "investigative_characters": [],
+      "male_random": ["suit-guy.html", "coat-guy.html"]
+    },
+    "sun-guy.html": {
+      "religious_characters": ["death-cult-leader.html", "nun.html"],
+      "mysterious_characters": ["fortune-teller.html", "theorist.html"],
+      "random_identity": ["music-conductor.html", "stoner.html"]
+    },
+    "sweaty-man.html": {
+      "male_random": ["cozy-man.html", "stoner.html"],
+      "vulnerable_characters": ["wounded-man.html", "homeless-man.html"],
+      "random_appearance": ["bearded-guy.html", "blonde-guy.html"]
+    },
+    "weather-reporter.html": {
+      "professional_roles": ["reporter.html", "armchair-lawyer-guy.html"],
+      "intellectual_characters": ["theorist.html"],
+      "female_characters": ["cat-lady.html", "kindergarten-teacher.html"]
     }
   },
   "relation_labels": {
@@ -258,6 +373,12 @@
     "social_characters": "🗣️ Social Types",
     "protection_roles": "🛡️ Protection Roles",
     "leadership_roles": "👑 Leadership Types",
-    "group_characters": "👥 Group Dynamics"
+    "group_characters": "👥 Group Dynamics",
+    "appearance_features": "👁️ Appearance Features",
+    "main_characters": "🎭 Main Characters",
+    "survivor_characters": "🛡️ Survivor Types",
+    "player_related": "🎮 Player Related",
+    "investigative_characters": "🔍 Investigative Types",
+    "working_characters": "🔧 Working Class"
   }
 }

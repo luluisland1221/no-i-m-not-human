@@ -58,7 +58,7 @@ def add_related_characters_to_page(character_file, relations_data, labels):
     file_path = f"guide/characters/{character_file}"
 
     if not os.path.exists(file_path):
-        print(f"文件不存在: {file_path}")
+        print(f"[ERROR] 文件不存在: {file_path}")
         return False
 
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -66,14 +66,14 @@ def add_related_characters_to_page(character_file, relations_data, labels):
 
     # 检查是否已经有相关角色模块
     if '<!-- Related Characters Section -->' in content:
-        print(f"已包含相关角色模块: {character_file}")
+        print(f"[SKIP] 已包含相关角色模块: {character_file}")
         return True
 
     # 生成相关角色HTML
     related_html = generate_related_characters_html(character_file, relations_data, labels)
 
     if not related_html:
-        print(f"没有关联数据: {character_file}")
+        print(f"[SKIP] 没有关联数据: {character_file}")
         return False
 
     # 找到插入位置（在 Back to Guide Link 之前）
@@ -154,10 +154,10 @@ def add_related_characters_to_page(character_file, relations_data, labels):
         with open(file_path, 'w', encoding='utf-8') as f:
             f.write(new_content)
 
-        print(f"✅ 已添加相关角色模块: {character_file}")
+        print(f"[SUCCESS] 已添加相关角色模块: {character_file}")
         return True
     else:
-        print(f"❌ 找不到插入位置: {character_file}")
+        print(f"[ERROR] 找不到插入位置: {character_file}")
         return False
 
 def main():

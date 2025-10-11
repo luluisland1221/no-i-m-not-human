@@ -59,6 +59,61 @@
         table {
             table-layout: fixed !important;
         }
+
+        /* Related Characters Section Styles */
+        .related-characters-container {
+            margin-top: 1.5rem;
+        }
+
+        .relation-group {
+            margin-bottom: 2rem;
+        }
+
+        .relation-group h4 {
+            color: #00ff88;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .related-characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .related-character-link {
+            display: block;
+            padding: 1rem;
+            background: rgba(0, 255, 136, 0.05);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 8px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        .related-character-link:hover {
+            background: rgba(0, 255, 136, 0.1);
+            border-color: rgba(0, 255, 136, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 255, 136, 0.2);
+        }
+
+        .character-name {
+            display: block;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #00ff88;
+            margin-bottom: 0.5rem;
+        }
+
+        .relation-desc {
+            display: block;
+            font-size: 0.9rem;
+            color: #cccccc;
+            line-height: 1.4;
+        }
     </style>
 
     <!-- Structured Data -->
@@ -298,6 +353,49 @@
                         <p>Determine individual vs group control</p>
                     </div>
                 </div>
+            <!-- Related Characters Section -->
+            <section id="related-characters" class="character-section">
+                <h2>Related Characters</h2>
+                <div class="related-characters-container">
+                    <div class="relation-group">
+                        <h4>🕯️ Cult Members</h4>
+                        <div class="related-characters-grid">
+                            <a href="death-cult-leader.html" class="related-character-link">
+                                <span class="character-name">Death Cult Leader</span>
+                                <span class="relation-desc">View character details</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relation-group">
+                        <h4>👥 Group Dynamics</h4>
+                        <div class="related-characters-grid">
+                            <a href="the-sisters.html" class="related-character-link">
+                                <span class="character-name">The Sisters</span>
+                                <span class="relation-desc">View character details</span>
+                            </a>
+                            <a href="husband-and-wife.html" class="related-character-link">
+                                <span class="character-name">Husband And Wife</span>
+                                <span class="relation-desc">View character details</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relation-group">
+                        <h4>⛪ Religious Elements</h4>
+                        <div class="related-characters-grid">
+                            <a href="nun.html" class="related-character-link">
+                                <span class="character-name">Nun</span>
+                                <span class="relation-desc">View character details</span>
+                            </a>
+                            <a href="sun-guy.html" class="related-character-link">
+                                <span class="character-name">Sun Guy</span>
+                                <span class="relation-desc">View character details</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
             </section>
 
             <!-- Back to Guide Link -->
