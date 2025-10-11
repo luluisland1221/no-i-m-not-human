@@ -1,0 +1,35 @@
+# Site settings
+title: No, I'm not a Human - Ultimate Horror Survival Game
+description: Complete character identification guide for No, I'm not a Human. All 62 characters with detailed descriptions, identification methods, and visual guides to distinguish humans from Visitors.
+url: "https://noimnothuman.xyz"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-sitemap
+
+# Sitemap settings
+timezone: Asia/Shanghai
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include files
+include:
+  - _pages
+  - .htaccess
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

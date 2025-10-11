@@ -1,0 +1,83 @@
+批量替换指令 - Bandana Guy错误修正
+=================================================
+
+对于每个角色页面，需要进行以下替换：
+
+替换规则:
+"The Bandana Guy is a visitor" → "The [角色名] is a character"
+"His bandana accessory" → "Their distinctive features"
+"His bandana" → "Their appearance"
+"he presents himself" → "they present"
+"he appears" → "they appear"
+"the Bandana Guy" → "the [角色名]"
+"Bandana Guy's" → "[角色名]'s"
+
+关键页面修正优先级:
+1. angry-guy.html ✅ (已修正)
+2. armchair-lawyer-guy.html ✅ (已修正)
+3. bar-guy.html ✅ (已修正)
+4. bearded-guy.html ✅ (已修正)
+5. best-son.html ✅ (已修正)
+
+剩余需要修正的页面 (58个):
+- bandana-guy.html (保持原样，这是Bandana Guy的正确页面)
+- big-momma.html
+- blinded-man.html
+- blonde-guy.html
+- border-patrol-agent.html
+- brunette-guy.html
+- cabby-man.html
+- cashier-girl.html
+- cat-lady.html
+- cheerful-man.html
+- child.html
+- coat-guy.html
+- cozy-man.html
+- death.html
+- death-cult-leader.html
+- death-cult-peon.html
+- delivery-man.html
+- delivery-man-backup.html
+- disfigured-guy.html
+- egghead-guy.html
+- factory-guy.html
+- fema-agent.html
+- fetus.html
+- fortune-teller.html
+- gravedigger.html
+- homeless-man.html
+- husband-and-wife.html
+- immortal-man.html
+- intruder.html
+- kindergarten-teacher.html
+- little-girl.html
+- miner.html
+- mushroom-man.html
+- music-conductor.html
+- neglectful-mother.html
+- neighbor.html
+- nikita-the-wind-based-intruder.html
+- nun.html
+- old-lady.html
+- parentless-teenager.html
+- positive-guy.html
+- protagonist.html
+- raincoat-child.html
+- reporter.html
+- seductive-woman.html
+- stand-up-guy.html
+- stoner.html
+- suit-guy.html
+- sun-guy.html
+- surgeon.html
+- sweaty-man.html
+- theorist.html
+- the-sisters.html
+- vigilante.html
+- weather-reporter.html
+- widowed-woman.html
+- wireface.html
+- wounded-man.html
+
+执行方案:
+由于文件数量较多，建议分批处理，每批处理10个文件。

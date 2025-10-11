@@ -1,0 +1,62 @@
+angry-guy.html|Angry Guy
+armchair-lawyer-guy.html|Armchair Lawyer Guy
+bar-guy.html|Bar Guy
+bearded-guy.html|Bearded Guy
+best-son.html|Best Son
+big-momma.html|Big Momma
+blinded-man.html|Blinded Man
+blonde-guy.html|Blonde Guy
+border-patrol-agent.html|Border Patrol Agent
+brunette-guy.html|Brunette Guy
+cabby-man.html|Cabby Man
+cashier-girl.html|Cashier Girl
+cat-lady.html|Cat Lady
+cheerful-man.html|Cheerful Man
+child.html|Child
+coat-guy.html|Coat Guy
+cozy-man.html|Cozy Man
+death.html|Death
+death-cult-leader.html|Death Cult Leader
+death-cult-peon.html|Death Cult Peons
+delivery-man.html|Delivery Man
+delivery-man-backup.html|Delivery Man Backup
+disfigured-guy.html|Disfigured Guy
+egghead-guy.html|Egghead Guy
+factory-guy.html|Factory Guy
+fema-agent.html|FEMA Agent
+fetus.html|Fetus
+fortune-teller.html|Fortune Teller
+gravedigger.html|Gravedigger
+homeless-man.html|Homeless Man
+husband-and-wife.html|Husband and Wife
+immortal-man.html|Immortal Man
+intruder.html|Intruder
+kindergarten-teacher.html|Kindergarten Teacher
+little-girl.html|Little Girl
+miner.html|Miner
+mushroom-man.html|Mushroom Man
+music-conductor.html|Music Conductor
+neglectful-mother.html|Neglectful Mother
+neighbor.html|Neighbor
+nikita-the-wind-based-intruder.html|Nikita the Wind
+nun.html|Nun
+old-lady.html|Old Lady
+parentless-teenager.html|Parentless Teenager
+positive-guy.html|Positive Guy
+protagonist.html|Protagonist
+raincoat-child.html|Raincoat Child
+reporter.html|Reporter
+seductive-woman.html|Seductive Woman
+stand-up-guy.html|Stand Up Guy
+stoner.html|Stoner
+suit-guy.html|Suit Guy
+sun-guy.html|Sun Guy
+surgeon.html|Surgeon
+sweaty-man.html|Sweaty Man
+theorist.html|Theorist
+the-sisters.html|The Sisters
+vigilante.html|Vigilante
+weather-reporter.html|Weather Reporter
+widowed-woman.html|Widowed Woman
+wireface.html|Wireface
+wounded-man.html|Wounded Man
