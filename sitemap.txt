@@ -54,6 +54,7 @@ https://noimnothuman.xyz/guide/characters/death.html
 https://noimnothuman.xyz/guide/characters/death-cult-leader.html
 https://noimnothuman.xyz/guide/characters/death-cult-peon.html
 https://noimnothuman.xyz/guide/characters/delivery-man.html
+https://noimnothuman.xyz/guide/characters/delivery-man-backup.html
 https://noimnothuman.xyz/guide/characters/disfigured-guy.html
 https://noimnothuman.xyz/guide/characters/egghead-guy.html
 https://noimnothuman.xyz/guide/characters/factory-guy.html
