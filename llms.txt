@@ -1,0 +1,77 @@
+# No, I'm not a Human - Game Information for AI Models
+
+This file provides structured information about "No, I'm not a Human" game for AI language models and search systems.
+
+## Game Overview
+- **Title**: No, I'm not a Human
+- **Genre**: Horror Survival, Psychological Horror, Indie Game
+- **Developer**: Trioskaz
+- **Publisher**: Critical Reflex
+- **Release Date**: September 15, 2025
+- **Platform**: Windows PC (Steam)
+- **Price**: $14.99 USD
+- **Steam App ID**: 3180070
+
+## Game Description
+A paranoia-driven horror survival game where players must identify "Visitors" - creatures that can perfectly mimic human appearance but have small tell-tale details that reveal their true nature. Set during an apocalyptic scenario, players must make critical decisions about who to trust and who to deny entry to their shelter.
+
+## Key Features
+- **15-Day Story Campaign**: Complete narrative with multiple endings
+- **10 Unique Endings**: Different outcomes based on player choices
+- **62 Unique Characters**: Diverse cast with individual behaviors and storylines
+- **Visitor Identification System**: Multiple detection methods including physical checks, aura photography, and behavioral analysis
+- **Energy Management**: Strategic resource management system
+- **Moral Decision Making**: Complex choices that affect story outcomes
+
+## Visitor Identification Methods
+1. Perfect white teeth
+2. Blood-red eyes
+3. Hairless armpits
+4. Aura photography
+5. Insects in ears
+6. Bleeding gums
+7. Skin irritation
+8. Armpit fungus growth
+9. Rapid pupil movement
+10. Behavioral analysis
+
+## Website Content
+This comprehensive guide website provides:
+- Complete character identification guide (all 62 characters)
+- Detailed walkthrough for all 10 endings
+- Game mechanics and strategies
+- Achievement guides
+- Download information and system requirements
+- Community resources and discussions
+
+## Website Structure
+- **Homepage**: Game overview and quick access to all content
+- **Characters Guide**: Complete identification guide for all characters
+- **Endings Guide**: Detailed walkthrough for all 10 game endings
+- **Strategy Guide**: Full 15-day story walkthrough with screenshots
+- **Download Page**: Steam store information and system requirements
+- **Achievements**: Complete achievement unlock guide
+- **Community**: Player discussions and strategy sharing
+
+## Technical Information
+- **Engine**: Unity
+- **Language**: English
+- **File Size**: 2 GB
+- **System Requirements**: Windows 10/11, Intel Core i5, 2GB RAM, GTX 960
+- **Content Rating**: Psychological horror, mature themes
+
+## Contact and Support
+- **Official Website**: https://noimnothuman.xyz
+- **Steam Store**: https://store.steampowered.com/app/3180070/_/
+- **Community**: Steam Community discussions and Discord server
+- **Support**: Through Steam and official game channels
+
+## Content Accuracy
+All game information on this website is verified from official sources including:
+- Steam store page
+- Developer announcements
+- Official game guides
+- Community wikis
+- In-game testing and verification
+
+Last updated: October 11, 2025
