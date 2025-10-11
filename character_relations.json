@@ -1,0 +1,263 @@
+{
+  "character_relations": {
+    "angry-guy.html": {
+      "random_appearance": ["cheerful-man.html", "stoner.html"],
+      "aggressive_behavior": ["vigilante.html", "death-cult-leader.html"],
+      "male_random": ["suit-guy.html", "stand-up-guy.html"]
+    },
+    "neighbor.html": {
+      "day_1": ["little-girl.html"],
+      "confirmed_human": ["delivery-man.html", "gravedigger.html"],
+      "story_characters": ["little-girl.html"]
+    },
+    "little-girl.html": {
+      "day_2": ["neighbor.html"],
+      "confirmed_human": ["neighbor.html", "gravedigger.html"],
+      "family_characters": ["neighbor.html"]
+    },
+    "cashier-girl.html": {
+      "day_2": ["bar-guy.html"],
+      "random_identity": ["doctor.html", "sun-guy.html"],
+      "female_characters": ["cat-lady.html", "seductive-woman.html"]
+    },
+    "bar-guy.html": {
+      "day_2": ["cashier-girl.html"],
+      "male_random": ["stand-up-guy.html", "suit-guy.html"],
+      "social_characters": ["cheerful-man.html"]
+    },
+    "fema-agent.html": {
+      "day_5": ["cat-lady.html"],
+      "authority_figures": ["vigilante.html", "border-patrol-agent.html"],
+      "government_roles": ["delivery-man.html"]
+    },
+    "cat-lady.html": {
+      "day_5": ["fema-agent.html"],
+      "confirmed_human": ["neighbor.html", "little-girl.html"],
+      "female_characters": ["seductive-woman.html", "nun.html"]
+    },
+    "death-cult-leader.html": {
+      "dangerous_characters": ["vigilante.html", "intruder.html"],
+      "cult_members": ["death-cult-peon.html"],
+      "leadership_roles": ["armchair-lawyer-guy.html"]
+    },
+    "death-cult-peon.html": {
+      "cult_members": ["death-cult-leader.html"],
+      "group_characters": ["the-sisters.html", "husband-and-wife.html"],
+      "religious_characters": ["nun.html", "sun-guy.html"]
+    },
+    "vigilante.html": {
+      "dangerous_characters": ["death-cult-leader.html", "intruder.html"],
+      "aggressive_behavior": ["angry-guy.html"],
+      "protection_roles": ["border-patrol-agent.html"]
+    },
+    "intruder.html": {
+      "dangerous_characters": ["vigilante.html", "death-cult-leader.html"],
+      "supernatural": ["the-sisters.html", "immortal-man.html"],
+      "threat_characters": ["wireface.html", "wounded-man.html"]
+    },
+    "delivery-man.html": {
+      "confirmed_human": ["neighbor.html", "gravedigger.html"],
+      "professional_roles": ["taxi-driver.html", "surgeon.html"],
+      "service_characters": ["cashier-girl.html"]
+    },
+    "fortune-teller.html": {
+      "mysterious_characters": ["theorist.html", "wireface.html"],
+      "random_appearance": ["music-conductor.html", "stoner.html"],
+      "supernatural": ["the-sisters.html", "immortal-man.html"]
+    },
+    "the-sisters.html": {
+      "family_characters": ["husband-and-wife.html"],
+      "supernatural": ["immortal-man.html", "intruder.html"],
+      "female_characters": ["cat-lady.html", "seductive-woman.html"]
+    },
+    "husband-and-wife.html": {
+      "family_characters": ["the-sisters.html"],
+      "couple_characters": [],
+      "adult_characters": ["neighbor.html", "coat-guy.html"]
+    },
+    "kindergarten-teacher.html": {
+      "female_characters": ["cat-lady.html", "neglectful-mother.html"],
+      "education_roles": [],
+      "child_related": ["little-girl.html", "child.html"]
+    },
+    "nun.html": {
+      "religious_characters": ["death-cult-leader.html", "sun-guy.html"],
+      "female_characters": ["cat-lady.html", "kindergarten-teacher.html"],
+      "authority_figures": ["armchair-lawyer-guy.html"]
+    },
+    "doctor.html": {
+      "professional_roles": ["surgeon.html", "gravedigger.html"],
+      "random_identity": ["sun-guy.html", "music-conductor.html"],
+      "medical_characters": ["wounded-man.html", "blinded-man.html"]
+    },
+    "surgeon.html": {
+      "professional_roles": ["doctor.html", "gravedigger.html"],
+      "medical_characters": ["wounded-man.html", "disfigured-guy.html"],
+      "authority_figures": ["fema-agent.html"]
+    },
+    "gravedigger.html": {
+      "confirmed_human": ["neighbor.html", "delivery-man.html"],
+      "professional_roles": ["doctor.html", "surgeon.html"],
+      "death_related": ["death-cult-leader.html", "widowed-woman.html"]
+    },
+    "homeless-man.html": {
+      "random_appearance": ["stoner.html", "stand-up-guy.html"],
+      "vulnerable_characters": ["wounded-man.html", "parentless-teenager.html"],
+      "male_characters": ["coat-guy.html", "bearded-guy.html"]
+    },
+    "music-conductor.html": {
+      "random_appearance": ["stoner.html", "fortune-teller.html"],
+      "artistic_characters": [],
+      "professional_roles": ["kindergarten-teacher.html"]
+    },
+    "stoner.html": {
+      "random_appearance": ["music-conductor.html", "cheerful-man.html"],
+      "male_random": ["stand-up-guy.html", "suit-guy.html"],
+      "relaxed_characters": ["cheerful-man.html"]
+    },
+    "suit-guy.html": {
+      "male_random": ["stand-up-guy.html", "angry-guy.html"],
+      "dangerous_characters": ["vigilante.html", "death-cult-leader.html"],
+      "professional_roles": ["armchair-lawyer-guy.html"]
+    },
+    "cheerful-man.html": {
+      "random_appearance": ["stoner.html", "music-conductor.html"],
+      "friendly_characters": ["stand-up-guy.html"],
+      "male_random": ["suit-guy.html", "angry-guy.html"]
+    },
+    "stand-up-guy.html": {
+      "friendly_characters": ["cheerful-man.html"],
+      "male_random": ["suit-guy.html", "angry-guy.html"],
+      "social_characters": ["bar-guy.html"]
+    },
+    "seductive-woman.html": {
+      "female_characters": ["cat-lady.html", "nun.html"],
+      "romantic_characters": [],
+      "adult_characters": ["widowed-woman.html", "old-lady.html"]
+    },
+    "wireface.html": {
+      "mysterious_characters": ["fortune-teller.html", "theorist.html"],
+      "supernatural": ["intruder.html", "the-sisters.html"],
+      "foreign_characters": []
+    },
+    "theorist.html": {
+      "mysterious_characters": ["wireface.html", "fortune-teller.html"],
+      "intellectual_characters": ["armchair-lawyer-guy.html"],
+      "conspiracy_characters": []
+    },
+    "armchair-lawyer-guy.html": {
+      "authority_figures": ["border-patrol-agent.html", "fema-agent.html"],
+      "intellectual_characters": ["theorist.html"],
+      "confrontational_characters": ["angry-guy.html"]
+    },
+    "border-patrol-agent.html": {
+      "authority_figures": ["fema-agent.html", "armchair-lawyer-guy.html"],
+      "government_roles": ["vigilante.html"],
+      "female_characters": ["cat-lady.html", "kindergarten-teacher.html"]
+    },
+    "blinded-man.html": {
+      "injured_characters": ["wounded-man.html", "disfigured-guy.html"],
+      "trauma_characters": [],
+      "male_characters": ["homeless-man.html", "cozy-man.html"]
+    },
+    "wounded-man.html": {
+      "injured_characters": ["blinded-man.html", "disfigured-guy.html"],
+      "vulnerable_characters": ["homeless-man.html", "parentless-teenager.html"],
+      "fugitive_characters": []
+    },
+    "disfigured-guy.html": {
+      "injured_characters": ["wounded-man.html", "blinded-man.html"],
+      "trauma_characters": [],
+      "male_characters": ["bearded-guy.html", "egghead-guy.html"]
+    },
+    "immortal-man.html": {
+      "supernatural": ["the-sisters.html", "intruder.html"],
+      "mysterious_characters": ["fortune-teller.html", "theorist.html"],
+      "unique_characters": []
+    },
+    "widowed-woman.html": {
+      "female_characters": ["cat-lady.html", "seductive-woman.html"],
+      "grief_characters": [],
+      "adult_characters": ["old-lady.html", "neglectful-mother.html"]
+    },
+    "neglectful-mother.html": {
+      "female_characters": ["kindergarten-teacher.html", "cat-lady.html"],
+      "parent_characters": [],
+      "adult_characters": ["widowed-woman.html", "old-lady.html"]
+    },
+    "parentless-teenager.html": {
+      "young_characters": ["little-girl.html", "child.html"],
+      "vulnerable_characters": ["wounded-man.html", "homeless-man.html"],
+      "female_characters": ["cat-lady.html", "seductive-woman.html"]
+    },
+    "little-girl.html": {
+      "young_characters": ["parentless-teenager.html", "child.html"],
+      "confirmed_human": ["neighbor.html", "gravedigger.html"],
+      "family_characters": ["neighbor.html"]
+    },
+    "child.html": {
+      "young_characters": ["little-girl.html", "parentless-teenager.html"],
+      "vulnerable_characters": ["parentless-teenager.html"],
+      "mystery_characters": []
+    },
+    "old-lady.html": {
+      "elderly_characters": [],
+      "female_characters": ["cat-lady.html", "widowed-woman.html"],
+      "vulnerable_characters": ["wounded-man.html", "blinded-man.html"]
+    },
+    "nikita-the-wind-based-intruder.html": {
+      "dangerous_characters": ["vigilante.html", "intruder.html"],
+      "supernatural": ["the-sisters.html", "immortal-man.html"],
+      "wind_related": []
+    }
+  },
+  "relation_labels": {
+    "day_1": "📅 Day 1 Characters",
+    "day_2": "📅 Day 2 Characters",
+    "day_5": "📅 Day 5 Characters",
+    "random_appearance": "📅 Random Appearance Time",
+    "confirmed_human": "✅ Confirmed Human",
+    "random_identity": "❓ Random Identity",
+    "aggressive_behavior": "⚔️ Aggressive Behavior Type",
+    "dangerous_characters": "⚠️ Dangerous Characters",
+    "male_random": "🧍‍♂️ Male Random Characters",
+    "female_characters": "🧍‍♀️ Female Characters",
+    "family_characters": "👨‍👩‍👧‍👦 Family Related",
+    "story_characters": "📖 Story Connected",
+    "supernatural": "👻 Supernatural Elements",
+    "professional_roles": "💼 Professional Roles",
+    "authority_figures": "🛡️ Authority Figures",
+    "mysterious_characters": "🔍 Mysterious Characters",
+    "injured_characters": "🏥 Injured/Traumatized",
+    "vulnerable_characters": "😔 Vulnerable Characters",
+    "religious_characters": "⛪ Religious Elements",
+    "intellectual_characters": "🧠 Intellectual Types",
+    "young_characters": "👶 Young Characters",
+    "elderly_characters": "👴 Elderly Characters",
+    "friendly_characters": "😊 Friendly Characters",
+    "confrontational_characters": "😠 Confrontational Characters",
+    "conspiracy_characters": "🕵️ Conspiracy Theorists",
+    "cult_members": "🕯️ Cult Members",
+    "government_roles": "🏛️ Government Roles",
+    "medical_characters": "🩺 Medical Related",
+    "death_related": "💀 Death Related",
+    "service_characters": "🔧 Service Roles",
+    "artistic_characters": "🎨 Artistic Types",
+    "education_roles": "📚 Education Roles",
+    "child_related": "👶 Child Related",
+    "couple_characters": "💑 Couple Related",
+    "adult_characters": "🧑 Adult Characters",
+    "romantic_characters": "💕 Romantic Elements",
+    "foreign_characters": "🌍 Foreign Elements",
+    "unique_characters": "⭐ Unique Characters",
+    "trauma_characters": "🧠 Trauma Survivors",
+    "parent_characters": "👪 Parent Roles",
+    "grief_characters": "😢 Grief Stricken",
+    "wind_related": "💨 Wind Related",
+    "fugitive_characters": "🏃 Fugitive Types",
+    "social_characters": "🗣️ Social Types",
+    "protection_roles": "🛡️ Protection Roles",
+    "leadership_roles": "👑 Leadership Types",
+    "group_characters": "👥 Group Dynamics"
+  }
+}
