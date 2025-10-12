@@ -222,6 +222,28 @@ body.homepage .screenshot-item:hover {
 /* Improved spacing and flow */
 body.homepage .about-game {
     scroll-margin-top: 100px;
+    background: #000000 !important;
+}
+
+section.about-game {
+    background: #000000 !important;
+}
+
+/* Force black backgrounds for all sections */
+body.homepage .about-game,
+body.homepage .survival-tips,
+body.homepage .key-features,
+section.about-game,
+section.survival-tips,
+section.key-features {
+    background: #000000 !important;
+}
+
+/* Additional specificity rules */
+body.homepage section.about-game,
+body.homepage section.survival-tips,
+body.homepage section.key-features {
+    background: #000000 !important;
 }
 
 body.homepage .key-features {
@@ -736,7 +758,7 @@ section.survival-tips {
 /* About Game */
 .about-game {
     padding: 100px 0;
-    background: linear-gradient(135deg, #0a0a0a, #001122);
+    background: #000000 !important;
     position: relative;
     overflow: hidden;
 }
