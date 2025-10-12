@@ -6,7 +6,6 @@ Allow: /
 Allow: /assets/
 Allow: /community/
 Allow: /download/
-Allow: /features/
 
 # Allow Google services specifically
 User-agent: Googlebot
