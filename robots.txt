@@ -1,27 +1,48 @@
 # Robots.txt for noimnothuman.xyz
-# Last updated: 2025-10-05
+# Last updated: 2025-10-12 - CRITICAL FIX: Allow all Google services
 
 User-agent: *
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /admin/
+Disallow: /_notes/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /*.py$
+Disallow: /*.sh$
+Disallow: /*.ps1$
+Disallow: /*.md$
+
+# CRITICAL: Allow all Google services explicitly
+User-agent: Googlebot
+Disallow:
+
+User-agent: Mediapartners-Google
+Disallow:
+
+User-agent: AdsBot-Google
+Disallow:
+
+User-agent: Googlebot-Image
+Disallow:
+
+User-agent: Googlebot-Video
+Disallow:
+
+User-agent: Googlebot-News
+Disallow:
+
+User-agent: Googlebot-Video
+Disallow:
+
+# Allow access to all important directories
 Allow: /
 Allow: /assets/
 Allow: /community/
 Allow: /download/
-
-# Allow Google services specifically
-User-agent: Googlebot
-Allow: /
-
-User-agent: Mediapartners-Google
-Allow: /
-
-User-agent: AdsBot-Google
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /
-
-User-agent: Googlebot-Video
-Allow: /
+Allow: /guide/
+Allow: /guide/characters/
 
 # Sitemap location
 Sitemap: https://noimnothuman.xyz/sitemap_index.xml
