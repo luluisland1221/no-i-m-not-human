@@ -359,7 +359,7 @@ body.homepage .screenshots {
 .bar {
     width: 25px;
     height: 3px;
-    background: rgba(0, 0, 0, 0.5);
+    background: #ffffff;
     margin: 3px 0;
     transition: 0.3s;
 }
