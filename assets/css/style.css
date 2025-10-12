@@ -230,6 +230,7 @@ body.homepage .key-features {
 
 body.homepage .survival-tips {
     scroll-margin-top: 100px;
+    background: #000000 !important;
 }
 
 body.homepage .screenshots {
@@ -610,8 +611,12 @@ body.homepage .screenshots {
 /* Quick Survival Tips */
 .survival-tips {
     padding: 100px 0;
-    background: #000000;
+    background: #000000 !important;
     position: relative;
+}
+
+section.survival-tips {
+    background: #000000 !important;
 }
 
 .survival-tips::before {
