@@ -531,14 +531,11 @@ body.homepage .screenshots {
 }
 
 .stat {
-    background: rgba(0, 255, 136, 0.15);
     color: #00ff88;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 600;
-    border: 1px solid rgba(0, 255, 136, 0.3);
-    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 0.25rem 0;
 }
 
 .feature-cta {
