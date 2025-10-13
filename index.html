@@ -41,6 +41,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://images.noimnothuman.xyz" crossorigin>
+    <!-- Preconnect to own domain for script.js optimization -->
+    <link rel="preconnect" href="https://noimnothuman.xyz" crossorigin>
+
+    <!-- Network dependency optimization - Preload script.js to eliminate dependency chain -->
+    <link rel="preload" href="assets/js/script.js?v=20241013" as="script" crossorigin="anonymous">
+
+    <!-- DNS prefetch for additional domains -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//images.noimnothuman.xyz">
+    <link rel="dns-prefetch" href="//noimnothuman.xyz">
     <!-- Preload critical font files to reduce dependency chain -->
     <link rel="preload" href="https://fonts.gstatic.com/s/notosanssc/v35/yMJRMIlzd4Xu2i8a9_x-1Nv.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://fonts.gstatic.com/s/creepster/v13/AlZy_zVUqYzCyOqc_yEEsA.woff2" as="font" type="font/woff2" crossorigin>
@@ -596,21 +607,58 @@
         </div>
     </footer>
 
-    <script type="module" src="assets/js/script.js?v=20241013" integrity="sha384-xyz123abc456" crossorigin="anonymous"></script>
-<script nomodule>
-// Fallback for older browsers - Minimal ES5 version
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
+  <!-- Network dependency optimized script loading -->
+    <script>
+        // Strategic script loading to eliminate 136ms dependency chain
+        function loadScriptOptimized() {
+            // Script is preloaded, now load it non-blocking
+            const script = document.createElement('script');
+            script.src = 'assets/js/script.js?v=20241013';
+            script.async = true;
+            script.defer = true;
+            script.crossOrigin = 'anonymous';
+            script.setAttribute('data-optimized', 'network-dependency-solution');
 
-    if (hamburger && navMenu) {
-        hamburger.addEventListener('click', function() {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-    }
-});
-</script>
+            // Load after critical content to prevent blocking
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', () => {
+                    requestIdleCallback(() => {
+                        document.head.appendChild(script);
+                    });
+                });
+            } else {
+                requestIdleCallback(() => {
+                    document.head.appendChild(script);
+                });
+            }
+        }
+
+        // Fallback for older browsers - Minimal navigation functionality
+        function loadFallbackScript() {
+            const fallbackScript = document.createElement('script');
+            fallbackScript.textContent = `
+                document.addEventListener('DOMContentLoaded', function() {
+                    const hamburger = document.querySelector('.hamburger');
+                    const navMenu = document.querySelector('.nav-menu');
+                    if (hamburger && navMenu) {
+                        hamburger.addEventListener('click', function() {
+                            hamburger.classList.toggle('active');
+                            navMenu.classList.toggle('active');
+                        });
+                    }
+                });
+            `;
+            document.head.appendChild(fallbackScript);
+        }
+
+        // Load optimized script immediately (preload already started)
+        loadScriptOptimized();
+
+        // Fallback for browsers that don't support module/nomodule
+        if (!('noModule' in HTMLScriptElement.prototype)) {
+            loadFallbackScript();
+        }
+    </script>
 
     <!-- Enhanced lazy loading for better performance -->
     <script>
