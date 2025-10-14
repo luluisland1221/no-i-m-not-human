@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;700&family=Creepster&family=Griffy&family=Nosifer&family=Butcherman&family=Eater&family=Merriweather:wght@300;400;700&family=Crimson+Text:wght@400;600&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Enhanced Meta Tags -->
-    <meta name="description" content="Join the No, I'm not a Human community! Find resources, contribute content, and connect with fellow horror game fans. Comprehensive game guide with active community support.">
+    <meta name="description" content="Join the No, I'm not a Human community! Connect with horror game fans, find resources, and contribute to our comprehensive game guide. Get support and share strategies.">
     <meta name="keywords" content="No, I'm not a Human contact, horror game community, game guide contribution, Steam community, Discord, Reddit horror games">
     <meta name="author" content="noimnothuman.xyz">
 
@@ -69,8 +69,8 @@
             <ul class="nav-menu">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="characters.html" class="nav-link">Characters</a></li>
-                <li class="nav-item"><a href="achievements.html" class="nav-link">Achievements</a></li>
-                <li class="nav-item"><a href="ending.html" class="nav-link">Endings</a></li>
+                <li class="nav-item"><a href="./achievements/" class="nav-link">Achievements</a></li>
+                <li class="nav-item"><a href="./ending/" class="nav-link">Endings</a></li>
                 <li class="nav-item"><a href="guide.html" class="nav-link">Guide</a></li>
                 <li class="nav-item"><a href="download.html" class="nav-link">Download</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
@@ -208,23 +208,49 @@
             <h2 class="section-title">Comments</h2>
             <p class="section-subtitle">Leave your thoughts, questions, or feedback here. GitHub account required to comment.</p>
 
-            <!-- Giscus Comments Container -->
+            <!-- Giscus Comments Container with proper attributes -->
             <div class="comments-container">
-                <script src="https://giscus.app/client.js"
-                        data-repo="luluisland1221/no-i-m-not-human"
-                        data-repo-id="R_kgDOP1AODg"
-                        data-category="General"
-                        data-category-id="DIC_kwDOP1AODs4CwRHD"
-                        data-mapping="pathname"
-                        data-strict="0"
-                        data-reactions-enabled="1"
-                        data-emit-metadata="0"
-                        data-input-position="bottom"
-                        data-theme="dark"
-                        data-lang="en"
-                        
-                        crossorigin="anonymous"
-                        async>
+                <div id="giscus-comments"
+                     data-repo="luluisland1221/no-i-m-not-human"
+                     data-repo-id="R_kgDOP1AODg"
+                     data-category="General"
+                     data-category-id="DIC_kwDOP1AODs4CwRHD"
+                     data-mapping="pathname"
+                     data-strict="0"
+                     data-reactions-enabled="1"
+                     data-emit-metadata="0"
+                     data-input-position="bottom"
+                     data-theme="dark"
+                     data-lang="en"
+                     data-loading="lazy">
+                </div>
+                <script>
+                    // Load Giscus dynamically to avoid CORB issues
+                    function loadGiscus() {
+                        const giscusScript = document.createElement('script');
+                        giscusScript.src = 'https://giscus.app/client.js';
+                        giscusScript.async = true;
+                        giscusScript.setAttribute('crossorigin', 'anonymous');
+                        giscusScript.setAttribute('data-giscus', 'true');
+
+                        // Error handling for CORB issues
+                        giscusScript.onerror = function() {
+                            console.log('Giscus failed to load due to CORS/CORB restrictions');
+                            const container = document.getElementById('giscus-comments');
+                            if (container) {
+                                container.innerHTML = '<p style="text-align: center; color: #ccc;">Comments are temporarily unavailable. Please visit our <a href="https://steamcommunity.com/app/3180070/discussions/" target="_blank" style="color: #00ff88;">Steam Community</a> to join the discussion.</p>';
+                            }
+                        };
+
+                        document.body.appendChild(giscusScript);
+                    }
+
+                    // Load Giscus after page load to avoid blocking
+                    if (document.readyState === 'loading') {
+                        document.addEventListener('DOMContentLoaded', loadGiscus);
+                    } else {
+                        loadGiscus();
+                    }
                 </script>
             </div>
         </div>
@@ -276,10 +302,10 @@
             <div class="footer-section">
                 <h3>Game Guide</h3>
                 <ul>
-                    <li><a href="characters.html">Characters</a></li>
-                    <li><a href="achievements.html">Achievements</a></li>
-                    <li><a href="ending.html">Endings</a></li>
-                    <li><a href="guide.html">Complete Guide</a></li>
+                    <li><a href="./characters.html">Characters</a></li>
+                    <li><a href="./achievements/">Achievements</a></li>
+                    <li><a href="./ending/">Endings</a></li>
+                    <li><a href="./guide.html">Complete Guide</a></li>
                 </ul>
             </div>
 
