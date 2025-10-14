@@ -203,6 +203,13 @@
     # Redirect index.html to root
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index\.html\ HTTP/
     RewriteRule ^(.*)index\.html$ /$1 [L,R=301]
+
+    # 方案A：将目录重定向到主文件
+    # 将 /download/ 重定向到 /download.html
+    RewriteRule ^download/?$ /download.html [L,R=301]
+
+    # 将 /guide/ 重定向到 /guide.html
+    RewriteRule ^guide/?$ /guide.html [L,R=301]
 </IfModule>
 
 # Protect sensitive files
