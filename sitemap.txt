@@ -10,7 +10,6 @@ https://noimnothuman.xyz/contact.html
 https://noimnothuman.xyz/characters/index.html
 https://noimnothuman.xyz/privacy-policy.html
 https://noimnothuman.xyz/terms-of-service.html
-https://noimnothuman.xyz/terms.html
 
 # Character guide pages (63 total characters)
 https://noimnothuman.xyz/guide/characters/angry-guy.html
