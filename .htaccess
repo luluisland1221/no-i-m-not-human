@@ -210,6 +210,13 @@
 
     # 将 /guide/ 重定向到 /guide.html
     RewriteRule ^guide/?$ /guide.html [L,R=301]
+
+    # Hub & Spoke架构：Achievements和Ending目录重定向
+    # 将 /achievements/ 重定向到 /achievements/index.html (Hub页面)
+    RewriteRule ^achievements/?$ /achievements/index.html [L,R=301]
+
+    # 将 /ending/ 重定向到 /ending/index.html (Hub页面)
+    RewriteRule ^ending/?$ /ending/index.html [L,R=301]
 </IfModule>
 
 # Protect sensitive files
