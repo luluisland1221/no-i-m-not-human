@@ -11,7 +11,7 @@ https://noimnothuman.xyz/characters/index.html
 https://noimnothuman.xyz/privacy-policy.html
 https://noimnothuman.xyz/terms-of-service.html
 
-# Character guide pages (63 total characters)
+# Character guide pages (62 total characters)
 https://noimnothuman.xyz/guide/characters/angry-guy.html
 https://noimnothuman.xyz/guide/characters/armchair-lawyer-guy.html
 https://noimnothuman.xyz/guide/characters/bandana-guy.html
@@ -30,11 +30,10 @@ https://noimnothuman.xyz/guide/characters/cheerful-man.html
 https://noimnothuman.xyz/guide/characters/child.html
 https://noimnothuman.xyz/guide/characters/coat-guy.html
 https://noimnothuman.xyz/guide/characters/cozy-man.html
-https://noimnothuman.xyz/guide/characters/death.html
 https://noimnothuman.xyz/guide/characters/death-cult-leader.html
 https://noimnothuman.xyz/guide/characters/death-cult-peon.html
+https://noimnothuman.xyz/guide/characters/death.html
 https://noimnothuman.xyz/guide/characters/delivery-man.html
-https://noimnothuman.xyz/guide/characters/delivery-man-backup.html
 https://noimnothuman.xyz/guide/characters/disfigured-guy.html
 https://noimnothuman.xyz/guide/characters/egghead-guy.html
 https://noimnothuman.xyz/guide/characters/factory-guy.html
@@ -68,8 +67,8 @@ https://noimnothuman.xyz/guide/characters/suit-guy.html
 https://noimnothuman.xyz/guide/characters/sun-guy.html
 https://noimnothuman.xyz/guide/characters/surgeon.html
 https://noimnothuman.xyz/guide/characters/sweaty-man.html
-https://noimnothuman.xyz/guide/characters/theorist.html
 https://noimnothuman.xyz/guide/characters/the-sisters.html
+https://noimnothuman.xyz/guide/characters/theorist.html
 https://noimnothuman.xyz/guide/characters/vigilante.html
 https://noimnothuman.xyz/guide/characters/weather-reporter.html
 https://noimnothuman.xyz/guide/characters/widowed-woman.html

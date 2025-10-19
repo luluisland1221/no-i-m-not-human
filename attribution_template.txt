@@ -1,0 +1,11 @@
+          <!-- Content Attribution -->
+            <section class="content-attribution">
+                <h3>📚 Content Reference</h3>
+                <p>Character information on this page is sourced from the official wiki:</p>
+                <div class="attribution-link">
+                    <a href="FANDOM_URL" target="_blank" rel="noopener">
+                        📖 No, I am not a human Wiki - CHARACTER_NAME ↗
+                    </a>
+                </div>
+                <p class="license-info">Content available under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC-BY-SA</a> unless otherwise noted.</p>
+            </section>

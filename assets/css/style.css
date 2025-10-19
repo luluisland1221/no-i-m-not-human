@@ -4995,3 +4995,75 @@ section.survival-tips {
         margin: 0 1rem;
     }
 }
+
+/* Content Attribution Styles */
+.content-attribution {
+    background: rgba(0, 255, 136, 0.05);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    color: #00ff88;
+}
+
+.content-attribution h3 {
+    margin-bottom: 1rem;
+    color: #00ff88;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.attribution-link {
+    margin: 1rem 0;
+}
+
+.attribution-link a {
+    color: #00ff88;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.attribution-link a:hover {
+    text-decoration: underline;
+    color: #00ffaa;
+}
+
+.license-info {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+.license-info a {
+    color: #00ff88;
+    text-decoration: underline;
+}
+
+.license-info a:hover {
+    color: #00ffaa;
+}
+
+/* Responsive design for attribution */
+@media (max-width: 768px) {
+    .content-attribution {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+
+    .content-attribution h3 {
+        font-size: 1.1rem;
+    }
+
+    .attribution-link a {
+        font-size: 0.95rem;
+    }
+
+    .license-info {
+        font-size: 0.85rem;
+    }
+}
