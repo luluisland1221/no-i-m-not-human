@@ -39,26 +39,46 @@
     <!-- Preconnect to own domain for script.js optimization -->
     <link rel="preconnect" href="https://noimnothuman.xyz" crossorigin>
 
-    <!-- Network dependency optimization - Preload script.js to eliminate dependency chain -->
-    <link rel="preload" href="assets/js/script.js?v=20241013" as="script" crossorigin="anonymous">
+    <!-- Script.js deferred for faster initial load -->
 
     <!-- DNS prefetch for additional domains -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="dns-prefetch" href="//images.noimnothuman.xyz">
     <link rel="dns-prefetch" href="//noimnothuman.xyz">
-    <!-- Font preloading removed to avoid loading errors - fonts will load via CSS -->
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <!-- Preload only critical font for H1 title -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/creepster/v15/AlZy_zVUwJj4y9iP_W1L5TV2.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-    <!-- Preload critical resources with optimization -->
-    <link rel="preload" href="https://images.noimnothuman.xyz/images.jpg?v=20241013" as="image" fetchpriority="high" imagesrcset="https://images.noimnothuman.xyz/images_small.jpg?v=20241013 425w, https://images.noimnothuman.xyz/images.jpg?v=20241013 850w" imagesizes="(max-width: 480px) 100vw, (max-width: 768px) 85vw, (max-width: 1200px) 60vw, 50vw">
-        <!-- Feature icon preloads removed - using fallback images -->
-    <!-- Microsoft Clarity Analytics -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "trvcsrbbm1");
+    <!-- Inline critical CSS for faster loading -->
+    <style>
+        /* Critical font fallback for immediate display */
+        .hero-title {
+            font-family: 'Creepster', cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            font-display: swap;
+        }
+        body {
+            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            font-display: swap;
+        }
+    </style>
+
+    <!-- Performance optimization hints -->
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="preconnect" href="//www.googletagmanager.com">
+    <!-- Microsoft Clarity Analytics - Deferred Loading -->
+    <script>
+        // Defer analytics loading for faster page load
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                (function(c,l,a,r,i,t,y){
+                    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "trvcsrbbm1");
+            }, 2000); // Load analytics after 2 seconds
+        });
     </script>
 
     <!-- Clickjacking Protection - Frame Busting Script -->
@@ -143,55 +163,20 @@
 
     <!-- Google Fonts CSS - Ultra-conservative loading -->
     <script>
-        // Defer Google Fonts CSS loading
+        // Fast font loading
         function loadGoogleFontsCSS() {
             var link = document.createElement('link');
             link.rel = 'stylesheet';
-            link.href = 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&family=Creepster&family=Orbitron:wght@400&display=swap';
+            link.href = 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&family=Creepster&display=swap';
             document.head.appendChild(link);
         }
 
-        // Load fonts only with extensive conditions
-        var fontsLoaded = false;
-        function loadFontsOnConditions() {
-            if (fontsLoaded) return;
-
-            // Check connection speed
-            if (navigator.connection && navigator.connection.effectiveType &&
-                (navigator.connection.effectiveType === 'slow-2g' ||
-                 navigator.connection.effectiveType === '2g')) {
-                console.debug('Skipping Google Fonts on slow connection');
-                return;
-            }
-
-            // Check if user has been on page long enough
-            var timeOnPage = Date.now() - performance.timing.navigationStart;
-            if (timeOnPage < 5000) { // 5 seconds minimum
-                console.debug('Skipping Google Fonts - user not on page long enough');
-                return;
-            }
-
-            fontsLoaded = true;
+        // Load fonts immediately for best UX
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', loadGoogleFontsCSS);
+        } else {
             loadGoogleFontsCSS();
-            console.debug('Google Fonts CSS loaded after conditions met');
         }
-
-        // Load fonts after user interaction or timeout
-        setTimeout(function() {
-            if (!fontsLoaded) {
-                document.addEventListener('click', loadFontsOnConditions, { once: true });
-                document.addEventListener('scroll', loadFontsOnConditions, { once: true });
-            }
-        }, 4000); // Wait 4 seconds before adding listeners
-
-        // Fallback: load after 15 seconds if no interaction
-        setTimeout(function() {
-            if (!fontsLoaded) {
-                fontsLoaded = true;
-                loadGoogleFontsCSS();
-                console.debug('Google Fonts CSS loaded as fallback');
-            }
-        }, 15000);
     </script>
 
     <!-- Structured Data -->
@@ -280,30 +265,15 @@
                 <p class="logo-text">No, I'm not a Human</p>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./characters.html" class="nav-link">Characters</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./achievements/" class="nav-link">Achievements</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./ending.html"" class="nav-link">Endings</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./guide.html" class="nav-link">Guide</a>
-                </li>
-                  <li class="nav-item">
-                    <a href="./download.html" class="nav-link">Download</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./contact.html" class="nav-link">Contact</a>
-                </li>
+                <a href="./index.html" class="nav-link active">Home</a>
+                <a href="./guide.html" class="nav-link">Guide</a>
+                <a href="./characters.html" class="nav-link">Characters</a>
+                <a href="./tips.html" class="nav-link">Tips</a>
+                <a href="./ending.html" class="nav-link">Endings</a>
+                <a href="./achievements.html" class="nav-link">Achievements</a>
+                <a href="./download.html" class="nav-link">Download</a>
+                <a href="./about.html" class="nav-link">About</a>
+                <a href="./contact.html" class="nav-link">Contact</a>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -320,10 +290,11 @@
                 <h1 class="hero-title">No, I'm not a Human</h1>
                 <p class="hero-subtitle">A paranoia-driven horror survival game where you identify Visitors disguised as humans during an apocalyptic scenario</p>
                 <nav class="hero-buttons">
-                    <a href="./characters.html" class="btn btn-primary btn-small">Characters</a>
-                    <a href="./achievements/" class="btn btn-primary btn-small">Achievements</a>
-                    <a href="./ending.html"" class="btn btn-primary btn-small">Endings</a>
                     <a href="./guide.html" class="btn btn-primary btn-small">Guide</a>
+                    <a href="./characters.html" class="btn btn-primary btn-small">Characters</a>
+                    <a href="./tips.html" class="btn btn-primary btn-small">Tips</a>
+                    <a href="./ending.html" class="btn btn-primary btn-small">Endings</a>
+                    <a href="./achievements.html" class="btn btn-primary btn-small">Achievements</a>
                     <a href="./download.html" class="btn btn-primary btn-small">Download</a>
                 </nav>
             </div>
@@ -335,7 +306,8 @@
                     sizes="(max-width: 768px) 85vw, 50vw"
                     alt="No, I'm not a Human Game Screenshot"
                     fetchpriority="high"
-                    decoding="sync"
+                    decoding="async"
+                    loading="eager"
                     width="1200"
                     height="675"
                     loading="eager"
@@ -354,66 +326,72 @@
             <h2 class="section-title">Core Content Hub</h2>
             <div class="features-grid">
                 <div class="feature-card featured">
-                    <img
-                        src="https://images.noimnothuman.xyz/assets/images/characters/DeliveryMan.png?v=20241013"
-                        srcset="https://images.noimnothuman.xyz/assets/images/characters/DeliveryMan.png?v=20241013 400w"
-                        sizes="(max-width: 768px) 85vw, 35vw"
-                        alt="Character Identification Guide"
-                        class="feature-icon-img"
-                        loading="lazy"
-                        decoding="async"
-                        width="400"
-                        height="300"
-                        style="contain: layout style paint;">
-                    <h3>Character Identification Guide</h3>
-                    <p><strong>62 Characters • 120,000+ words</strong> - Complete visitor identification guide with detailed analysis of every character's physical traits, behavioral patterns, and identification methods</p>
-                    <div class="feature-stats">
-                        <span class="stat">62 Characters</span>
-                        <span class="stat">Average 1,911 words each</span>
+                    <div class="card-content">
+                        <img
+                            src="https://images.noimnothuman.xyz/Core_Content_Hub/1.jpg"
+                            srcset="https://images.noimnothuman.xyz/Core_Content_Hub/1.jpg 400w"
+                            sizes="(max-width: 768px) 85vw, 35vw"
+                            alt="Character Identification Guide"
+                            class="feature-icon-img"
+                            loading="lazy"
+                            decoding="async"
+                            width="400"
+                            height="300"
+                            style="contain: layout style paint;">
+                        <h3>Character Identification Guide</h3>
+                        <p><strong>62 Characters • 120,000+ words</strong> - Complete visitor identification guide with physical traits, behavioral patterns, and identification methods</p>
+                        <div class="feature-stats">
+                            <span class="stat">62 Characters</span>
+                            <span class="stat">Average 1,911 words each</span>
+                        </div>
+                        <a href="./characters.html" class="btn btn-primary btn-small">Explore Characters</a>
                     </div>
-                    <a href="./characters.html" class="btn btn-primary btn-small">Explore Characters</a>
                 </div>
                 <div class="feature-card featured">
-                    <img
-                        src="https://images.noimnothuman.xyz/assets/images/achievements/Breakfast_of_Champions.jpg?v=20241013"
-                        srcset="https://images.noimnothuman.xyz/assets/images/achievements/Breakfast_of_Champions.jpg?v=20241013 400w"
-                        sizes="(max-width: 768px) 85vw, 35vw"
-                        alt="Achievement Unlocking System"
-                        class="feature-icon-img"
-                        loading="lazy"
-                        decoding="async"
-                        width="400"
-                        height="300"
-                        style="contain: layout style paint;">
-                    <h3>Achievement Unlocking System</h3>
-                    <p><strong>Complete Achievement Guide</strong> - All achievement types, difficulty tiers, unlock requirements, and proven strategies for 100% completion</p>
-                    <div class="feature-stats">
-                        <span class="stat">Story Achievements</span>
-                        <span class="stat">Hidden Challenges</span>
-                        <span class="stat">Speed Run Goals</span>
+                    <div class="card-content">
+                        <img
+                            src="https://images.noimnothuman.xyz/Core_Content_Hub/2.jpg"
+                            srcset="https://images.noimnothuman.xyz/Core_Content_Hub/2.jpg 400w"
+                            sizes="(max-width: 768px) 85vw, 35vw"
+                            alt="Achievement Unlocking System"
+                            class="feature-icon-img"
+                            loading="lazy"
+                            decoding="async"
+                            width="400"
+                            height="300"
+                            style="contain: layout style paint;">
+                        <h3>Achievement Unlocking System</h3>
+                        <p><strong>Complete Achievement Guide</strong> - All achievement types, unlock requirements, and proven strategies for 100% completion</p>
+                        <div class="feature-stats">
+                            <span class="stat">Story Achievements</span>
+                            <span class="stat">Hidden Challenges</span>
+                            <span class="stat">Speed Run Goals</span>
+                        </div>
+                        <a href="./achievements.html" class="btn btn-primary btn-small">View Achievements</a>
                     </div>
-                    <a href="./achievements/" class="btn btn-primary btn-small">View Achievements</a>
                 </div>
                 <div class="feature-card featured">
-                    <img
-                        src="https://images.noimnothuman.xyz/images.jpg?v=20241013"
-                        srcset="https://images.noimnothuman.xyz/images.jpg?v=20241013 400w"
-                        sizes="(max-width: 768px) 85vw, 35vw"
-                        alt="All Game Endings Guide"
-                        class="feature-icon-img"
-                        loading="lazy"
-                        decoding="async"
-                        width="400"
-                        height="300"
-                        style="contain: layout style paint;">
-                    <h3>All Game Endings Guide</h3>
-                    <p><strong>Complete Endings Walkthrough</strong> - Every ending condition, decision tree, story impact analysis, and path to unlock all possible conclusions</p>
-                    <div class="feature-stats">
-                        <span class="stat">Multiple Endings</span>
-                        <span class="stat">Decision Flowcharts</span>
-                        <span class="stat">Story Analysis</span>
+                    <div class="card-content">
+                        <img
+                            src="https://images.noimnothuman.xyz/Core_Content_Hub/3.jpg"
+                            srcset="https://images.noimnothuman.xyz/Core_Content_Hub/3.jpg 400w"
+                            sizes="(max-width: 768px) 85vw, 35vw"
+                            alt="All Game Endings Guide"
+                            class="feature-icon-img"
+                            loading="lazy"
+                            decoding="async"
+                            width="400"
+                            height="300"
+                            style="contain: layout style paint;">
+                        <h3>All Game Endings Guide</h3>
+                        <p><strong>Complete Endings Walkthrough</strong> - Every ending condition, decision tree, and path to unlock all possible conclusions</p>
+                        <div class="feature-stats">
+                            <span class="stat">Multiple Endings</span>
+                            <span class="stat">Decision Flowcharts</span>
+                            <span class="stat">Story Analysis</span>
+                        </div>
+                        <a href="./ending.html" class="btn btn-primary btn-small">Discover Endings</a>
                     </div>
-                    <a href="./ending.html"" class="btn btn-primary btn-small">Discover Endings</a>
                 </div>
             </div>
         </div>
@@ -485,6 +463,53 @@
         </div>
     </section>
 
+    <!-- Player Experience Highlights -->
+    <section class="player-experience">
+        <div class="container">
+            <h2 class="section-title">🎮 Real Player Experience Highlights</h2>
+            <p class="section-intro">Based on actual gameplay analysis, here's what players really experience in No, I'm not a Human:</p>
+
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-icon">🎭</div>
+                    <h3>Emotional Decision Making</h3>
+                    <blockquote class="player-quote-mini">
+                        "I don't care if you're not a visitor. If you got bad vibes, I'm not letting you in anyway."
+                    </blockquote>
+                    <p>Players rely on gut feelings over technical methods, making each playthrough uniquely personal.</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-icon">😱</div>
+                    <h3>Genuine Psychological Impact</h3>
+                    <blockquote class="player-quote-mini">
+                        "I'm sick to my stomach. I just made a disgusting horrific mistake that I'll never live down."
+                    </blockquote>
+                    <p>Wrong decisions create real emotional distress, demonstrating the game's unique psychological depth.</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-icon">🎬</div>
+                    <h3>Cinematic Storytelling</h3>
+                    <blockquote class="player-quote-mini">
+                        "Game of the Year. That was cinema though. W game. That was a great game."
+                    </blockquote>
+                    <p>Players consistently praise the game's cinematic quality, calling it "Game of the Year" worthy.</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-icon">💔</div>
+                    <h3>Real Character Attachment</h3>
+                    <blockquote class="player-quote-mini">
+                        "I'm still sad that they're gone. I still miss him. That's the best character in the game from me."
+                    </blockquote>
+                    <p>Players form genuine emotional connections with characters, making choices feel meaningful.</p>
+                </div>
+            </div>
+
+            </div>
+    </section>
+
     <!-- Game Screenshots -->
     <section class="screenshots">
         <div class="container">
@@ -500,7 +525,8 @@
                         decoding="async"
                         width="400"
                         height="300"
-                        style="image-rendering: -webkit-optimize-contrast; image-rendering: optimize-contrast;">
+                        style="image-rendering: -webkit-optimize-contrast; image-rendering: optimize-contrast;"
+                        fetchpriority="low">
                 </div>
                 <div class="screenshot-item">
                     <img
@@ -512,7 +538,8 @@
                         decoding="async"
                         width="400"
                         height="300"
-                        style="image-rendering: -webkit-optimize-contrast; image-rendering: optimize-contrast;">
+                        style="image-rendering: -webkit-optimize-contrast; image-rendering: optimize-contrast;"
+                        fetchpriority="low">
                 </div>
                 <div class="screenshot-item">
                     <img
@@ -524,7 +551,8 @@
                         decoding="async"
                         width="400"
                         height="300"
-                        style="image-rendering: -webkit-optimize-contrast; image-rendering: optimize-contrast;">
+                        style="image-rendering: -webkit-optimize-contrast; image-rendering: optimize-contrast;"
+                        fetchpriority="low">
                 </div>
             </div>
         </div>
@@ -605,34 +633,12 @@
 
         // Strategic script loading to eliminate 136ms dependency chain
         function loadScriptOptimized() {
-            // Script is preloaded, now load it non-blocking
+            // Load script async for better performance
             const script = document.createElement('script');
-            const scriptSrc = 'assets/js/script.js?v=20241013';
-
-            // Use Trusted Script URL if available
-            if (trustedScriptURL) {
-                script.src = trustedScriptURL(scriptSrc);
-            } else {
-                script.src = scriptSrc;
-            }
-
+            script.src = 'assets/js/script.js?v=20241013';
             script.async = true;
             script.defer = true;
-            script.crossOrigin = 'anonymous';
-            script.setAttribute('data-optimized', 'network-dependency-solution');
-
-            // Load after critical content to prevent blocking
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', () => {
-                    requestIdleCallback(() => {
-                        document.head.appendChild(script);
-                    });
-                });
-            } else {
-                requestIdleCallback(() => {
-                    document.head.appendChild(script);
-                });
-            }
+            document.head.appendChild(script);
         }
 
         // Fallback for older browsers - Minimal navigation functionality
@@ -664,8 +670,8 @@
             document.head.appendChild(fallbackScript);
         }
 
-        // Load optimized script immediately (preload already started)
-        loadScriptOptimized();
+        // Load script after page load for better performance
+        window.addEventListener('load', loadScriptOptimized);
 
         // Fallback for browsers that don't support module/nomodule
         if (!('noModule' in HTMLScriptElement.prototype)) {

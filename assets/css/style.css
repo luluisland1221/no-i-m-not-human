@@ -1,4 +1,4 @@
-/* Reset styles */
+/* Reset styles - Version 2.0 */
 * {
     margin: 0;
     padding: 0;
@@ -297,7 +297,7 @@ body.homepage .screenshots {
 }
 
 .nav-logo h1 a:hover {
-    color: #ff3333 !important;
+    color: #00ff88 !important;
 }
 
 .nav-logo .logo-text {
@@ -310,7 +310,7 @@ body.homepage .screenshots {
 }
 
 .nav-logo .logo-text:hover {
-    color: #ff3333 !important;
+    color: #00ff88 !important;
 }
 
 .nav-menu {
@@ -496,8 +496,10 @@ body.homepage .screenshots {
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .feature-card {
@@ -507,6 +509,12 @@ body.homepage .screenshots {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(0, 255, 136, 0.2);
+    min-height: 550px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .feature-card:hover {
@@ -517,16 +525,99 @@ body.homepage .screenshots {
 .feature-card.featured {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 255, 136, 0.1));
     border: 2px solid rgba(0, 255, 136, 0.4);
-    padding: 2.5rem;
+    padding: 1.8rem;
     position: relative;
     overflow: hidden;
+    max-width: 380px;
+    min-height: 550px;
+    max-height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Content wrapper for better spacing */
+.feature-card.featured .card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+/* Consistent element positioning */
+.feature-card.featured .feature-icon-img {
+    width: 273.33px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+    transition: all 0.3s ease;
+}
+
+.feature-card.featured h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-family: 'Creepster', cursive;
+    font-weight: 400;
+    color: #00ff88;
+    text-align: center;
+}
+
+.feature-card.featured p {
+    margin: 0 0 1.5rem 0;
+    line-height: 1.6;
+    flex-grow: 1;
+    text-align: center;
+    min-height: 80px;
+    display: block;
+    padding: 0.5rem 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.feature-card.featured p strong {
+    color: #00ff88;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.feature-card.featured .feature-stats {
+    margin: 0 0 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.feature-card.featured .btn {
+    margin: 0;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    min-width: 160px;
+    font-size: 1rem;
+    border-radius: 50px;
+}
+
+.feature-card.featured .btn-small {
+    height: 40px;
+    padding: 8px 20px;
+    min-width: 140px;
+    font-size: 0.9rem;
+    border-radius: 25px;
 }
 
 .feature-stats {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -615,7 +706,10 @@ body.homepage .screenshots {
     font-family: 'Orbitron', sans-serif;
     font-size: 3rem;
     font-weight: 700;
-    color: #00ff88;
+    background: linear-gradient(45deg, #00ff88, #0088ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 1.5rem;
 }
 
@@ -891,7 +985,7 @@ section.survival-tips {
 }
 
 .identification-category h4 {
-    color: #ff6b6b;
+    color: #00ff88;
     font-family: 'Orbitron', monospace;
     font-size: 1.3rem;
     margin-bottom: 1rem;
@@ -904,11 +998,11 @@ section.survival-tips {
 }
 
 .indicator-item {
-    color: #ffcccc;
+    color: #00ff88;
     margin-bottom: 1rem;
     padding: 1rem;
     background: rgba(255, 0, 0, 0.1);
-    border-left: 4px solid #ff6b6b;
+    border-left: 4px solid #00ff88;
     border-radius: 0 8px 8px 0;
     font-family: 'Courier New', monospace;
     font-size: 0.95rem;
@@ -1058,7 +1152,7 @@ section.survival-tips {
 }
 
 .clue-item {
-    color: #ff6b6b;
+    color: #00ff88;
     margin-bottom: 0.8rem;
     padding-left: 1.5rem;
     position: relative;
@@ -1645,15 +1739,15 @@ section.survival-tips {
     background: rgba(0, 0, 0, 0.3);
     padding: 1.5rem;
     border-radius: 15px;
-    border-left: 4px solid #ff6b6b;
+    border-left: 4px solid #00ff88;
 }
 
 .marker-card.high-priority {
-    border-left-color: #ff4444;
+    border-left-color: #00ff88;
 }
 
 .marker-card.medium-priority {
-    border-left-color: #ffaa44;
+    border-left-color: #00ff88;
 }
 
 .marker-icon {
@@ -1667,7 +1761,7 @@ section.survival-tips {
     background: rgba(255, 107, 107, 0.2);
     border-radius: 15px;
     font-size: 0.9rem;
-    color: #ff6b6b;
+    color: #00ff88;
 }
 
 .techniques-list {
@@ -1726,11 +1820,11 @@ section.survival-tips {
 }
 
 .ending-card.bad-ending {
-    border-left: 4px solid #ff4444;
+    border-left: 4px solid #00ff88;
 }
 
 .ending-card.special-ending {
-    border-left: 4px solid #ffaa44;
+    border-left: 4px solid #00ff88;
 }
 
 .ending-icon {
@@ -1828,7 +1922,7 @@ section.survival-tips {
 }
 
 .common-mistakes h3 {
-    color: #ff6b6b;
+    color: #00ff88;
     margin-bottom: 1.5rem;
 }
 
@@ -2683,7 +2777,7 @@ section.survival-tips {
 
 .achievement-rarity.Legendary {
     background: rgba(255, 215, 0, 0.3);
-    color: #ffd700;
+    color: #00ff88;
 }
 
 .achievements-intro {
@@ -3348,7 +3442,7 @@ section.survival-tips {
 
 .dialogue-line.character {
     background: rgba(255, 100, 0, 0.2);
-    border-left: 3px solid #ff6400;
+    border-left: 3px solid #00ff88;
 }
 
 .dialogue-line.analysis {
@@ -3731,18 +3825,18 @@ section.survival-tips {
 
 .ending-quote {
     font-style: italic;
-    color: #ff6b6b;
+    color: #00ff88;
     font-size: 1rem;
     margin-bottom: 1rem;
     padding-left: 1rem;
-    border-left: 3px solid #ff6b6b;
+    border-left: 3px solid #00ff88;
     background: rgba(255, 107, 107, 0.1);
     padding: 0.8rem;
     border-radius: 5px;
 }
 
 .ending-details h5 {
-    color: #ffd93d;
+    color: #00ff88;
     font-size: 1.1rem;
     margin-top: 1.2rem;
     margin-bottom: 0.8rem;
@@ -3836,7 +3930,7 @@ section.survival-tips {
 }
 
 .anthology-ending strong {
-    color: #ffd93d;
+    color: #00ff88;
 }
 
 /* Character Grid for Tips Section */
@@ -3893,7 +3987,7 @@ section.survival-tips {
 }
 
 .achievement-item h4 {
-    color: #ffd93d;
+    color: #00ff88;
     margin-bottom: 0.8rem;
 }
 
@@ -3989,7 +4083,7 @@ section.survival-tips {
 
 /* Enhanced Game Mechanics Section */
 .guide-section h3 {
-    color: #ffd93d;
+    color: #00ff88;
     font-size: 1.2rem;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
@@ -4175,19 +4269,24 @@ section.survival-tips {
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
     border-radius: 25px;
-    min-width: 100px;
+    min-width: 120px;
     text-align: center;
+    height: auto;
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-outline {
     background: transparent;
-    color: #0088ff;
-    border: 2px solid #0088ff;
-    box-shadow: 0 2px 10px rgba(0, 136, 255, 0.2);
+    color: #00ff88;
+    border: 2px solid #00ff88;
+    box-shadow: 0 2px 10px rgba(0, 255, 136, 0.2);
 }
 
 .btn-outline:hover {
-    background: rgba(0, 136, 255, 0.1);
+    background: rgba(0, 255, 136, 0.1);
     color: #00ff88;
     border-color: #00ff88;
     /* transform: translateY(-1px); */
@@ -4523,13 +4622,13 @@ section.survival-tips {
 }
 
 .critical-warning h3 {
-    color: #ff4444;
+    color: #00ff88;
     margin-bottom: 1rem;
     font-size: 1.4rem;
 }
 
 .critical-warning p {
-    color: #ffcccc;
+    color: #00ff88;
     margin: 0.5rem 0;
     font-size: 1.1rem;
     font-weight: 600;
@@ -5065,5 +5164,1281 @@ section.survival-tips {
 
     .license-info {
         font-size: 0.85rem;
+    }
+}
+
+/* ================================================== */
+/* Tips Page Styles - Enhanced Gameplay Guide          */
+/* ================================================== */
+
+/* Page Header - Different from index.html hero */
+.page-header {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(0, 255, 136, 0.05));
+    padding: 6rem 0 3rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(0, 255, 136, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(0, 136, 255, 0.05) 0%, transparent 50%);
+    z-index: -1;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-family: 'Creepster', cursive;
+    font-size: 4rem;
+    background: linear-gradient(45deg, #00ff88, #0088ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.page-description {
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-badges {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.badge-primary {
+    border-color: rgba(0, 255, 136, 0.5);
+    color: #00ff88;
+}
+
+.badge-secondary {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.badge-success {
+    border-color: rgba(0, 255, 136, 0.3);
+    color: #00ff88;
+}
+
+.badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Quick Navigation Grid */
+.quick-nav {
+    padding: 3rem 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.nav-item {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #00ff88;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-item:hover {
+    background: rgba(0, 255, 136, 0.1);
+    border-color: rgba(0, 255, 136, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 255, 136, 0.2);
+}
+
+.nav-item:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.nav-item h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #00ff88;
+}
+
+.nav-item p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.tips-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section styling for tips page */
+.tips-container .section {
+    margin: 4rem 0;
+    position: relative;
+}
+
+.tips-container .section-title {
+    font-family: 'Creepster', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #00ff88;
+    position: relative;
+}
+
+.tips-container .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #00ff88, #0088ff);
+    border-radius: 2px;
+}
+
+/* Strategy Cards */
+.strategy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.strategy-card {
+    background: rgba(0, 255, 136, 0.1);
+    border: 2px solid rgba(0, 255, 136, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.strategy-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #00ff88;
+    border-radius: 15px 15px 0 0;
+}
+
+.strategy-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 255, 136, 0.6);
+    box-shadow: 0 15px 30px rgba(0, 255, 136, 0.2);
+}
+
+.strategy-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #00ff88;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.strategy-card h3::before {
+    content: '🎯';
+    font-size: 1.2rem;
+}
+
+.player-quote {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #00ff88;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #00ff88;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    position: relative;
+}
+
+.player-quote::before,
+.player-quote::after {
+    content: '"';
+    font-size: 2rem;
+    color: #00ff88;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.player-quote::before {
+    top: 0;
+    left: 0.5rem;
+}
+
+.player-quote::after {
+    bottom: -1rem;
+    right: 0.5rem;
+}
+
+.pro-tip {
+    background: rgba(76, 175, 80, 0.2);
+    border: 1px solid rgba(76, 175, 80, 0.4);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.pro-tip::before {
+    content: '💡';
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: #000;
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.warning {
+    background: rgba(0, 255, 136, 0.1);
+    border: 1px solid rgba(0, 255, 136, 0.3);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.warning::before {
+    content: '⚠️';
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: #000;
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Identification Guide */
+.identification-guide {
+    background: rgba(0, 255, 136, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.identification-guide h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.priority-list {
+    list-style: none;
+    padding: 0;
+}
+
+.priority-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.priority-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+}
+
+.priority-item.high::before {
+    background: #00ff88;
+}
+
+.priority-item.medium::before {
+    background: #00ff88;
+}
+
+.priority-item.low::before {
+    background: #4caf50;
+}
+
+.priority {
+    background: #00ff88;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    min-width: 60px;
+    text-align: center;
+}
+
+.priority-item.medium .priority {
+    background: #00ff88;
+}
+
+.priority-item.low .priority {
+    background: #4caf50;
+}
+
+.characteristic {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    flex: 1;
+}
+
+.priority-item p {
+    color: #ccc;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Testing Methods */
+.testing-methods {
+    margin: 3rem 0;
+}
+
+.testing-methods h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.method-card {
+    background: rgba(0, 255, 136, 0.1);
+    border: 2px solid rgba(0, 255, 136, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.method-card:hover {
+    border-color: rgba(0, 255, 136, 0.6);
+    box-shadow: 0 10px 25px rgba(0, 255, 136, 0.2);
+}
+
+.method-card h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.dialogue-example {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    font-family: 'Courier New', monospace;
+}
+
+.dialogue-example p {
+    margin: 0.5rem 0;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.dialogue-example strong {
+    color: #00ff88;
+}
+
+.analysis {
+    color: #00ff88;
+    font-style: italic;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Tactics Grid */
+.tactics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.tactic-card {
+    background: rgba(0, 255, 136, 0.1);
+    border: 2px solid rgba(0, 255, 136, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.tactic-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #00ff88;
+    border-radius: 15px 15px 0 0;
+}
+
+.tactic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 255, 136, 0.2);
+}
+
+.tactic-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tactic-card h3::before {
+    content: '🧠';
+    font-size: 1.2rem;
+}
+
+/* Experience Timeline */
+.experience-timeline {
+    margin: 3rem 0;
+}
+
+.experience-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    border-left: 4px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(5px);
+}
+
+.experience-item.success {
+    border-left-color: #4caf50;
+}
+
+.experience-item.warning {
+    border-left-color: #00ff88;
+}
+
+.experience-item.failure {
+    border-left-color: #00ff88;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-header h4 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+    flex: 1;
+}
+
+.outcome {
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.experience-item.success .outcome {
+    background: rgba(76, 175, 80, 0.2);
+    color: #4caf50;
+    border: 1px solid rgba(76, 175, 80, 0.4);
+}
+
+.experience-item.warning .outcome {
+    background: rgba(255, 152, 0, 0.2);
+    color: #00ff88;
+    border: 1px solid rgba(255, 152, 0, 0.4);
+}
+
+.experience-item.failure .outcome {
+    background: rgba(255, 107, 107, 0.2);
+    color: #00ff88;
+    border: 1px solid rgba(255, 107, 107, 0.4);
+}
+
+.result {
+    color: #00ff88;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.lesson {
+    background: rgba(0, 136, 255, 0.1);
+    border: 1px solid rgba(0, 136, 255, 0.3);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.lesson::before {
+    content: '📚';
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: #000;
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.lesson strong {
+    color: #00ff88;
+}
+
+/* FAQ Section */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.faq-question {
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 255, 136, 0.05);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background: rgba(0, 255, 136, 0.1);
+    border-color: rgba(0, 255, 136, 0.4);
+}
+
+.faq-question h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    font-size: 1.2rem;
+    margin: 0;
+    flex: 1;
+}
+
+.faq-toggle {
+    background: rgba(0, 255, 136, 0.2);
+    color: #00ff88;
+    border: 2px solid rgba(0, 255, 136, 0.4);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 0 1.5rem;
+}
+
+.faq-answer.active {
+    max-height: 500px;
+    padding: 1.5rem;
+}
+
+.faq-answer p {
+    color: #ccc;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Advanced Tips */
+.advanced-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.advanced-card {
+    background: rgba(0, 255, 136, 0.1);
+    border: 2px solid rgba(0, 255, 136, 0.3);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.advanced-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #00ff88;
+}
+
+.advanced-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+    border-color: rgba(0, 255, 136, 0.6);
+}
+
+.advanced-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff88;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.advanced-card h3::before {
+    content: '🎯';
+    font-size: 1rem;
+}
+
+.advanced-card p {
+    color: #ccc;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Tips Page Responsive Design */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 4rem 0 2rem;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .page-description {
+        font-size: 1.1rem;
+    }
+
+    .header-badges {
+        gap: 0.5rem;
+    }
+
+    .badge {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .nav-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    .nav-item {
+        padding: 1.5rem;
+    }
+
+    .nav-icon {
+        font-size: 2.5rem;
+    }
+
+    .nav-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .nav-item p {
+        font-size: 0.9rem;
+    }
+
+    .tips-container .section-title {
+        font-size: 2rem;
+    }
+
+    .strategy-grid,
+    .tactics-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .priority-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .advanced-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .strategy-card,
+    .method-card,
+    .tactic-card {
+        padding: 1.5rem;
+    }
+
+    .faq-question h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tips-container {
+        padding: 0 15px;
+    }
+
+    .tips-container .section {
+        margin: 2rem 0;
+    }
+
+    .strategy-card,
+    .method-card,
+    .tactic-card,
+    .experience-item {
+        padding: 1rem;
+    }
+
+    .identification-guide {
+        padding: 1.5rem;
+    }
+
+    .priority-item {
+        padding: 1rem;
+    }
+
+    .dialogue-example {
+        padding: 1rem;
+    }
+}
+
+/* Player Real Combat Cases Styles */
+.section-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.case-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 255, 136, 0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.case-card:hover {
+    border-color: #00ff88;
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+    transform: translateY(-5px);
+}
+
+.case-card h3 {
+    color: #00ff88;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.case-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem;
+    background: rgba(0, 255, 136, 0.1);
+    border-radius: 8px;
+}
+
+.case-day {
+    color: #00ff88;
+    font-weight: 600;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.case-result {
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.case-result.success {
+    background: rgba(0, 255, 136, 0.2);
+    color: #00ff88;
+}
+
+.case-result.warning {
+    background: rgba(255, 165, 0, 0.2);
+    color: #ffa500;
+}
+
+.case-scenario,
+.case-decisions,
+.case-lesson {
+    margin-bottom: 1.5rem;
+}
+
+.case-scenario h4,
+.case-decisions h4,
+.case-lesson h4 {
+    color: #00ff88;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.case-scenario p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.case-decisions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.case-decisions li {
+    color: #ccc;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.case-decisions li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.case-decisions strong {
+    color: #00ff88;
+}
+
+.case-lesson blockquote {
+    background: rgba(0, 255, 136, 0.1);
+    border-left: 4px solid #00ff88;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #ccc;
+    border-radius: 0 8px 8px 0;
+}
+
+.cases-summary {
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 255, 136, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.cases-summary h3 {
+    color: #00ff88;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(0, 255, 136, 0.05);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    background: rgba(0, 255, 136, 0.1);
+    transform: translateY(-3px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00ff88;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Responsive Design for Cases */
+@media (max-width: 768px) {
+    .cases-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .case-card {
+        padding: 1.5rem;
+    }
+
+    .case-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .section-intro {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Player Experience Section Styles */
+.player-experience-section {
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 255, 136, 0.2);
+    border-radius: 15px;
+    padding: 3rem;
+    margin: 3rem 0;
+}
+
+.experience-title {
+    color: #00ff88;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.experience-intro {
+    text-align: center;
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.experience-card {
+    background: rgba(0, 255, 136, 0.05);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    background: rgba(0, 255, 136, 0.1);
+    border-color: #00ff88;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+}
+
+.experience-card h3 {
+    color: #00ff88;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.player-quote {
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #00ff88;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.player-quote blockquote {
+    color: #ccc;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.player-name {
+    color: #00ff88;
+    font-weight: 600;
+    display: block;
+    margin-top: 1rem;
+    text-align: right;
+    font-size: 0.95rem;
+}
+
+.experience-tips {
+    margin-top: 1.5rem;
+}
+
+.experience-tips h4 {
+    color: #00ff88;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.experience-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-tips li {
+    color: #ccc;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.experience-tips li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.experience-stats {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(0, 255, 136, 0.3);
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.experience-stats h3 {
+    color: #00ff88;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.stat-box {
+    padding: 1.5rem;
+    background: rgba(0, 255, 136, 0.05);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    background: rgba(0, 255, 136, 0.1);
+    transform: translateY(-3px);
+}
+
+.stat-number {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #00ff88;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Responsive Design for Player Experience */
+@media (max-width: 768px) {
+    .player-experience-section {
+        padding: 2rem 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .experience-title {
+        font-size: 1.8rem;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .experience-card {
+        padding: 1.5rem;
+    }
+
+    .experience-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .player-quote {
+        padding: 1rem;
+    }
+
+    .player-quote blockquote {
+        font-size: 1rem;
+    }
+
+    .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2.2rem;
+    }
+
+    .experience-intro {
+        font-size: 1.1rem;
+        padding: 0 1rem;
     }
 }
